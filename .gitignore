@@ -2,6 +2,9 @@
 *.docx
 *.doc
 
+# Ignore any compressed files
+*.zip
+
 # Ignore temporary Word backup files (lock files)
 ~$*.docx
 ~$*.doc
