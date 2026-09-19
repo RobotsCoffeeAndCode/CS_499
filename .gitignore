@@ -3,7 +3,7 @@
 *.doc
 
 # Ignore General text files
-.txt
+*.txt
 
 # Ignore any compressed files
 *.zip
