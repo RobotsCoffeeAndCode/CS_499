@@ -2,6 +2,9 @@
 *.docx
 *.doc
 
+#Ignore Code Review
+*.mov
+
 # Ignore General text files
 *.txt
 
