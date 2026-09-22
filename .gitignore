@@ -14,6 +14,9 @@ docs/
 # Ignore any compressed files
 *.zip
 
+# Ignore any VS Code workspace specific settings/config
+.vscode/
+
 # Ignore temporary Word backup files (lock files)
 ~$*.docx
 ~$*.doc
