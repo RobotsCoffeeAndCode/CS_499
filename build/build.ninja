@@ -50,6 +50,7 @@ cmake_ninja_workdir = C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/build/
 build cmake_object_order_depends_target_app: phony || .
 
 build CMakeFiles/app.dir/src/main.cpp.obj: CXX_COMPILER__app_unscanned_Debug C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/src/main.cpp || cmake_object_order_depends_target_app
+  CODE_CHECK = C:\msys64\ucrt64\bin\cmake.exe -E __run_co_compile --tidy="C:/msys64/ucrt64/bin/clang-tidy.exe;--config-file=C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/.clang-tidy;--extra-arg-before=--driver-mode=g++" --source="C:\Users\Redhawk\Desktop\Google Drive\SNHU\CS-499\src\main.cpp" -- 
   CONFIG = Debug
   DEP_FILE = CMakeFiles\app.dir\src\main.cpp.obj.d
   FLAGS = -g -std=gnu++20 -Wall -Wextra -Wpedantic -Wconversion -Wshadow
@@ -68,7 +69,7 @@ build CMakeFiles/app.dir/src/main.cpp.obj: CXX_COMPILER__app_unscanned_Debug C$:
 build app.exe: CXX_EXECUTABLE_LINKER__app_Debug CMakeFiles/app.dir/src/main.cpp.obj
   CONFIG = Debug
   FLAGS = -g
-  LINK_FLAGS = -static
+  LINK_FLAGS = -fuse-ld=lld -static
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\app.dir
   POST_BUILD = cd .
@@ -116,6 +117,12 @@ build unit_tests.exe: CXX_EXECUTABLE_LINKER__unit_tests_Debug CMakeFiles/unit_te
   TARGET_IMPLIB = libunit_tests.dll.a
   TARGET_PDB = unit_tests.exe.dbg
   TARGET_SUPPORT_DIR = CMakeFiles\unit_tests.dir
+
+
+#############################################
+# Utility command for run_all_tests
+
+build run_all_tests: phony CMakeFiles/run_all_tests unit_tests.exe
 
 
 #############################################
@@ -193,6 +200,14 @@ build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
   restat = 1
 
 build install/strip: phony CMakeFiles/install/strip.util
+
+
+#############################################
+# Custom command for CMakeFiles\run_all_tests
+
+build CMakeFiles/run_all_tests | ${cmake_ninja_workdir}CMakeFiles/run_all_tests: CUSTOM_COMMAND unit_tests.exe || lib/libgtest.a lib/libgtest_main.a unit_tests.exe
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Redhawk\Desktop\Google Drive\SNHU\CS-499\build" && "C:\Users\Redhawk\Desktop\Google Drive\SNHU\CS-499\build\unit_tests.exe""
+  DESC = Executing test suite on every build...
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -615,7 +630,7 @@ build unit_tests: phony unit_tests.exe
 #############################################
 # Folder: C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build
 
-build all: phony app.exe unit_tests.exe _deps/googletest-build/all
+build all: phony app.exe unit_tests.exe run_all_tests _deps/googletest-build/all
 
 # =============================================================================
 

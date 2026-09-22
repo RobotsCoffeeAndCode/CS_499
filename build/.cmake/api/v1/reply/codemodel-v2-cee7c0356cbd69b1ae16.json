@@ -38,7 +38,8 @@
 					"targetIndexes" : 
 					[
 						0,
-						5
+						5,
+						6
 					]
 				},
 				{
@@ -117,7 +118,8 @@
 					"targetIndexes" : 
 					[
 						0,
-						5
+						5,
+						6
 					]
 				},
 				{
@@ -173,7 +175,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "app::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-app-Debug-142c76210b578e1d4586.json",
+					"jsonFile" : "target-app-Debug-7a5703ab2c5b2008a4a3.json",
 					"name" : "app",
 					"projectIndex" : 0
 				},
@@ -207,8 +209,15 @@
 				},
 				{
 					"directoryIndex" : 0,
+					"id" : "run_all_tests::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-run_all_tests-Debug-33e002439b4c335230c7.json",
+					"name" : "run_all_tests",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "unit_tests::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-unit_tests-Debug-31bf8727976464d7f983.json",
+					"jsonFile" : "target-unit_tests-Debug-0bfeb40fbb75ce37b1a8.json",
 					"name" : "unit_tests",
 					"projectIndex" : 0
 				}

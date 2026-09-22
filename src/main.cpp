@@ -3,13 +3,16 @@
 #include <chrono>
 #include <thread>
 
-int main() {
-    std::string x;
-    std::cout << std::format("Hello from Clang {} on Windows!\n", __clang_version__);
-    std::getline(std::cin, x); 
-    std::cout << "You wrote: " << x << std::endl;
+auto main() -> int {
 
-    std::this_thread::sleep_for(std::chrono::seconds(5));
+    const int timeToSleep = 5;
+
+    std::string userInput;
+    std::cout << std::format("Hello from Clang {} on Windows!\n", __clang_version__);
+    std::getline(std::cin, userInput); 
+    std::cout << "You wrote: " << userInput << '\n';
+
+    std::this_thread::sleep_for(std::chrono::seconds(timeToSleep));
 
     return 0;
 }

@@ -1,0 +1,22 @@
+---
+# Enable modern C++, bug-prone checks, and Clang Static Analyzer checks
+Checks: >
+  -*,
+  clang-analyzer-*,
+  bugprone-*,
+  modernize-*,
+  performance-*,
+  readability-*,
+  cppcoreguidelines-*
+
+# Treat warnings as errors to fail the build on issues (optional but recommended)
+WarningsAsErrors: 'clang-analyzer-*,bugprone-*'
+
+# Header filter ensures we analyze our own headers, but NOT external GoogleTest headers
+HeaderFilterRegex: 'include/.*'
+
+CheckOptions:
+  - key: readability-identifier-naming.NamespaceCase
+    value: CamelCase
+  - key: readability-identifier-naming.FunctionCase
+    value: camelBack
