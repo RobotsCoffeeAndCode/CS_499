@@ -1,0 +1,8 @@
+[
+{
+  "directory": "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -g -std=gnu++20 -Wall -Wextra -Wpedantic -Wconversion -Wshadow -o CMakeFiles\\app.dir\\src\\main.cpp.obj -c \"C:\\Users\\Redhawk\\Desktop\\Google Drive\\SNHU\\CS-499\\src\\main.cpp\"",
+  "file": "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/src/main.cpp",
+  "output": "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/CMakeFiles/app.dir/src/main.cpp.obj"
+}
+]
