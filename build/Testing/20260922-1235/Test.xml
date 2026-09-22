@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20260922-1235-Experimental"
+	Name="(empty)"
+	Generator="ctest-4.4.3"
+	CompilerName=""
+	CompilerVersion=""
+	OSName="Windows"
+	Hostname="Nathaniel"
+	OSRelease="10.0.26200"
+	OSVersion="Windows 10"
+	OSPlatform="AMD64"
+	Is64Bits="1"
+	VendorString=""
+	VendorID="Unknown Manufacturer"
+	FamilyID="0"
+	ModelID="0"
+	ModelName=""
+	ProcessorCacheSize="0"
+	NumberOfLogicalCPU="16"
+	NumberOfPhysicalCPU="8"
+	TotalVirtualMemory="2048"
+	TotalPhysicalMemory="32698"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="3600.000000"
+	>
+	<Testing>
+		<StartDateTime>Sep 22 08:47 Eastern Daylight Time</StartDateTime>
+		<StartTestTime>1790081266</StartTestTime>
+		<TestList/>
+		<EndDateTime>Sep 22 08:47 Eastern Daylight Time</EndDateTime>
+		<EndTestTime>1790081266</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

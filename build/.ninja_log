@@ -1,15 +1,15 @@
 # ninja log v7
-8	1101	8117760154447666	CMakeFiles/app.dir/src/main.cpp.obj	df9dcd8931192c57
-1102	1381	8117760165387679	app.exe	48eba7b36c61770f
-4	1089	8117768664150626	CMakeFiles/app.dir/src/main.cpp.obj	df9dcd8931192c57
-1090	1371	8117768675010649	app.exe	48eba7b36c61770f
-8	1199	8117819834880348	CMakeFiles/app.dir/src/main.cpp.obj	df9dcd8931192c57
-1200	1473	8117819846790345	app.exe	48eba7b36c61770f
-4	1106	8117820380239254	CMakeFiles/app.dir/src/main.cpp.obj	df9dcd8931192c57
-4	263	8117820715569255	app.exe	48eba7b36c61770f
-5	1130	8117822574349258	CMakeFiles/app.dir/src/main.cpp.obj	df9dcd8931192c57
-1130	1417	8117822585599255	app.exe	48eba7b36c61770f
-5	1574	8117823446278451	CMakeFiles/app.dir/src/main.cpp.obj	df9dcd8931192c57
-1575	1855	8117823461978451	app.exe	48eba7b36c61770f
 5	1588	8117824335528441	CMakeFiles/app.dir/src/main.cpp.obj	df9dcd8931192c57
 1588	1848	8117824351358446	app.exe	48eba7b36c61770f
+20	1624	8117840070645382	_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	e7ca35ac7236f26e
+36	1985	8117840070805391	_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj	b6ae01ee9796d3c3
+13	2603	8117840070585368	_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj	8c2182d784180e03
+6	5542	8117840070505363	_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	b599b418c3c9714e
+8	360	8117841419026033	lib/libgtest.a	2dcec27ea8478b8d
+372	531	8117841422666182	lib/libgtest_main.a	7acfdd8e9515dae0
+360	550	8117841422546171	lib/libgmock.a	5b35e7b29991e6d5
+550	687	8117841424446251	lib/libgmock_main.a	ae719fb906c32461
+8	1491	8117843005351719	CMakeFiles/unit_tests.dir/tests/test_main.cpp.obj	e0bcae8f8dfa1844
+1462	1998	8117842351284635	unit_tests.exe	537f5d45c145cb59
+7	1455	8117844641959447	CMakeFiles/unit_tests.dir/tests/test_main.cpp.obj	e0bcae8f8dfa1844
+1455	1732	8117844656430068	unit_tests.exe	8ad5ef957f27fa19
