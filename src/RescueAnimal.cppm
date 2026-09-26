@@ -24,10 +24,10 @@ module;
 // Gives access to
 #include <utility>
 
-
-
 //-----------------------------------------------------------------------------
 
+// Here we name the exported module rescue_animal, when exported
+// all other code blocks marked export are included in this module
 export module rescue_animal;
 
 // Enumerations to ensure that Gender and
@@ -42,6 +42,30 @@ export enum class TrainingStatus : std::uint8_t {
   InService,
   Retired
 };
+
+// Helper function to convert Gender enum to a string for printing
+export constexpr auto toString(Gender gender) -> std::string_view{
+  switch(gender){
+    case Gender::Female: return "Female";
+    case Gender::Male: return "Male";
+    default: return "Unknown";
+  }
+}
+
+
+// Helper function to convert Gender enum to a string for printing
+export constexpr auto toString(TrainingStatus status) -> std::string_view{
+  switch(status){
+    case TrainingStatus::Intake: return "Intake";
+    case TrainingStatus::InTraining: return "In Training";
+    case TrainingStatus::PhaseI: return "PhaseI";
+    case TrainingStatus::PhaseII: return "PhaseII";
+    case TrainingStatus::PhaseIII: return "PhaseIII";
+    case TrainingStatus::InService: return "In Service";
+    case TrainingStatus::Retired: return "Retired";
+    default: return "unknown";
+  }
+}
 
 // The Abstract RescueAnimal Class
 export class RescueAnimal {
@@ -119,7 +143,7 @@ public:
   void setName(std::string name) { name_ = std::move(name); }
 
   // Get and Set the Gender of the animal
-  [[nodiscard]] auto getGender() const noexcept -> Gender { return gender_; }
+  [[nodiscard]] auto getGender() const noexcept -> std::string_view{ return toString(gender_); }
   void setGender(Gender gender) noexcept { gender_ = gender; }
 
   // Get and Set the birthday of the animal
@@ -173,8 +197,8 @@ public:
   }
 
   // Get and Set the Training Status of the animal
-  [[nodiscard]] auto getTrainingStatus() const noexcept -> TrainingStatus {
-    return trainingStatus_;
+  [[nodiscard]] auto getTrainingStatus() const noexcept -> std::string_view{
+    return toString(trainingStatus_);
   }
   void setTrainingStatus(TrainingStatus status) noexcept {
     trainingStatus_ = status;

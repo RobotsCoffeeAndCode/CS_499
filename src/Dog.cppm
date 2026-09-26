@@ -15,14 +15,22 @@ private:
   std::string breed_;
 
 public:
-  Dog(std::string name, Gender gender, std::chrono::year_month_day birthDate,
-      double weightKg, std::chrono::year_month_day acquisitionDate,
-      std::string acquisitionCountry, std::string breed)
-      : RescueAnimal(std::move(name), gender, birthDate, weightKg,
-                     acquisitionDate, std::move(acquisitionCountry)),
-        breed_{std::move(breed)} {}
+  Dog(
+    std::string name,
+    Gender gender,
+    std::chrono::year_month_day birthDate,
+    double weightKg, 
+    std::chrono::year_month_day acquisitionDate,
+    std::string acquisitionCountry, 
+    std::string breed) : RescueAnimal(std::move(name), 
+    gender, 
+    birthDate, 
+    weightKg,
+    acquisitionDate, 
+    std::move(acquisitionCountry)),
+    breed_{std::move(breed)} {}
 
-  // Implement the sole pure virtual function from RescueAnimal
+  // Implementation of the sole pure virtual function from RescueAnimal
   [[nodiscard]] auto getAnimalType() const noexcept
       -> std::string_view override {
     return "Dog";

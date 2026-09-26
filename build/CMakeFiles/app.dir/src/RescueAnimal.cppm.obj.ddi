@@ -2,7 +2,7 @@
   "revision": 0,
   "rules": [
     {
-      "primary-output": "CMakeFiles\\rescue_modules.dir\\src\\RescueAnimal.cppm.obj",
+      "primary-output": "CMakeFiles\\app.dir\\src\\RescueAnimal.cppm.obj",
       "provides": [
         {
           "is-interface": true,

@@ -260,7 +260,6 @@ CMakeFiles\unit_tests.dir\tests\test_main.cpp.obj.ddi: \
   C:/msys64/ucrt64/lib/clang/22/include/__float_header_macro.h \
   C:/msys64/ucrt64/include/float.h \
   C:/msys64/ucrt64/lib/clang/22/include/__float_float.h \
-  C:/msys64/ucrt64/lib/clang/22/include/__float_infinity_nan.h \
   C:/msys64/ucrt64/include/c++/16.2.0/map \
   C:/msys64/ucrt64/include/c++/16.2.0/bits/stl_map.h \
   C:/msys64/ucrt64/include/c++/16.2.0/bits/stl_multimap.h \

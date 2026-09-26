@@ -41,86 +41,18 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/build/
 # =============================================================================
-# Object build statements for STATIC_LIBRARY target rescue_modules
-
-
-#############################################
-# Order-only phony target for rescue_modules
-
-build cmake_object_order_depends_target_rescue_modules: phony || .
-
-build CMakeFiles/rescue_modules.dir/src/RescueAnimal.cppm.obj.ddi: CXX_SCAN__rescue_modules_Debug C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/src/RescueAnimal.cppm || cmake_object_order_depends_target_rescue_modules
-  DEP_FILE = CMakeFiles\rescue_modules.dir\src\RescueAnimal.cppm.obj.ddi.d
-  DYNDEP_INTERMEDIATE_FILE = CMakeFiles\rescue_modules.dir\src\RescueAnimal.cppm.obj.ddi
-  FLAGS = -g -std=gnu++20 -Wall -Wextra -Wpedantic -Wconversion -Wshadow
-  OBJ_FILE = CMakeFiles\rescue_modules.dir\src\RescueAnimal.cppm.obj
-  PREPROCESSED_OUTPUT_FILE = CMakeFiles\rescue_modules.dir\src\RescueAnimal.cppm.obj.ddi.i
-
-build CMakeFiles/rescue_modules.dir/src/RescueAnimal.cppm.obj: CXX_COMPILER__rescue_modules_scanned_Debug C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/src/RescueAnimal.cppm | CMakeFiles/rescue_modules.dir/src/RescueAnimal.cppm.obj.modmap || cmake_object_order_depends_target_rescue_modules CMakeFiles/rescue_modules.dir/CXX.dd
-  CONFIG = Debug
-  DEP_FILE = CMakeFiles\rescue_modules.dir\src\RescueAnimal.cppm.obj.d
-  DYNDEP_MODULE_MAP_FILE = CMakeFiles\rescue_modules.dir\src\RescueAnimal.cppm.obj.modmap
-  FLAGS = -g -std=gnu++20 -Wall -Wextra -Wpedantic -Wconversion -Wshadow
-  OBJECT_DIR = CMakeFiles\rescue_modules.dir
-  OBJECT_FILE_DIR = CMakeFiles\rescue_modules.dir\src
-  TARGET_COMPILE_PDB = CMakeFiles\rescue_modules.dir\rescue_modules.pdb
-  TARGET_PDB = librescue_modules.pdb
-  TARGET_SUPPORT_DIR = CMakeFiles\rescue_modules.dir
-  dyndep = CMakeFiles/rescue_modules.dir/CXX.dd
-
-build CMakeFiles/rescue_modules.dir/src/Dog.cppm.obj.ddi: CXX_SCAN__rescue_modules_Debug C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/src/Dog.cppm || cmake_object_order_depends_target_rescue_modules
-  DEP_FILE = CMakeFiles\rescue_modules.dir\src\Dog.cppm.obj.ddi.d
-  DYNDEP_INTERMEDIATE_FILE = CMakeFiles\rescue_modules.dir\src\Dog.cppm.obj.ddi
-  FLAGS = -g -std=gnu++20 -Wall -Wextra -Wpedantic -Wconversion -Wshadow
-  OBJ_FILE = CMakeFiles\rescue_modules.dir\src\Dog.cppm.obj
-  PREPROCESSED_OUTPUT_FILE = CMakeFiles\rescue_modules.dir\src\Dog.cppm.obj.ddi.i
-
-build CMakeFiles/rescue_modules.dir/src/Dog.cppm.obj: CXX_COMPILER__rescue_modules_scanned_Debug C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/src/Dog.cppm | CMakeFiles/rescue_modules.dir/src/Dog.cppm.obj.modmap || cmake_object_order_depends_target_rescue_modules CMakeFiles/rescue_modules.dir/CXX.dd
-  CONFIG = Debug
-  DEP_FILE = CMakeFiles\rescue_modules.dir\src\Dog.cppm.obj.d
-  DYNDEP_MODULE_MAP_FILE = CMakeFiles\rescue_modules.dir\src\Dog.cppm.obj.modmap
-  FLAGS = -g -std=gnu++20 -Wall -Wextra -Wpedantic -Wconversion -Wshadow
-  OBJECT_DIR = CMakeFiles\rescue_modules.dir
-  OBJECT_FILE_DIR = CMakeFiles\rescue_modules.dir\src
-  TARGET_COMPILE_PDB = CMakeFiles\rescue_modules.dir\rescue_modules.pdb
-  TARGET_PDB = librescue_modules.pdb
-  TARGET_SUPPORT_DIR = CMakeFiles\rescue_modules.dir
-  dyndep = CMakeFiles/rescue_modules.dir/CXX.dd
-
-build CMakeFiles/rescue_modules.dir/CXX.dd | CMakeFiles/rescue_modules.dir/CXXModules.json CMakeFiles/rescue_modules.dir/src/RescueAnimal.cppm.obj.modmap CMakeFiles/rescue_modules.dir/src/Dog.cppm.obj.modmap: CXX_DYNDEP__rescue_modules_Debug CMakeFiles/rescue_modules.dir/src/RescueAnimal.cppm.obj.ddi CMakeFiles/rescue_modules.dir/src/Dog.cppm.obj.ddi | C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/build/CMakeFiles/rescue_modules.dir/CXXDependInfo.json
-
-
-# =============================================================================
-# Link build statements for STATIC_LIBRARY target rescue_modules
-
-
-#############################################
-# Link the static library librescue_modules.a
-
-build librescue_modules.a: CXX_STATIC_LIBRARY_LINKER__rescue_modules_Debug CMakeFiles/rescue_modules.dir/src/RescueAnimal.cppm.obj CMakeFiles/rescue_modules.dir/src/Dog.cppm.obj
-  CONFIG = Debug
-  LANGUAGE_COMPILE_FLAGS = -g
-  OBJECT_DIR = CMakeFiles\rescue_modules.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\rescue_modules.dir\rescue_modules.pdb
-  TARGET_FILE = librescue_modules.a
-  TARGET_PDB = librescue_modules.pdb
-  TARGET_SUPPORT_DIR = CMakeFiles\rescue_modules.dir
-
-# =============================================================================
 # Object build statements for EXECUTABLE target app
 
 
 #############################################
 # Order-only phony target for app
 
-build cmake_object_order_depends_target_app: phony || cmake_object_order_depends_target_rescue_modules
+build cmake_object_order_depends_target_app: phony || .
 
 build CMakeFiles/app.dir/src/main.cpp.obj.ddi: CXX_SCAN__app_Debug C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/src/main.cpp || cmake_object_order_depends_target_app
   DEP_FILE = CMakeFiles\app.dir\src\main.cpp.obj.ddi.d
   DYNDEP_INTERMEDIATE_FILE = CMakeFiles\app.dir\src\main.cpp.obj.ddi
-  FLAGS = -g -std=gnu++20 -Wall -Wextra -Wpedantic -Wconversion -Wshadow
+  FLAGS = -g -std=c++20 -Wall -Wextra -Wpedantic -Wconversion -Wshadow
   OBJ_FILE = CMakeFiles\app.dir\src\main.cpp.obj
   PREPROCESSED_OUTPUT_FILE = CMakeFiles\app.dir\src\main.cpp.obj.ddi.i
 
@@ -129,15 +61,49 @@ build CMakeFiles/app.dir/src/main.cpp.obj: CXX_COMPILER__app_scanned_Debug C$:/U
   CONFIG = Debug
   DEP_FILE = CMakeFiles\app.dir\src\main.cpp.obj.d
   DYNDEP_MODULE_MAP_FILE = CMakeFiles\app.dir\src\main.cpp.obj.modmap
-  FLAGS = -g -std=gnu++20 -Wall -Wextra -Wpedantic -Wconversion -Wshadow
+  FLAGS = -g -std=c++20 -Wall -Wextra -Wpedantic -Wconversion -Wshadow
   OBJECT_DIR = CMakeFiles\app.dir
   OBJECT_FILE_DIR = CMakeFiles\app.dir\src
-  TARGET_COMPILE_PDB = CMakeFiles\app.dir\
-  TARGET_PDB = app.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\app.dir
   dyndep = CMakeFiles/app.dir/CXX.dd
 
-build CMakeFiles/app.dir/CXX.dd | CMakeFiles/app.dir/CXXModules.json CMakeFiles/app.dir/src/main.cpp.obj.modmap: CXX_DYNDEP__app_Debug CMakeFiles/app.dir/src/main.cpp.obj.ddi | C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/build/CMakeFiles/app.dir/CXXDependInfo.json CMakeFiles/rescue_modules.dir/CXXModules.json
+build CMakeFiles/app.dir/src/RescueAnimal.cppm.obj.ddi: CXX_SCAN__app_Debug C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/src/RescueAnimal.cppm || cmake_object_order_depends_target_app
+  DEP_FILE = CMakeFiles\app.dir\src\RescueAnimal.cppm.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = CMakeFiles\app.dir\src\RescueAnimal.cppm.obj.ddi
+  FLAGS = -g -std=c++20 -Wall -Wextra -Wpedantic -Wconversion -Wshadow
+  OBJ_FILE = CMakeFiles\app.dir\src\RescueAnimal.cppm.obj
+  PREPROCESSED_OUTPUT_FILE = CMakeFiles\app.dir\src\RescueAnimal.cppm.obj.ddi.i
+
+build CMakeFiles/app.dir/src/RescueAnimal.cppm.obj: CXX_COMPILER__app_scanned_Debug C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/src/RescueAnimal.cppm | CMakeFiles/app.dir/src/RescueAnimal.cppm.obj.modmap || cmake_object_order_depends_target_app CMakeFiles/app.dir/CXX.dd
+  CODE_CHECK = C:\msys64\ucrt64\bin\cmake.exe -E __run_co_compile --tidy="C:/msys64/ucrt64/bin/clang-tidy.exe;--config-file=C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/.clang-tidy;--extra-arg-before=--driver-mode=g++" --source="C:\Users\Redhawk\Desktop\Google Drive\SNHU\CS-499\src\RescueAnimal.cppm" -- 
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\app.dir\src\RescueAnimal.cppm.obj.d
+  DYNDEP_MODULE_MAP_FILE = CMakeFiles\app.dir\src\RescueAnimal.cppm.obj.modmap
+  FLAGS = -g -std=c++20 -Wall -Wextra -Wpedantic -Wconversion -Wshadow
+  OBJECT_DIR = CMakeFiles\app.dir
+  OBJECT_FILE_DIR = CMakeFiles\app.dir\src
+  TARGET_SUPPORT_DIR = CMakeFiles\app.dir
+  dyndep = CMakeFiles/app.dir/CXX.dd
+
+build CMakeFiles/app.dir/src/Dog.cppm.obj.ddi: CXX_SCAN__app_Debug C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/src/Dog.cppm || cmake_object_order_depends_target_app
+  DEP_FILE = CMakeFiles\app.dir\src\Dog.cppm.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = CMakeFiles\app.dir\src\Dog.cppm.obj.ddi
+  FLAGS = -g -std=c++20 -Wall -Wextra -Wpedantic -Wconversion -Wshadow
+  OBJ_FILE = CMakeFiles\app.dir\src\Dog.cppm.obj
+  PREPROCESSED_OUTPUT_FILE = CMakeFiles\app.dir\src\Dog.cppm.obj.ddi.i
+
+build CMakeFiles/app.dir/src/Dog.cppm.obj: CXX_COMPILER__app_scanned_Debug C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/src/Dog.cppm | CMakeFiles/app.dir/src/Dog.cppm.obj.modmap || cmake_object_order_depends_target_app CMakeFiles/app.dir/CXX.dd
+  CODE_CHECK = C:\msys64\ucrt64\bin\cmake.exe -E __run_co_compile --tidy="C:/msys64/ucrt64/bin/clang-tidy.exe;--config-file=C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/.clang-tidy;--extra-arg-before=--driver-mode=g++" --source="C:\Users\Redhawk\Desktop\Google Drive\SNHU\CS-499\src\Dog.cppm" -- 
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\app.dir\src\Dog.cppm.obj.d
+  DYNDEP_MODULE_MAP_FILE = CMakeFiles\app.dir\src\Dog.cppm.obj.modmap
+  FLAGS = -g -std=c++20 -Wall -Wextra -Wpedantic -Wconversion -Wshadow
+  OBJECT_DIR = CMakeFiles\app.dir
+  OBJECT_FILE_DIR = CMakeFiles\app.dir\src
+  TARGET_SUPPORT_DIR = CMakeFiles\app.dir
+  dyndep = CMakeFiles/app.dir/CXX.dd
+
+build CMakeFiles/app.dir/CXX.dd | CMakeFiles/app.dir/CXXModules.json CMakeFiles/app.dir/src/main.cpp.obj.modmap CMakeFiles/app.dir/src/RescueAnimal.cppm.obj.modmap CMakeFiles/app.dir/src/Dog.cppm.obj.modmap: CXX_DYNDEP__app_Debug CMakeFiles/app.dir/src/main.cpp.obj.ddi CMakeFiles/app.dir/src/RescueAnimal.cppm.obj.ddi CMakeFiles/app.dir/src/Dog.cppm.obj.ddi | C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/build/CMakeFiles/app.dir/CXXDependInfo.json
 
 
 # =============================================================================
@@ -147,18 +113,17 @@ build CMakeFiles/app.dir/CXX.dd | CMakeFiles/app.dir/CXXModules.json CMakeFiles/
 #############################################
 # Link the executable app.exe
 
-build app.exe: CXX_EXECUTABLE_LINKER__app_Debug CMakeFiles/app.dir/src/main.cpp.obj | librescue_modules.a || librescue_modules.a
+build app.exe: CXX_EXECUTABLE_LINKER__app_Debug CMakeFiles/app.dir/src/main.cpp.obj CMakeFiles/app.dir/src/RescueAnimal.cppm.obj CMakeFiles/app.dir/src/Dog.cppm.obj
   CONFIG = Debug
   FLAGS = -g
   LINK_FLAGS = -fuse-ld=lld -static
-  LINK_LIBRARIES = librescue_modules.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\app.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\app.dir\
   TARGET_FILE = app.exe
   TARGET_IMPLIB = libapp.dll.a
-  TARGET_PDB = app.pdb
+  TARGET_PDB = app.exe.dbg
   TARGET_SUPPORT_DIR = CMakeFiles\app.dir
 
 # =============================================================================
@@ -173,7 +138,7 @@ build cmake_object_order_depends_target_unit_tests: phony || cmake_object_order_
 build CMakeFiles/unit_tests.dir/tests/test_main.cpp.obj.ddi: CXX_SCAN__unit_tests_Debug C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/tests/test_main.cpp || cmake_object_order_depends_target_unit_tests
   DEP_FILE = CMakeFiles\unit_tests.dir\tests\test_main.cpp.obj.ddi.d
   DYNDEP_INTERMEDIATE_FILE = CMakeFiles\unit_tests.dir\tests\test_main.cpp.obj.ddi
-  FLAGS = -g -std=gnu++20 -Wall -Wextra -Wpedantic -Wconversion -Wshadow
+  FLAGS = -g -std=c++20 -Wall -Wextra -Wpedantic -Wconversion -Wshadow
   INCLUDES = -isystem "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src/googletest/include" -isystem "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src/googletest"
   OBJ_FILE = CMakeFiles\unit_tests.dir\tests\test_main.cpp.obj
   PREPROCESSED_OUTPUT_FILE = CMakeFiles\unit_tests.dir\tests\test_main.cpp.obj.ddi.i
@@ -182,12 +147,10 @@ build CMakeFiles/unit_tests.dir/tests/test_main.cpp.obj: CXX_COMPILER__unit_test
   CONFIG = Debug
   DEP_FILE = CMakeFiles\unit_tests.dir\tests\test_main.cpp.obj.d
   DYNDEP_MODULE_MAP_FILE = CMakeFiles\unit_tests.dir\tests\test_main.cpp.obj.modmap
-  FLAGS = -g -std=gnu++20 -Wall -Wextra -Wpedantic -Wconversion -Wshadow
+  FLAGS = -g -std=c++20 -Wall -Wextra -Wpedantic -Wconversion -Wshadow
   INCLUDES = -isystem "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src/googletest/include" -isystem "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src/googletest"
   OBJECT_DIR = CMakeFiles\unit_tests.dir
   OBJECT_FILE_DIR = CMakeFiles\unit_tests.dir\tests
-  TARGET_COMPILE_PDB = CMakeFiles\unit_tests.dir\
-  TARGET_PDB = unit_tests.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\unit_tests.dir
   dyndep = CMakeFiles/unit_tests.dir/CXX.dd
 
@@ -209,10 +172,9 @@ build unit_tests.exe: CXX_EXECUTABLE_LINKER__unit_tests_Debug CMakeFiles/unit_te
   OBJECT_DIR = CMakeFiles\unit_tests.dir
   POST_BUILD = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Redhawk\Desktop\Google Drive\SNHU\CS-499\build" && "C:\Users\Redhawk\Desktop\Google Drive\SNHU\CS-499\build\unit_tests.exe""
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\unit_tests.dir\
   TARGET_FILE = unit_tests.exe
   TARGET_IMPLIB = libunit_tests.dll.a
-  TARGET_PDB = unit_tests.pdb
+  TARGET_PDB = unit_tests.exe.dbg
   TARGET_SUPPORT_DIR = CMakeFiles\unit_tests.dir
 
 
@@ -409,8 +371,6 @@ build _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.ob
   INCLUDES = -I"C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src/googlemock/include" -I"C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src/googlemock" -isystem "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src/googletest/include" -isystem "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src/googletest"
   OBJECT_DIR = _deps\googletest-build\googlemock\CMakeFiles\gmock.dir
   OBJECT_FILE_DIR = _deps\googletest-build\googlemock\CMakeFiles\gmock.dir\src
-  TARGET_COMPILE_PDB = lib\libgmockpdb_debug_postfix-NOTFOUND.pdb
-  TARGET_PDB = bin\libgmockpdb_debug_postfix-NOTFOUND.pdb
   TARGET_SUPPORT_DIR = _deps\googletest-build\googlemock\CMakeFiles\gmock.dir
 
 
@@ -427,9 +387,8 @@ build lib/libgmock.a: CXX_STATIC_LIBRARY_LINKER__gmock_Debug _deps/googletest-bu
   OBJECT_DIR = _deps\googletest-build\googlemock\CMakeFiles\gmock.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = lib\libgmockpdb_debug_postfix-NOTFOUND.pdb
   TARGET_FILE = lib\libgmock.a
-  TARGET_PDB = bin\libgmockpdb_debug_postfix-NOTFOUND.pdb
+  TARGET_PDB = gmock.a.dbg
   TARGET_SUPPORT_DIR = _deps\googletest-build\googlemock\CMakeFiles\gmock.dir
 
 # =============================================================================
@@ -448,8 +407,6 @@ build _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main
   INCLUDES = -isystem "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src/googlemock/include" -isystem "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src/googlemock" -isystem "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src/googletest/include" -isystem "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src/googletest"
   OBJECT_DIR = _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir
   OBJECT_FILE_DIR = _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\src
-  TARGET_COMPILE_PDB = lib\libgmock_mainpdb_debug_postfix-NOTFOUND.pdb
-  TARGET_PDB = bin\libgmock_mainpdb_debug_postfix-NOTFOUND.pdb
   TARGET_SUPPORT_DIR = _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir
 
 
@@ -466,9 +423,8 @@ build lib/libgmock_main.a: CXX_STATIC_LIBRARY_LINKER__gmock_main_Debug _deps/goo
   OBJECT_DIR = _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = lib\libgmock_mainpdb_debug_postfix-NOTFOUND.pdb
   TARGET_FILE = lib\libgmock_main.a
-  TARGET_PDB = bin\libgmock_mainpdb_debug_postfix-NOTFOUND.pdb
+  TARGET_PDB = gmock_main.a.dbg
   TARGET_SUPPORT_DIR = _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir
 
 
@@ -569,8 +525,6 @@ build _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.ob
   INCLUDES = -I"C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src/googletest/include" -I"C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src/googletest"
   OBJECT_DIR = _deps\googletest-build\googletest\CMakeFiles\gtest.dir
   OBJECT_FILE_DIR = _deps\googletest-build\googletest\CMakeFiles\gtest.dir\src
-  TARGET_COMPILE_PDB = lib\libgtestpdb_debug_postfix-NOTFOUND.pdb
-  TARGET_PDB = bin\libgtestpdb_debug_postfix-NOTFOUND.pdb
   TARGET_SUPPORT_DIR = _deps\googletest-build\googletest\CMakeFiles\gtest.dir
 
 
@@ -587,9 +541,8 @@ build lib/libgtest.a: CXX_STATIC_LIBRARY_LINKER__gtest_Debug _deps/googletest-bu
   OBJECT_DIR = _deps\googletest-build\googletest\CMakeFiles\gtest.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = lib\libgtestpdb_debug_postfix-NOTFOUND.pdb
   TARGET_FILE = lib\libgtest.a
-  TARGET_PDB = bin\libgtestpdb_debug_postfix-NOTFOUND.pdb
+  TARGET_PDB = gtest.a.dbg
   TARGET_SUPPORT_DIR = _deps\googletest-build\googletest\CMakeFiles\gtest.dir
 
 # =============================================================================
@@ -608,8 +561,6 @@ build _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main
   INCLUDES = -isystem "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src/googletest/include" -isystem "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src/googletest"
   OBJECT_DIR = _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir
   OBJECT_FILE_DIR = _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir\src
-  TARGET_COMPILE_PDB = lib\libgtest_mainpdb_debug_postfix-NOTFOUND.pdb
-  TARGET_PDB = bin\libgtest_mainpdb_debug_postfix-NOTFOUND.pdb
   TARGET_SUPPORT_DIR = _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir
 
 
@@ -626,9 +577,8 @@ build lib/libgtest_main.a: CXX_STATIC_LIBRARY_LINKER__gtest_main_Debug _deps/goo
   OBJECT_DIR = _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = lib\libgtest_mainpdb_debug_postfix-NOTFOUND.pdb
   TARGET_FILE = lib\libgtest_main.a
-  TARGET_PDB = bin\libgtest_mainpdb_debug_postfix-NOTFOUND.pdb
+  TARGET_PDB = gtest_main.a.dbg
   TARGET_SUPPORT_DIR = _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir
 
 
@@ -729,8 +679,6 @@ build libgtest.a: phony lib/libgtest.a
 
 build libgtest_main.a: phony lib/libgtest_main.a
 
-build rescue_modules: phony librescue_modules.a
-
 build unit_tests: phony unit_tests.exe
 
 # =============================================================================
@@ -741,7 +689,7 @@ build unit_tests: phony unit_tests.exe
 #############################################
 # Folder: C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build
 
-build all: phony librescue_modules.a app.exe unit_tests.exe run_all_tests _deps/googletest-build/all
+build all: phony app.exe unit_tests.exe run_all_tests _deps/googletest-build/all
 
 # =============================================================================
 
@@ -771,14 +719,14 @@ build _deps/googletest-build/googletest/all: phony lib/libgtest.a lib/libgtest_m
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/build/cmake_install.cmake C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/build/_deps/googletest-build/cmake_install.cmake C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/build/_deps/googletest-build/googlemock/cmake_install.cmake C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/build/_deps/googletest-build/googletest/cmake_install.cmake C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/build/CTestTestfile.cmake C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/build/_deps/googletest-build/CTestTestfile.cmake C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/build/_deps/googletest-build/googlemock/CTestTestfile.cmake C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/build/_deps/googletest-build/googletest/CTestTestfile.cmake: RERUN_CMAKE | C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/CMakeLists.txt C$:/msys64/ucrt64/share/cmake/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/msys64/ucrt64/share/cmake/Modules/CMakeCCompiler.cmake.in C$:/msys64/ucrt64/share/cmake/Modules/CMakeCCompilerABI.c C$:/msys64/ucrt64/share/cmake/Modules/CMakeCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCXXCompiler.cmake.in C$:/msys64/ucrt64/share/cmake/Modules/CMakeCXXCompilerABI.cpp C$:/msys64/ucrt64/share/cmake/Modules/CMakeCXXInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCompilerIdDetection.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDependentOption.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerId.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineRCCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineSystem.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeNinjaFindMake.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakePackageConfigHelpers.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeRCCompiler.cmake.in C$:/msys64/ucrt64/share/cmake/Modules/CMakeRCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystem.cmake.in C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeTestCCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeTestCXXCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeTestCompilerCommon.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeTestRCCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Clang-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Clang-CXX-CXXImportStd.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Clang-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Clang-FindBinUtils.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Clang.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Diab-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/LCC-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/PellesC-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Renesas-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/TIClang-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/ExternalProject/shared_internal_commands.cmake C$:/msys64/ucrt64/share/cmake/Modules/FetchContent.cmake C$:/msys64/ucrt64/share/cmake/Modules/FetchContent/CMakeLists.cmake.in C$:/msys64/ucrt64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPackageMessage.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPython3.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPython/Support.cmake C$:/msys64/ucrt64/share/cmake/Modules/GNUInstallDirs.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeInspectCLinker.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeInspectCXXLinker.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/FeatureTesting.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Clang-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Clang-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Clang.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Determine-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/WindowsPaths.cmake C$:/msys64/ucrt64/share/cmake/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/4.4.3/CMakeCCompiler.cmake CMakeFiles/4.4.3/CMakeCXXCompiler.cmake CMakeFiles/4.4.3/CMakeRCCompiler.cmake CMakeFiles/4.4.3/CMakeSystem.cmake _deps/googletest-src/CMakeLists.txt _deps/googletest-src/googlemock/CMakeLists.txt _deps/googletest-src/googlemock/cmake/gmock.pc.in _deps/googletest-src/googlemock/cmake/gmock_main.pc.in _deps/googletest-src/googletest/CMakeLists.txt _deps/googletest-src/googletest/cmake/Config.cmake.in _deps/googletest-src/googletest/cmake/gtest.pc.in _deps/googletest-src/googletest/cmake/gtest_main.pc.in _deps/googletest-src/googletest/cmake/internal_utils.cmake
+build build.ninja C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/build/cmake_install.cmake C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/build/_deps/googletest-build/cmake_install.cmake C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/build/_deps/googletest-build/googlemock/cmake_install.cmake C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/build/_deps/googletest-build/googletest/cmake_install.cmake C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/build/CTestTestfile.cmake C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/build/_deps/googletest-build/CTestTestfile.cmake C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/build/_deps/googletest-build/googlemock/CTestTestfile.cmake C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/build/_deps/googletest-build/googletest/CTestTestfile.cmake: RERUN_CMAKE | C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/CMakeLists.txt C$:/msys64/ucrt64/share/cmake/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/msys64/ucrt64/share/cmake/Modules/CMakeCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCXXInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDependentOption.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakePackageConfigHelpers.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeRCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Clang-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Clang-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Clang.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/ExternalProject/shared_internal_commands.cmake C$:/msys64/ucrt64/share/cmake/Modules/FetchContent.cmake C$:/msys64/ucrt64/share/cmake/Modules/FetchContent/CMakeLists.cmake.in C$:/msys64/ucrt64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPackageMessage.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPython3.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPython/Support.cmake C$:/msys64/ucrt64/share/cmake/Modules/GNUInstallDirs.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Clang-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Clang-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Clang.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/WindowsPaths.cmake C$:/msys64/ucrt64/share/cmake/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/4.4.3/CMakeCCompiler.cmake CMakeFiles/4.4.3/CMakeCXXCompiler.cmake CMakeFiles/4.4.3/CMakeRCCompiler.cmake CMakeFiles/4.4.3/CMakeSystem.cmake _deps/googletest-src/CMakeLists.txt _deps/googletest-src/googlemock/CMakeLists.txt _deps/googletest-src/googlemock/cmake/gmock.pc.in _deps/googletest-src/googlemock/cmake/gmock_main.pc.in _deps/googletest-src/googletest/CMakeLists.txt _deps/googletest-src/googletest/cmake/Config.cmake.in _deps/googletest-src/googletest/cmake/gtest.pc.in _deps/googletest-src/googletest/cmake/gtest_main.pc.in _deps/googletest-src/googletest/cmake/internal_utils.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/CMakeLists.txt C$:/msys64/ucrt64/share/cmake/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/msys64/ucrt64/share/cmake/Modules/CMakeCCompiler.cmake.in C$:/msys64/ucrt64/share/cmake/Modules/CMakeCCompilerABI.c C$:/msys64/ucrt64/share/cmake/Modules/CMakeCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCXXCompiler.cmake.in C$:/msys64/ucrt64/share/cmake/Modules/CMakeCXXCompilerABI.cpp C$:/msys64/ucrt64/share/cmake/Modules/CMakeCXXInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCompilerIdDetection.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDependentOption.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerId.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineRCCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineSystem.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeNinjaFindMake.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakePackageConfigHelpers.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeRCCompiler.cmake.in C$:/msys64/ucrt64/share/cmake/Modules/CMakeRCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystem.cmake.in C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeTestCCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeTestCXXCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeTestCompilerCommon.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeTestRCCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Clang-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Clang-CXX-CXXImportStd.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Clang-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Clang-FindBinUtils.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Clang.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Diab-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/LCC-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/PellesC-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Renesas-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/TIClang-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/ExternalProject/shared_internal_commands.cmake C$:/msys64/ucrt64/share/cmake/Modules/FetchContent.cmake C$:/msys64/ucrt64/share/cmake/Modules/FetchContent/CMakeLists.cmake.in C$:/msys64/ucrt64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPackageMessage.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPython3.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPython/Support.cmake C$:/msys64/ucrt64/share/cmake/Modules/GNUInstallDirs.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeInspectCLinker.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeInspectCXXLinker.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/FeatureTesting.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Clang-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Clang-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Clang.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Determine-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/WindowsPaths.cmake C$:/msys64/ucrt64/share/cmake/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/4.4.3/CMakeCCompiler.cmake CMakeFiles/4.4.3/CMakeCXXCompiler.cmake CMakeFiles/4.4.3/CMakeRCCompiler.cmake CMakeFiles/4.4.3/CMakeSystem.cmake _deps/googletest-src/CMakeLists.txt _deps/googletest-src/googlemock/CMakeLists.txt _deps/googletest-src/googlemock/cmake/gmock.pc.in _deps/googletest-src/googlemock/cmake/gmock_main.pc.in _deps/googletest-src/googletest/CMakeLists.txt _deps/googletest-src/googletest/cmake/Config.cmake.in _deps/googletest-src/googletest/cmake/gtest.pc.in _deps/googletest-src/googletest/cmake/gtest_main.pc.in _deps/googletest-src/googletest/cmake/internal_utils.cmake: phony
+build C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/CMakeLists.txt C$:/msys64/ucrt64/share/cmake/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/msys64/ucrt64/share/cmake/Modules/CMakeCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCXXInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDependentOption.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakePackageConfigHelpers.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeRCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Clang-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Clang-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Clang.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/ExternalProject/shared_internal_commands.cmake C$:/msys64/ucrt64/share/cmake/Modules/FetchContent.cmake C$:/msys64/ucrt64/share/cmake/Modules/FetchContent/CMakeLists.cmake.in C$:/msys64/ucrt64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPackageMessage.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPython3.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPython/Support.cmake C$:/msys64/ucrt64/share/cmake/Modules/GNUInstallDirs.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Clang-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Clang-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Clang.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/WindowsPaths.cmake C$:/msys64/ucrt64/share/cmake/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/4.4.3/CMakeCCompiler.cmake CMakeFiles/4.4.3/CMakeCXXCompiler.cmake CMakeFiles/4.4.3/CMakeRCCompiler.cmake CMakeFiles/4.4.3/CMakeSystem.cmake _deps/googletest-src/CMakeLists.txt _deps/googletest-src/googlemock/CMakeLists.txt _deps/googletest-src/googlemock/cmake/gmock.pc.in _deps/googletest-src/googlemock/cmake/gmock_main.pc.in _deps/googletest-src/googletest/CMakeLists.txt _deps/googletest-src/googletest/cmake/Config.cmake.in _deps/googletest-src/googletest/cmake/gtest.pc.in _deps/googletest-src/googletest/cmake/gtest_main.pc.in _deps/googletest-src/googletest/cmake/internal_utils.cmake: phony
 
 
 #############################################

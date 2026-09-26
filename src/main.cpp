@@ -8,6 +8,8 @@ import dog;
 auto main() -> int {
     using namespace std::chrono_literals;
 
+    std::vector<std::unique_ptr<RescueAnimal>> RescueAnimalServiceList;
+
     // Direct instantiation
     Dog dog(
         "Kona",
@@ -23,11 +25,11 @@ auto main() -> int {
     std::cout << "Name:  " << dog.getName() << '\n';
     std::cout << "Breed: " << dog.getBreed() << '\n';
     std::cout << "Type:  " << dog.getAnimalType() << '\n';
+    std::cout << "NATHANIEL WAS HERE:  " << dog.getTrainingStatus() << '\n';
 
     std::cout << "\nPolymorphic call via Base pointer:\n";
-    std::vector<std::unique_ptr<RescueAnimal>> shelter;
 
-    shelter.push_back(std::make_unique<Dog>(
+    RescueAnimalServiceList.push_back(std::make_unique<Dog>(
         "Balto",
         Gender::Male,
         2019y / std::chrono::January / 1,
@@ -39,7 +41,7 @@ auto main() -> int {
 
     const auto today = 2026y / std::chrono::September / 26;
 
-    for (const auto& animal : shelter) {
+    for (const auto& animal : RescueAnimalServiceList) {
         std::cout << "Type: " << animal->getAnimalType() << '\n';
         std::cout << "Name: " << animal->getName() << '\n';
         std::cout << "Age:  " << animal->getAgeInYears(today).count()

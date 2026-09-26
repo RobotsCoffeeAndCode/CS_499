@@ -1,2 +1,3 @@
--fmodule-file="dog=CMakeFiles/app.dir/dog.pcm"
+-x c++-module
+-fmodule-output="CMakeFiles/app.dir/dog.pcm"
 -fmodule-file="rescue_animal=CMakeFiles/app.dir/rescue_animal.pcm"

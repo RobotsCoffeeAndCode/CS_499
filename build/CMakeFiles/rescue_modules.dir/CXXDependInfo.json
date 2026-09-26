@@ -3,7 +3,7 @@
 	"compiler-frontend-variant" : "GNU",
 	"compiler-id" : "Clang",
 	"compiler-simulate-id" : "",
-	"config" : "Debug",
+	"config" : "",
 	"cxx-modules" : 
 	{
 		"CMakeFiles/rescue_modules.dir/src/Dog.cppm.obj" : 

@@ -1,7 +1,0 @@
-ninja_dyndep_version = 1.0
-build CMakeFiles/rescue_modules.dir/src/RescueAnimal.cppm.obj | CMakeFiles/rescue_modules.dir/rescue_animal.pcm: dyndep
-  restat = 1
-
-build CMakeFiles/rescue_modules.dir/src/Dog.cppm.obj | CMakeFiles/rescue_modules.dir/dog.pcm: dyndep | CMakeFiles/rescue_modules.dir/rescue_animal.pcm
-  restat = 1
-

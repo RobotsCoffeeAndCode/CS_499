@@ -4,7 +4,51 @@
 	"compiler-id" : "Clang",
 	"compiler-simulate-id" : "",
 	"config" : "Debug",
-	"cxx-modules" : {},
+	"cxx-modules" : 
+	{
+		"CMakeFiles/app.dir/src/Dog.cppm.obj" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : 
+			[
+				"-Wall",
+				"-Wextra",
+				"-Wpedantic",
+				"-Wconversion",
+				"-Wshadow"
+			],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : [],
+			"name" : "my_modules",
+			"relative-directory" : "src",
+			"source" : "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/src/Dog.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/app.dir/src/RescueAnimal.cppm.obj" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : 
+			[
+				"-Wall",
+				"-Wextra",
+				"-Wpedantic",
+				"-Wconversion",
+				"-Wshadow"
+			],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : [],
+			"name" : "my_modules",
+			"relative-directory" : "src",
+			"source" : "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/src/RescueAnimal.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		}
+	},
 	"database-info" : null,
 	"dir-cur-bld" : "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build",
 	"dir-cur-src" : "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499",
@@ -14,10 +58,7 @@
 	"forward-modules-from-target-dirs" : [],
 	"include-dirs" : [],
 	"language" : "CXX",
-	"linked-target-dirs" : 
-	[
-		"C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/CMakeFiles/rescue_modules.dir"
-	],
+	"linked-target-dirs" : [],
 	"module-dir" : "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/CMakeFiles/app.dir",
 	"sources" : 
 	{
