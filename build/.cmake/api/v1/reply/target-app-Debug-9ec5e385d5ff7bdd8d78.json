@@ -30,25 +30,25 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 60,
+				"line" : 61,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 101,
+				"line" : 103,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 49,
+				"line" : 50,
 				"parent" : 0
 			},
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 62,
+				"line" : 63,
 				"parent" : 0
 			}
 		]
@@ -100,7 +100,8 @@
 			[
 				0,
 				1,
-				2
+				2,
+				3
 			]
 		}
 	],
@@ -126,6 +127,15 @@
 				0
 			],
 			"path" : "src/Dog.cppm",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"fileSetIndexes" : 
+			[
+				0
+			],
+			"path" : "src/Monkey.cppm",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -176,14 +186,16 @@
 			"interfaceSourceIndexes" : 
 			[
 				0,
-				1
+				1,
+				2
 			],
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
 				0,
 				1,
-				2
+				2,
+				3
 			]
 		}
 	],
@@ -227,6 +239,21 @@
 				0
 			],
 			"path" : "src/Dog.cppm",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"backtraces" : 
+			[
+				4
+			],
+			"compileGroupIndex" : 0,
+			"fileSetIndex" : 0,
+			"fileSetIndexes" : 
+			[
+				0
+			],
+			"path" : "src/Monkey.cppm",
 			"sourceGroupIndex" : 0
 		}
 	],

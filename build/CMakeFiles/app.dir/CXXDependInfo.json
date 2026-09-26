@@ -27,6 +27,27 @@
 			"type" : "CXX_MODULES",
 			"visibility" : "PUBLIC"
 		},
+		"CMakeFiles/app.dir/src/Monkey.cppm.obj" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : 
+			[
+				"-Wall",
+				"-Wextra",
+				"-Wpedantic",
+				"-Wconversion",
+				"-Wshadow"
+			],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : [],
+			"name" : "my_modules",
+			"relative-directory" : "src",
+			"source" : "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/src/Monkey.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
 		"CMakeFiles/app.dir/src/RescueAnimal.cppm.obj" : 
 		{
 			"bmi-only" : false,

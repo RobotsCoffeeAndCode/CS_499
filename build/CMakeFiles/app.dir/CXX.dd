@@ -7,3 +7,6 @@ build CMakeFiles/app.dir/src/RescueAnimal.cppm.obj | CMakeFiles/app.dir/rescue_a
 build CMakeFiles/app.dir/src/Dog.cppm.obj | CMakeFiles/app.dir/dog.pcm: dyndep | CMakeFiles/app.dir/rescue_animal.pcm
   restat = 1
 
+build CMakeFiles/app.dir/src/Monkey.cppm.obj | CMakeFiles/app.dir/monkey.pcm: dyndep | CMakeFiles/app.dir/rescue_animal.pcm
+  restat = 1
+
