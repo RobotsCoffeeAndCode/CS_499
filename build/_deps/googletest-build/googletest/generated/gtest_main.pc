@@ -1,5 +1,5 @@
-libdir=C:/Program Files (x86)/ClangProject/lib
-includedir=C:/Program Files (x86)/ClangProject/include
+libdir=C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/lib
+includedir=C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/include
 
 Name: gtest_main
 Description: GoogleTest (with main() function)

@@ -1,0 +1,64 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "GNU",
+	"compiler-id" : "Clang",
+	"compiler-simulate-id" : "",
+	"config" : "Debug",
+	"cxx-modules" : 
+	{
+		"CMakeFiles/rescue_modules.dir/src/Dog.cppm.obj" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : 
+			[
+				"-Wall",
+				"-Wextra",
+				"-Wpedantic",
+				"-Wconversion",
+				"-Wshadow"
+			],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : [],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src",
+			"source" : "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/src/Dog.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/rescue_modules.dir/src/RescueAnimal.cppm.obj" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : 
+			[
+				"-Wall",
+				"-Wextra",
+				"-Wpedantic",
+				"-Wconversion",
+				"-Wshadow"
+			],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : [],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src",
+			"source" : "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/src/RescueAnimal.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		}
+	},
+	"database-info" : null,
+	"dir-cur-bld" : "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build",
+	"dir-cur-src" : "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499",
+	"dir-top-bld" : "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build",
+	"dir-top-src" : "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : [],
+	"language" : "CXX",
+	"linked-target-dirs" : [],
+	"module-dir" : "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/CMakeFiles/rescue_modules.dir",
+	"sources" : {}
+}

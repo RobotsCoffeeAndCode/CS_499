@@ -1,0 +1,30 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "GNU",
+	"compiler-id" : "Clang",
+	"compiler-simulate-id" : "",
+	"config" : "Debug",
+	"cxx-modules" : {},
+	"database-info" : null,
+	"dir-cur-bld" : "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build",
+	"dir-cur-src" : "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499",
+	"dir-top-bld" : "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build",
+	"dir-top-src" : "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : [],
+	"language" : "CXX",
+	"linked-target-dirs" : 
+	[
+		"C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/CMakeFiles/rescue_modules.dir"
+	],
+	"module-dir" : "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/CMakeFiles/app.dir",
+	"sources" : 
+	{
+		"CMakeFiles/app.dir/src/main.cpp.obj" : 
+		{
+			"language" : "CXX",
+			"source" : "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/src/main.cpp"
+		}
+	}
+}

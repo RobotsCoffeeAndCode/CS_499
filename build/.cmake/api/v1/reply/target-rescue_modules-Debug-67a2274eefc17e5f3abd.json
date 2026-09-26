@@ -1,0 +1,188 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "librescue_modules.a"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"add_compile_options",
+			"target_sources"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 56,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 48,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 58,
+				"parent" : 0
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 11
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -std=gnu++20"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-Wpedantic"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-Wconversion"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-Wshadow"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "20"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		}
+	],
+	"fileSets" : 
+	[
+		{
+			"baseDirectories" : 
+			[
+				"."
+			],
+			"name" : "CXX_MODULES",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		}
+	],
+	"id" : "rescue_modules::@6890427a1f51a3e7e1df",
+	"interfaceSources" : 
+	[
+		{
+			"fileSetIndex" : 0,
+			"fileSetIndexes" : 
+			[
+				0
+			],
+			"path" : "src/Dog.cppm",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"fileSetIndexes" : 
+			[
+				0
+			],
+			"path" : "src/RescueAnimal.cppm",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"name" : "rescue_modules",
+	"nameOnDisk" : "librescue_modules.a",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"interfaceSourceIndexes" : 
+			[
+				0,
+				1
+			],
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 3,
+			"backtraces" : 
+			[
+				3
+			],
+			"compileGroupIndex" : 0,
+			"fileSetIndex" : 0,
+			"fileSetIndexes" : 
+			[
+				0
+			],
+			"path" : "src/RescueAnimal.cppm",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"backtraces" : 
+			[
+				3
+			],
+			"compileGroupIndex" : 0,
+			"fileSetIndex" : 0,
+			"fileSetIndexes" : 
+			[
+				0
+			],
+			"path" : "src/Dog.cppm",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

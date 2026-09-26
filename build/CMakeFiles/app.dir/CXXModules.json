@@ -1,0 +1,23 @@
+{
+	"modules" : {},
+	"references" : 
+	{
+		"dog" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/rescue_modules.dir/dog.pcm"
+		},
+		"rescue_animal" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/rescue_modules.dir/rescue_animal.pcm"
+		}
+	},
+	"usages" : 
+	{
+		"dog" : 
+		[
+			"rescue_animal"
+		]
+	}
+}

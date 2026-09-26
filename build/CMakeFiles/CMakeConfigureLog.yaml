@@ -5,14 +5,14 @@ events:
     kind: "message-v1"
     backtrace:
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineSystem.cmake:218 (message)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:8 (project)"
     message: |
       The system is: Windows - 10.0.26200 - AMD64
   -
     kind: "find-v1"
     backtrace:
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeNinjaFindMake.cmake:5 (find_program)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:8 (project)"
     mode: "program"
     variable: "CMAKE_MAKE_PROGRAM"
     description: "Program used to build from build.ninja files."
@@ -152,7 +152,7 @@ events:
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:8 (project)"
     mode: "file"
     variable: "src_in"
     description: "Path to a file."
@@ -234,7 +234,7 @@ events:
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:8 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
       Compiler: C:/msys64/ucrt64/bin/clang++.exe 
@@ -255,7 +255,7 @@ events:
     backtrace:
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:8 (project)"
     mode: "program"
     variable: "CMAKE_AR"
     description: "Path to a program."
@@ -538,7 +538,7 @@ events:
     backtrace:
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:8 (project)"
     mode: "program"
     variable: "CMAKE_RANLIB"
     description: "Path to a program."
@@ -821,7 +821,7 @@ events:
     backtrace:
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:8 (project)"
     mode: "program"
     variable: "CMAKE_STRIP"
     description: "Path to a program."
@@ -1104,7 +1104,7 @@ events:
     backtrace:
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:8 (project)"
     mode: "program"
     variable: "CMAKE_LINKER"
     description: "Path to a program."
@@ -1237,7 +1237,7 @@ events:
     backtrace:
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:8 (project)"
     mode: "program"
     variable: "CMAKE_NM"
     description: "Path to a program."
@@ -1520,7 +1520,7 @@ events:
     backtrace:
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:8 (project)"
     mode: "program"
     variable: "CMAKE_OBJDUMP"
     description: "Path to a program."
@@ -1803,7 +1803,7 @@ events:
     backtrace:
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:8 (project)"
     mode: "program"
     variable: "CMAKE_OBJCOPY"
     description: "Path to a program."
@@ -2086,7 +2086,7 @@ events:
     backtrace:
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:8 (project)"
     mode: "program"
     variable: "CMAKE_READELF"
     description: "Path to a program."
@@ -2369,7 +2369,7 @@ events:
     backtrace:
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:8 (project)"
     mode: "program"
     variable: "CMAKE_DLLTOOL"
     description: "Path to a program."
@@ -2652,7 +2652,7 @@ events:
     backtrace:
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:8 (project)"
     mode: "program"
     variable: "CMAKE_ADDR2LINE"
     description: "Path to a program."
@@ -2935,7 +2935,7 @@ events:
     backtrace:
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:8 (project)"
     mode: "program"
     variable: "CMAKE_TAPI"
     description: "Path to a program."
@@ -3216,7 +3216,7 @@ events:
     backtrace:
       - "C:/msys64/ucrt64/share/cmake/Modules/Compiler/Clang-FindBinUtils.cmake:26 (find_program)"
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:8 (project)"
     mode: "program"
     variable: "CMAKE_CXX_COMPILER_AR"
     description: "LLVM archiver"
@@ -3950,7 +3950,7 @@ events:
     backtrace:
       - "C:/msys64/ucrt64/share/cmake/Modules/Compiler/Clang-FindBinUtils.cmake:38 (find_program)"
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:8 (project)"
     mode: "program"
     variable: "CMAKE_CXX_COMPILER_RANLIB"
     description: "Generate index for LLVM archive"
@@ -4684,7 +4684,7 @@ events:
     backtrace:
       - "C:/msys64/ucrt64/share/cmake/Modules/Compiler/Clang-FindBinUtils.cmake:50 (find_program)"
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:8 (project)"
     mode: "program"
     variable: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS"
     description: "`clang-scan-deps` dependency scanner"
@@ -5277,7 +5277,7 @@ events:
       - "C:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Clang.cmake:296 (__windows_compiler_clang_base)"
       - "C:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Clang-CXX.cmake:3 (__windows_compiler_clang)"
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeCXXInformation.cmake:48 (include)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:8 (project)"
     mode: "program"
     variable: "CMAKE_RC_COMPILER"
     description: "RC compiler"
@@ -5352,9 +5352,9 @@ events:
       - "C:/msys64/ucrt64/bin/"
       - "C:/msys64/ucrt64/sbin/"
       - "C:/msys64/ucrt64/"
-      - "C:/Program Files (x86)/ClangProject/bin/"
-      - "C:/Program Files (x86)/ClangProject/sbin/"
-      - "C:/Program Files (x86)/ClangProject/"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/bin/"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/sbin/"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/"
     searched_directories:
       - "C:/msys64/ucrt64/bin/windres.com"
     found: "C:/msys64/ucrt64/bin/windres.exe"
@@ -5417,23 +5417,23 @@ events:
         - "C:/Program Files/nodejs/"
         - "C:\\Program Files\\Git\\cmd"
         - "C:/msys64/ucrt64/bin/"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/ClangProject"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/msys64/ucrt64"
-        - "C:/Program Files (x86)/ClangProject"
+        - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue"
   -
     kind: "try_compile-v1"
     backtrace:
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:123 (try_compile)"
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:8 (project)"
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/CMakeFiles/CMakeScratch/TryCompile-ygzcv0"
-      binary: "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/CMakeFiles/CMakeScratch/TryCompile-ygzcv0"
+      source: "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/CMakeFiles/CMakeScratch/TryCompile-863fjj"
+      binary: "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/CMakeFiles/CMakeScratch/TryCompile-863fjj"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/msys64/ucrt64/bin/clang-scan-deps.exe"
       CMAKE_CXX_FLAGS: ""
@@ -5445,16 +5445,16 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: false
       stdout: |
-        Change Dir: 'C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/CMakeFiles/CMakeScratch/TryCompile-ygzcv0'
+        Change Dir: 'C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/CMakeFiles/CMakeScratch/TryCompile-863fjj'
         
-        Run Build Command(s): C:/msys64/ucrt64/bin/ninja.exe -v cmTC_9c019
-        [1/2] C:\\msys64\\ucrt64\\bin\\clang++.exe   -v -MD -MT CMakeFiles/cmTC_9c019.dir/CMakeCXXCompilerABI.cpp.obj -MF CMakeFiles\\cmTC_9c019.dir\\CMakeCXXCompilerABI.cpp.obj.d -o CMakeFiles/cmTC_9c019.dir/CMakeCXXCompilerABI.cpp.obj -c C:/msys64/ucrt64/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): C:/msys64/ucrt64/bin/ninja.exe -v cmTC_94f00
+        [1/2] C:\\msys64\\ucrt64\\bin\\clang++.exe   -v -MD -MT CMakeFiles/cmTC_94f00.dir/CMakeCXXCompilerABI.cpp.obj -MF CMakeFiles\\cmTC_94f00.dir\\CMakeCXXCompilerABI.cpp.obj.d -o CMakeFiles/cmTC_94f00.dir/CMakeCXXCompilerABI.cpp.obj -c C:/msys64/ucrt64/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         clang version 22.1.8 (https://github.com/msys2/MINGW-packages d34feaaa1d0aff624c870910b6f2589aa40d20de)
         Target: x86_64-w64-windows-gnu
         Thread model: posix
         InstalledDir: C:/msys64/ucrt64/bin
          (in-process)
-         "C:/msys64/ucrt64/bin/clang++.exe" -cc1 -triple x86_64-w64-windows-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -fno-sized-deallocation -fno-use-init-array -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb "-fdebug-compilation-dir=C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/CMakeFiles/CMakeScratch/TryCompile-ygzcv0" -v "-fcoverage-compilation-dir=C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/CMakeFiles/CMakeScratch/TryCompile-ygzcv0" -resource-dir C:/msys64/ucrt64/lib/clang/22 -dependency-file "CMakeFiles\\\\cmTC_9c019.dir\\\\CMakeCXXCompilerABI.cpp.obj.d" -MT CMakeFiles/cmTC_9c019.dir/CMakeCXXCompilerABI.cpp.obj -sys-header-deps -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++ -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++/x86_64-w64-mingw32 -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++/backward -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++/16.2.0 -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++/16.2.0/x86_64-w64-mingw32 -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++/16.2.0/backward -internal-isystem C:/msys64/ucrt64/include/c++/16.2.0 -internal-isystem C:/msys64/ucrt64/include/c++/16.2.0/x86_64-w64-mingw32 -internal-isystem C:/msys64/ucrt64/include/c++/16.2.0/backward -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++ -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/x86_64-w64-mingw32 -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/backward -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/g++-v16.2.0 -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/g++-v16.2.0/x86_64-w64-mingw32 -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/g++-v16.2.0/backward -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/g++-v16.2 -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/g++-v16.2/x86_64-w64-mingw32 -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/g++-v16.2/backward -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/g++-v16 -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/g++-v16/x86_64-w64-mingw32 -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/g++-v16/backward -internal-isystem C:/msys64/ucrt64/lib/clang/22/include -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/include -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/usr/include -internal-isystem C:/msys64/ucrt64/include -fdeprecated-macro -ferror-limit 19 -fno-use-cxa-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -exception-model=seh -faddrsig -o CMakeFiles/cmTC_9c019.dir/CMakeCXXCompilerABI.cpp.obj -x c++ C:/msys64/ucrt64/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+         "C:/msys64/ucrt64/bin/clang++.exe" -cc1 -triple x86_64-w64-windows-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -fno-sized-deallocation -fno-use-init-array -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb "-fdebug-compilation-dir=C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/CMakeFiles/CMakeScratch/TryCompile-863fjj" -v "-fcoverage-compilation-dir=C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/CMakeFiles/CMakeScratch/TryCompile-863fjj" -resource-dir C:/msys64/ucrt64/lib/clang/22 -dependency-file "CMakeFiles\\\\cmTC_94f00.dir\\\\CMakeCXXCompilerABI.cpp.obj.d" -MT CMakeFiles/cmTC_94f00.dir/CMakeCXXCompilerABI.cpp.obj -sys-header-deps -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++ -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++/x86_64-w64-mingw32 -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++/backward -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++/16.2.0 -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++/16.2.0/x86_64-w64-mingw32 -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++/16.2.0/backward -internal-isystem C:/msys64/ucrt64/include/c++/16.2.0 -internal-isystem C:/msys64/ucrt64/include/c++/16.2.0/x86_64-w64-mingw32 -internal-isystem C:/msys64/ucrt64/include/c++/16.2.0/backward -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++ -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/x86_64-w64-mingw32 -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/backward -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/g++-v16.2.0 -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/g++-v16.2.0/x86_64-w64-mingw32 -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/g++-v16.2.0/backward -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/g++-v16.2 -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/g++-v16.2/x86_64-w64-mingw32 -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/g++-v16.2/backward -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/g++-v16 -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/g++-v16/x86_64-w64-mingw32 -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/g++-v16/backward -internal-isystem C:/msys64/ucrt64/lib/clang/22/include -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/include -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/usr/include -internal-isystem C:/msys64/ucrt64/include -fdeprecated-macro -ferror-limit 19 -fno-use-cxa-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -exception-model=seh -faddrsig -o CMakeFiles/cmTC_94f00.dir/CMakeCXXCompilerABI.cpp.obj -x c++ C:/msys64/ucrt64/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         clang -cc1 version 22.1.8 based upon LLVM 22.1.8 default target x86_64-w64-windows-gnu
         ignoring nonexistent directory "C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++"
         ignoring nonexistent directory "C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++/x86_64-w64-mingw32"
@@ -5484,12 +5484,12 @@ events:
          C:/msys64/ucrt64/lib/clang/22/include
          C:/msys64/ucrt64/include
         End of search list.
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\msys64\\ucrt64\\bin\\clang++.exe  -v -Wl,-v CMakeFiles/cmTC_9c019.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_9c019.exe -Wl,--out-implib,libcmTC_9c019.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\msys64\\ucrt64\\bin\\clang++.exe  -v -Wl,-v CMakeFiles/cmTC_94f00.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_94f00.exe -Wl,--out-implib,libcmTC_94f00.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
         clang version 22.1.8 (https://github.com/msys2/MINGW-packages d34feaaa1d0aff624c870910b6f2589aa40d20de)
         Target: x86_64-w64-windows-gnu
         Thread model: posix
         InstalledDir: C:/msys64/ucrt64/bin
-         "C:/msys64/ucrt64/bin/ld" -m i386pep -Bdynamic -o cmTC_9c019.exe C:/msys64/ucrt64/lib/crt2.o C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o -LC:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0 -LC:/msys64/ucrt64/x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/x86_64-w64-mingw32/mingw/lib -LC:/msys64/ucrt64/lib -v CMakeFiles/cmTC_9c019.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_9c019.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o
+         "C:/msys64/ucrt64/bin/ld" -m i386pep -Bdynamic -o cmTC_94f00.exe C:/msys64/ucrt64/lib/crt2.o C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o -LC:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0 -LC:/msys64/ucrt64/x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/x86_64-w64-mingw32/mingw/lib -LC:/msys64/ucrt64/lib -v CMakeFiles/cmTC_94f00.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_94f00.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o
         GNU ld (GNU Binutils) 2.47.20260726
         
       exitCode: 0
@@ -5498,7 +5498,7 @@ events:
     backtrace:
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:255 (message)"
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:8 (project)"
     message: |
       Parsed CXX implicit include dir info: rv=done
         found start of include info
@@ -5522,21 +5522,21 @@ events:
     backtrace:
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:291 (message)"
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:8 (project)"
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild))("|,| |$)]
-        ignore line: [Change Dir: 'C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/CMakeFiles/CMakeScratch/TryCompile-ygzcv0']
+        ignore line: [Change Dir: 'C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/CMakeFiles/CMakeScratch/TryCompile-863fjj']
         ignore line: []
-        ignore line: [Run Build Command(s): C:/msys64/ucrt64/bin/ninja.exe -v cmTC_9c019]
-        ignore line: [[1/2] C:\\msys64\\ucrt64\\bin\\clang++.exe   -v -MD -MT CMakeFiles/cmTC_9c019.dir/CMakeCXXCompilerABI.cpp.obj -MF CMakeFiles\\cmTC_9c019.dir\\CMakeCXXCompilerABI.cpp.obj.d -o CMakeFiles/cmTC_9c019.dir/CMakeCXXCompilerABI.cpp.obj -c C:/msys64/ucrt64/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): C:/msys64/ucrt64/bin/ninja.exe -v cmTC_94f00]
+        ignore line: [[1/2] C:\\msys64\\ucrt64\\bin\\clang++.exe   -v -MD -MT CMakeFiles/cmTC_94f00.dir/CMakeCXXCompilerABI.cpp.obj -MF CMakeFiles\\cmTC_94f00.dir\\CMakeCXXCompilerABI.cpp.obj.d -o CMakeFiles/cmTC_94f00.dir/CMakeCXXCompilerABI.cpp.obj -c C:/msys64/ucrt64/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [clang version 22.1.8 (https://github.com/msys2/MINGW-packages d34feaaa1d0aff624c870910b6f2589aa40d20de)]
         ignore line: [Target: x86_64-w64-windows-gnu]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: C:/msys64/ucrt64/bin]
         ignore line: [ (in-process)]
-        ignore line: [ "C:/msys64/ucrt64/bin/clang++.exe" -cc1 -triple x86_64-w64-windows-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -fno-sized-deallocation -fno-use-init-array -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb "-fdebug-compilation-dir=C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/CMakeFiles/CMakeScratch/TryCompile-ygzcv0" -v "-fcoverage-compilation-dir=C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/CMakeFiles/CMakeScratch/TryCompile-ygzcv0" -resource-dir C:/msys64/ucrt64/lib/clang/22 -dependency-file "CMakeFiles\\\\cmTC_9c019.dir\\\\CMakeCXXCompilerABI.cpp.obj.d" -MT CMakeFiles/cmTC_9c019.dir/CMakeCXXCompilerABI.cpp.obj -sys-header-deps -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++ -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++/x86_64-w64-mingw32 -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++/backward -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++/16.2.0 -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++/16.2.0/x86_64-w64-mingw32 -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++/16.2.0/backward -internal-isystem C:/msys64/ucrt64/include/c++/16.2.0 -internal-isystem C:/msys64/ucrt64/include/c++/16.2.0/x86_64-w64-mingw32 -internal-isystem C:/msys64/ucrt64/include/c++/16.2.0/backward -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++ -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/x86_64-w64-mingw32 -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/backward -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/g++-v16.2.0 -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/g++-v16.2.0/x86_64-w64-mingw32 -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/g++-v16.2.0/backward -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/g++-v16.2 -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/g++-v16.2/x86_64-w64-mingw32 -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/g++-v16.2/backward -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/g++-v16 -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/g++-v16/x86_64-w64-mingw32 -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/g++-v16/backward -internal-isystem C:/msys64/ucrt64/lib/clang/22/include -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/include -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/usr/include -internal-isystem C:/msys64/ucrt64/include -fdeprecated-macro -ferror-limit 19 -fno-use-cxa-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -exception-model=seh -faddrsig -o CMakeFiles/cmTC_9c019.dir/CMakeCXXCompilerABI.cpp.obj -x c++ C:/msys64/ucrt64/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [ "C:/msys64/ucrt64/bin/clang++.exe" -cc1 -triple x86_64-w64-windows-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -fno-sized-deallocation -fno-use-init-array -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb "-fdebug-compilation-dir=C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/CMakeFiles/CMakeScratch/TryCompile-863fjj" -v "-fcoverage-compilation-dir=C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/CMakeFiles/CMakeScratch/TryCompile-863fjj" -resource-dir C:/msys64/ucrt64/lib/clang/22 -dependency-file "CMakeFiles\\\\cmTC_94f00.dir\\\\CMakeCXXCompilerABI.cpp.obj.d" -MT CMakeFiles/cmTC_94f00.dir/CMakeCXXCompilerABI.cpp.obj -sys-header-deps -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++ -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++/x86_64-w64-mingw32 -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++/backward -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++/16.2.0 -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++/16.2.0/x86_64-w64-mingw32 -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++/16.2.0/backward -internal-isystem C:/msys64/ucrt64/include/c++/16.2.0 -internal-isystem C:/msys64/ucrt64/include/c++/16.2.0/x86_64-w64-mingw32 -internal-isystem C:/msys64/ucrt64/include/c++/16.2.0/backward -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++ -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/x86_64-w64-mingw32 -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/backward -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/g++-v16.2.0 -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/g++-v16.2.0/x86_64-w64-mingw32 -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/g++-v16.2.0/backward -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/g++-v16.2 -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/g++-v16.2/x86_64-w64-mingw32 -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/g++-v16.2/backward -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/g++-v16 -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/g++-v16/x86_64-w64-mingw32 -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/g++-v16/backward -internal-isystem C:/msys64/ucrt64/lib/clang/22/include -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/include -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/usr/include -internal-isystem C:/msys64/ucrt64/include -fdeprecated-macro -ferror-limit 19 -fno-use-cxa-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -exception-model=seh -faddrsig -o CMakeFiles/cmTC_94f00.dir/CMakeCXXCompilerABI.cpp.obj -x c++ C:/msys64/ucrt64/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [clang -cc1 version 22.1.8 based upon LLVM 22.1.8 default target x86_64-w64-windows-gnu]
         ignore line: [ignoring nonexistent directory "C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++"]
         ignore line: [ignoring nonexistent directory "C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++/x86_64-w64-mingw32"]
@@ -5566,20 +5566,20 @@ events:
         ignore line: [ C:/msys64/ucrt64/lib/clang/22/include]
         ignore line: [ C:/msys64/ucrt64/include]
         ignore line: [End of search list.]
-        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\msys64\\ucrt64\\bin\\clang++.exe  -v -Wl -v CMakeFiles/cmTC_9c019.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_9c019.exe -Wl --out-implib libcmTC_9c019.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
+        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\msys64\\ucrt64\\bin\\clang++.exe  -v -Wl -v CMakeFiles/cmTC_94f00.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_94f00.exe -Wl --out-implib libcmTC_94f00.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
         ignore line: [clang version 22.1.8 (https://github.com/msys2/MINGW-packages d34feaaa1d0aff624c870910b6f2589aa40d20de)]
         ignore line: [Target: x86_64-w64-windows-gnu]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: C:/msys64/ucrt64/bin]
-        link line: [ "C:/msys64/ucrt64/bin/ld" -m i386pep -Bdynamic -o cmTC_9c019.exe C:/msys64/ucrt64/lib/crt2.o C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o -LC:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0 -LC:/msys64/ucrt64/x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/x86_64-w64-mingw32/mingw/lib -LC:/msys64/ucrt64/lib -v CMakeFiles/cmTC_9c019.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_9c019.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o] ==> linker [C:/msys64/ucrt64/bin/ld]
-        link line: [ "C:/msys64/ucrt64/bin/ld" -m i386pep -Bdynamic -o cmTC_9c019.exe C:/msys64/ucrt64/lib/crt2.o C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o -LC:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0 -LC:/msys64/ucrt64/x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/x86_64-w64-mingw32/mingw/lib -LC:/msys64/ucrt64/lib -v CMakeFiles/cmTC_9c019.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_9c019.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o] ==> linker architecture flags [-m;i386pep]
-        link line: [ "C:/msys64/ucrt64/bin/ld" -m i386pep -Bdynamic -o cmTC_9c019.exe C:/msys64/ucrt64/lib/crt2.o C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o -LC:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0 -LC:/msys64/ucrt64/x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/x86_64-w64-mingw32/mingw/lib -LC:/msys64/ucrt64/lib -v CMakeFiles/cmTC_9c019.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_9c019.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o]
+        link line: [ "C:/msys64/ucrt64/bin/ld" -m i386pep -Bdynamic -o cmTC_94f00.exe C:/msys64/ucrt64/lib/crt2.o C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o -LC:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0 -LC:/msys64/ucrt64/x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/x86_64-w64-mingw32/mingw/lib -LC:/msys64/ucrt64/lib -v CMakeFiles/cmTC_94f00.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_94f00.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o] ==> linker [C:/msys64/ucrt64/bin/ld]
+        link line: [ "C:/msys64/ucrt64/bin/ld" -m i386pep -Bdynamic -o cmTC_94f00.exe C:/msys64/ucrt64/lib/crt2.o C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o -LC:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0 -LC:/msys64/ucrt64/x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/x86_64-w64-mingw32/mingw/lib -LC:/msys64/ucrt64/lib -v CMakeFiles/cmTC_94f00.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_94f00.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o] ==> linker architecture flags [-m;i386pep]
+        link line: [ "C:/msys64/ucrt64/bin/ld" -m i386pep -Bdynamic -o cmTC_94f00.exe C:/msys64/ucrt64/lib/crt2.o C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o -LC:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0 -LC:/msys64/ucrt64/x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/x86_64-w64-mingw32/mingw/lib -LC:/msys64/ucrt64/lib -v CMakeFiles/cmTC_94f00.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_94f00.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o]
           arg [C:/msys64/ucrt64/bin/ld] ==> ignore
           arg [-m] ==> ignore
           arg [i386pep] ==> ignore
           arg [-Bdynamic] ==> search dynamic
           arg [-o] ==> ignore
-          arg [cmTC_9c019.exe] ==> ignore
+          arg [cmTC_94f00.exe] ==> ignore
           arg [C:/msys64/ucrt64/lib/crt2.o] ==> obj [C:/msys64/ucrt64/lib/crt2.o]
           arg [C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o] ==> obj [C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o]
           arg [-LC:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0] ==> dir [C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0]
@@ -5587,9 +5587,9 @@ events:
           arg [-LC:/msys64/ucrt64/x86_64-w64-mingw32/mingw/lib] ==> dir [C:/msys64/ucrt64/x86_64-w64-mingw32/mingw/lib]
           arg [-LC:/msys64/ucrt64/lib] ==> dir [C:/msys64/ucrt64/lib]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_9c019.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+          arg [CMakeFiles/cmTC_94f00.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
           arg [--out-implib] ==> ignore
-          arg [libcmTC_9c019.dll.a] ==> ignore
+          arg [libcmTC_94f00.dll.a] ==> ignore
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore
@@ -5633,14 +5633,158 @@ events:
       - "C:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:41 (message)"
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:337 (cmake_determine_linker_id)"
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:8 (project)"
     message: |
       Running the CXX compiler's linker: "C:/msys64/ucrt64/bin/ld" "-v"
       GNU ld (GNU Binutils) 2.47.20260726
-...
-
----
-events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "CMakeLists.txt:18 (find_program)"
+    mode: "program"
+    variable: "CLANG_TIDY_EXE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "clang-tidy"
+    candidate_directories:
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Python314/Scripts/"
+      - "C:/Python314/"
+      - "C:/Python312/Scripts/"
+      - "C:/Python312/"
+      - "C:/Python310/Scripts/"
+      - "C:/Python310/"
+      - "C:/Python38/Scripts/"
+      - "C:/Python38/"
+      - "C:/Program Files (x86)/Razer Chroma SDK/bin/"
+      - "C:/Program Files/Razer Chroma SDK/bin/"
+      - "C:/Program Files (x86)/Razer/ChromaBroadcast/bin/"
+      - "C:/Program Files/Razer/ChromaBroadcast/bin/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/PuTTY/"
+      - "C:/Program Files/Microsoft VS Code/bin/"
+      - "C:/Program Files/Java/jdk-11.0.5/bin/"
+      - "C:/Windows/System32/config/systemprofile/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Program Files/Microsoft SQL Server/130/Tools/Binn/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Go/bin/"
+      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/"
+      - "C:/Program Files (x86)/Zig/zig-windows-x86_64-0.14.0-dev.3008+7cef585f5/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Users/Redhawk/.cargo/bin/"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
+      - "C:/Users/Redhawk/AppData/Local/Programs/Python/Python37/Scripts/"
+      - "C:/Users/Redhawk/AppData/Local/Programs/Python/Python37/"
+      - "C:/Users/Redhawk/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/texlive/2019/bin/win32/"
+      - "C:/Program Files/heroku/bin/"
+      - "C:/Program Files/JetBrains/PyCharm Community Edition 2023.3.2/bin/"
+      - "C:/Program Files/Neovim/bin/"
+      - "C:/Tools/neovim/nvim-win64/bin/"
+      - "C:/ProgramData/mingw64/mingw64/bin/"
+      - "C:/Users/Redhawk/go/bin/"
+      - "C:/Users/Redhawk/AppData/Roaming/npm/"
+      - "C:/Users/Redhawk/.dotnet/tools/"
+      - "C:/Users/Redhawk/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Program Files (x86)/sox-14-4-2/"
+      - "C:/Path/To/Sox/Folder/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/msys64/ucrt64/sbin/"
+      - "C:/msys64/ucrt64/"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/bin/"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/sbin/"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/"
+    searched_directories:
+      - "C:/msys64/ucrt64/bin/clang-tidy.com"
+    found: "C:/msys64/ucrt64/bin/clang-tidy.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:/msys64/ucrt64/bin"
+        - "C:/msys64/ucrt64/bin"
+        - "C:/Python314/Scripts/"
+        - "C:\\Python314\\"
+        - "C:/Python312/Scripts/"
+        - "C:\\Python312\\"
+        - "C:/Python310/Scripts/"
+        - "C:\\Python310\\"
+        - "C:/Python38/Scripts/"
+        - "C:\\Python38\\"
+        - "C:/Program Files (x86)/Razer Chroma SDK/bin"
+        - "C:\\Program Files\\Razer Chroma SDK\\bin"
+        - "C:/Program Files (x86)/Razer/ChromaBroadcast/bin"
+        - "C:\\Program Files\\Razer\\ChromaBroadcast\\bin"
+        - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common"
+        - "C:\\Windows\\system32"
+        - "C:/Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:/Program Files/PuTTY/"
+        - "C:\\Program Files\\Microsoft VS Code\\bin"
+        - "C:/Program Files/Java/jdk-11.0.5/bin"
+        - "C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:/Program Files/Microsoft SQL Server/130/Tools/Binn/"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:/WINDOWS/system32"
+        - "C:\\WINDOWS"
+        - "C:/WINDOWS/System32/Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:/WINDOWS/System32/OpenSSH/"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:/Program Files/Go/bin"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/"
+        - "C:\\Program Files (x86)\\Zig\\zig-windows-x86_64-0.14.0-dev.3008+7cef585f5"
+        - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+        - "C:\\Users\\Redhawk\\.cargo\\bin"
+        - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
+        - "C:\\Users\\Redhawk\\AppData\\Local\\Programs\\Python\\Python37\\Scripts\\"
+        - "C:/Users/Redhawk/AppData/Local/Programs/Python/Python37/"
+        - "C:\\Users\\Redhawk\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:/texlive/2019/bin/win32"
+        - "C:\\Program Files\\heroku\\bin"
+        - "C:/Program Files/JetBrains/PyCharm Community Edition 2023.3.2/bin"
+        - "C:\\Program Files\\Neovim\\bin"
+        - "C:/Tools/neovim/nvim-win64/bin"
+        - "C:\\ProgramData\\mingw64\\mingw64\\bin"
+        - "C:/Users/Redhawk/go/bin"
+        - "C:\\Users\\Redhawk\\AppData\\Roaming\\npm"
+        - "C:/Users/Redhawk/.dotnet/tools"
+        - "C:\\Users\\Redhawk\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:/Program Files (x86)/sox-14-4-2"
+        - "C:\\Path\\To\\Sox\\Folder"
+        - "C:/Program Files/nodejs/"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:/msys64/ucrt64/bin/"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue"
   -
     kind: "find-v1"
     backtrace:
@@ -5649,7 +5793,7 @@ events:
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:2 (project)"
+      - "build/_deps/googletest-src/CMakeLists.txt:6 (project)"
     mode: "file"
     variable: "src_in"
     description: "Path to a file."
@@ -5725,14 +5869,19 @@ events:
         - "C:/Program Files/nodejs/"
         - "C:\\Program Files\\Git\\cmd"
         - "C:/msys64/ucrt64/bin/"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/ClangProject"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue"
   -
     kind: "message-v1"
     backtrace:
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:2 (project)"
+      - "build/_deps/googletest-src/CMakeLists.txt:6 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
       Compiler: C:/msys64/ucrt64/bin/clang.exe 
@@ -5753,7 +5902,7 @@ events:
     backtrace:
       - "C:/msys64/ucrt64/share/cmake/Modules/Compiler/Clang-FindBinUtils.cmake:26 (find_program)"
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
-      - "CMakeLists.txt:2 (project)"
+      - "build/_deps/googletest-src/CMakeLists.txt:6 (project)"
     mode: "program"
     variable: "CMAKE_C_COMPILER_AR"
     description: "LLVM archiver"
@@ -5821,6 +5970,18 @@ events:
       - "C:/Path/To/Sox/Folder/"
       - "C:/Program Files/nodejs/"
       - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/msys64/ucrt64/sbin/"
+      - "C:/msys64/ucrt64/"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/bin/"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/sbin/"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/"
     searched_directories:
       - "C:/msys64/ucrt64/bin/llvm-ar-22.1.com"
       - "C:/msys64/ucrt64/bin/llvm-ar-22.1.exe"
@@ -5972,6 +6133,42 @@ events:
       - "C:/Program Files/Git/cmd/llvm-ar-22.1.com"
       - "C:/Program Files/Git/cmd/llvm-ar-22.1.exe"
       - "C:/Program Files/Git/cmd/llvm-ar-22.1"
+      - "C:/Program Files/bin/llvm-ar-22.1.com"
+      - "C:/Program Files/bin/llvm-ar-22.1.exe"
+      - "C:/Program Files/bin/llvm-ar-22.1"
+      - "C:/Program Files/sbin/llvm-ar-22.1.com"
+      - "C:/Program Files/sbin/llvm-ar-22.1.exe"
+      - "C:/Program Files/sbin/llvm-ar-22.1"
+      - "C:/Program Files/llvm-ar-22.1.com"
+      - "C:/Program Files/llvm-ar-22.1.exe"
+      - "C:/Program Files/llvm-ar-22.1"
+      - "C:/Program Files (x86)/bin/llvm-ar-22.1.com"
+      - "C:/Program Files (x86)/bin/llvm-ar-22.1.exe"
+      - "C:/Program Files (x86)/bin/llvm-ar-22.1"
+      - "C:/Program Files (x86)/sbin/llvm-ar-22.1.com"
+      - "C:/Program Files (x86)/sbin/llvm-ar-22.1.exe"
+      - "C:/Program Files (x86)/sbin/llvm-ar-22.1"
+      - "C:/Program Files (x86)/llvm-ar-22.1.com"
+      - "C:/Program Files (x86)/llvm-ar-22.1.exe"
+      - "C:/Program Files (x86)/llvm-ar-22.1"
+      - "C:/msys64/ucrt64/bin/llvm-ar-22.1.com"
+      - "C:/msys64/ucrt64/bin/llvm-ar-22.1.exe"
+      - "C:/msys64/ucrt64/bin/llvm-ar-22.1"
+      - "C:/msys64/ucrt64/sbin/llvm-ar-22.1.com"
+      - "C:/msys64/ucrt64/sbin/llvm-ar-22.1.exe"
+      - "C:/msys64/ucrt64/sbin/llvm-ar-22.1"
+      - "C:/msys64/ucrt64/llvm-ar-22.1.com"
+      - "C:/msys64/ucrt64/llvm-ar-22.1.exe"
+      - "C:/msys64/ucrt64/llvm-ar-22.1"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/bin/llvm-ar-22.1.com"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/bin/llvm-ar-22.1.exe"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/bin/llvm-ar-22.1"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/sbin/llvm-ar-22.1.com"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/sbin/llvm-ar-22.1.exe"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/sbin/llvm-ar-22.1"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/llvm-ar-22.1.com"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/llvm-ar-22.1.exe"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/llvm-ar-22.1"
       - "C:/msys64/ucrt64/bin/llvm-ar-22.com"
       - "C:/msys64/ucrt64/bin/llvm-ar-22.exe"
       - "C:/msys64/ucrt64/bin/llvm-ar-22"
@@ -6122,6 +6319,42 @@ events:
       - "C:/Program Files/Git/cmd/llvm-ar-22.com"
       - "C:/Program Files/Git/cmd/llvm-ar-22.exe"
       - "C:/Program Files/Git/cmd/llvm-ar-22"
+      - "C:/Program Files/bin/llvm-ar-22.com"
+      - "C:/Program Files/bin/llvm-ar-22.exe"
+      - "C:/Program Files/bin/llvm-ar-22"
+      - "C:/Program Files/sbin/llvm-ar-22.com"
+      - "C:/Program Files/sbin/llvm-ar-22.exe"
+      - "C:/Program Files/sbin/llvm-ar-22"
+      - "C:/Program Files/llvm-ar-22.com"
+      - "C:/Program Files/llvm-ar-22.exe"
+      - "C:/Program Files/llvm-ar-22"
+      - "C:/Program Files (x86)/bin/llvm-ar-22.com"
+      - "C:/Program Files (x86)/bin/llvm-ar-22.exe"
+      - "C:/Program Files (x86)/bin/llvm-ar-22"
+      - "C:/Program Files (x86)/sbin/llvm-ar-22.com"
+      - "C:/Program Files (x86)/sbin/llvm-ar-22.exe"
+      - "C:/Program Files (x86)/sbin/llvm-ar-22"
+      - "C:/Program Files (x86)/llvm-ar-22.com"
+      - "C:/Program Files (x86)/llvm-ar-22.exe"
+      - "C:/Program Files (x86)/llvm-ar-22"
+      - "C:/msys64/ucrt64/bin/llvm-ar-22.com"
+      - "C:/msys64/ucrt64/bin/llvm-ar-22.exe"
+      - "C:/msys64/ucrt64/bin/llvm-ar-22"
+      - "C:/msys64/ucrt64/sbin/llvm-ar-22.com"
+      - "C:/msys64/ucrt64/sbin/llvm-ar-22.exe"
+      - "C:/msys64/ucrt64/sbin/llvm-ar-22"
+      - "C:/msys64/ucrt64/llvm-ar-22.com"
+      - "C:/msys64/ucrt64/llvm-ar-22.exe"
+      - "C:/msys64/ucrt64/llvm-ar-22"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/bin/llvm-ar-22.com"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/bin/llvm-ar-22.exe"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/bin/llvm-ar-22"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/sbin/llvm-ar-22.com"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/sbin/llvm-ar-22.exe"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/sbin/llvm-ar-22"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/llvm-ar-22.com"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/llvm-ar-22.exe"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/llvm-ar-22"
       - "C:/msys64/ucrt64/bin/llvm-ar22.com"
       - "C:/msys64/ucrt64/bin/llvm-ar22.exe"
       - "C:/msys64/ucrt64/bin/llvm-ar22"
@@ -6272,6 +6505,42 @@ events:
       - "C:/Program Files/Git/cmd/llvm-ar22.com"
       - "C:/Program Files/Git/cmd/llvm-ar22.exe"
       - "C:/Program Files/Git/cmd/llvm-ar22"
+      - "C:/Program Files/bin/llvm-ar22.com"
+      - "C:/Program Files/bin/llvm-ar22.exe"
+      - "C:/Program Files/bin/llvm-ar22"
+      - "C:/Program Files/sbin/llvm-ar22.com"
+      - "C:/Program Files/sbin/llvm-ar22.exe"
+      - "C:/Program Files/sbin/llvm-ar22"
+      - "C:/Program Files/llvm-ar22.com"
+      - "C:/Program Files/llvm-ar22.exe"
+      - "C:/Program Files/llvm-ar22"
+      - "C:/Program Files (x86)/bin/llvm-ar22.com"
+      - "C:/Program Files (x86)/bin/llvm-ar22.exe"
+      - "C:/Program Files (x86)/bin/llvm-ar22"
+      - "C:/Program Files (x86)/sbin/llvm-ar22.com"
+      - "C:/Program Files (x86)/sbin/llvm-ar22.exe"
+      - "C:/Program Files (x86)/sbin/llvm-ar22"
+      - "C:/Program Files (x86)/llvm-ar22.com"
+      - "C:/Program Files (x86)/llvm-ar22.exe"
+      - "C:/Program Files (x86)/llvm-ar22"
+      - "C:/msys64/ucrt64/bin/llvm-ar22.com"
+      - "C:/msys64/ucrt64/bin/llvm-ar22.exe"
+      - "C:/msys64/ucrt64/bin/llvm-ar22"
+      - "C:/msys64/ucrt64/sbin/llvm-ar22.com"
+      - "C:/msys64/ucrt64/sbin/llvm-ar22.exe"
+      - "C:/msys64/ucrt64/sbin/llvm-ar22"
+      - "C:/msys64/ucrt64/llvm-ar22.com"
+      - "C:/msys64/ucrt64/llvm-ar22.exe"
+      - "C:/msys64/ucrt64/llvm-ar22"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/bin/llvm-ar22.com"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/bin/llvm-ar22.exe"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/bin/llvm-ar22"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/sbin/llvm-ar22.com"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/sbin/llvm-ar22.exe"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/sbin/llvm-ar22"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/llvm-ar22.com"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/llvm-ar22.exe"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/llvm-ar22"
       - "C:/msys64/ucrt64/bin/llvm-ar.com"
       - "C:/msys64/ucrt64/bin/llvm-ar.exe"
       - "C:/msys64/ucrt64/bin/llvm-ar"
@@ -6422,6 +6691,42 @@ events:
       - "C:/Program Files/Git/cmd/llvm-ar.com"
       - "C:/Program Files/Git/cmd/llvm-ar.exe"
       - "C:/Program Files/Git/cmd/llvm-ar"
+      - "C:/Program Files/bin/llvm-ar.com"
+      - "C:/Program Files/bin/llvm-ar.exe"
+      - "C:/Program Files/bin/llvm-ar"
+      - "C:/Program Files/sbin/llvm-ar.com"
+      - "C:/Program Files/sbin/llvm-ar.exe"
+      - "C:/Program Files/sbin/llvm-ar"
+      - "C:/Program Files/llvm-ar.com"
+      - "C:/Program Files/llvm-ar.exe"
+      - "C:/Program Files/llvm-ar"
+      - "C:/Program Files (x86)/bin/llvm-ar.com"
+      - "C:/Program Files (x86)/bin/llvm-ar.exe"
+      - "C:/Program Files (x86)/bin/llvm-ar"
+      - "C:/Program Files (x86)/sbin/llvm-ar.com"
+      - "C:/Program Files (x86)/sbin/llvm-ar.exe"
+      - "C:/Program Files (x86)/sbin/llvm-ar"
+      - "C:/Program Files (x86)/llvm-ar.com"
+      - "C:/Program Files (x86)/llvm-ar.exe"
+      - "C:/Program Files (x86)/llvm-ar"
+      - "C:/msys64/ucrt64/bin/llvm-ar.com"
+      - "C:/msys64/ucrt64/bin/llvm-ar.exe"
+      - "C:/msys64/ucrt64/bin/llvm-ar"
+      - "C:/msys64/ucrt64/sbin/llvm-ar.com"
+      - "C:/msys64/ucrt64/sbin/llvm-ar.exe"
+      - "C:/msys64/ucrt64/sbin/llvm-ar"
+      - "C:/msys64/ucrt64/llvm-ar.com"
+      - "C:/msys64/ucrt64/llvm-ar.exe"
+      - "C:/msys64/ucrt64/llvm-ar"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/bin/llvm-ar.com"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/bin/llvm-ar.exe"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/bin/llvm-ar"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/sbin/llvm-ar.com"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/sbin/llvm-ar.exe"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/sbin/llvm-ar"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/llvm-ar.com"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/llvm-ar.exe"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/llvm-ar"
     found: false
     search_context:
       ENV{PATH}:
@@ -6482,13 +6787,18 @@ events:
         - "C:/Program Files/nodejs/"
         - "C:\\Program Files\\Git\\cmd"
         - "C:/msys64/ucrt64/bin/"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/ClangProject"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue"
   -
     kind: "find-v1"
     backtrace:
       - "C:/msys64/ucrt64/share/cmake/Modules/Compiler/Clang-FindBinUtils.cmake:38 (find_program)"
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
-      - "CMakeLists.txt:2 (project)"
+      - "build/_deps/googletest-src/CMakeLists.txt:6 (project)"
     mode: "program"
     variable: "CMAKE_C_COMPILER_RANLIB"
     description: "Generate index for LLVM archive"
@@ -6556,6 +6866,18 @@ events:
       - "C:/Path/To/Sox/Folder/"
       - "C:/Program Files/nodejs/"
       - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/msys64/ucrt64/sbin/"
+      - "C:/msys64/ucrt64/"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/bin/"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/sbin/"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/"
     searched_directories:
       - "C:/msys64/ucrt64/bin/llvm-ranlib-22.1.com"
       - "C:/msys64/ucrt64/bin/llvm-ranlib-22.1.exe"
@@ -6707,6 +7029,42 @@ events:
       - "C:/Program Files/Git/cmd/llvm-ranlib-22.1.com"
       - "C:/Program Files/Git/cmd/llvm-ranlib-22.1.exe"
       - "C:/Program Files/Git/cmd/llvm-ranlib-22.1"
+      - "C:/Program Files/bin/llvm-ranlib-22.1.com"
+      - "C:/Program Files/bin/llvm-ranlib-22.1.exe"
+      - "C:/Program Files/bin/llvm-ranlib-22.1"
+      - "C:/Program Files/sbin/llvm-ranlib-22.1.com"
+      - "C:/Program Files/sbin/llvm-ranlib-22.1.exe"
+      - "C:/Program Files/sbin/llvm-ranlib-22.1"
+      - "C:/Program Files/llvm-ranlib-22.1.com"
+      - "C:/Program Files/llvm-ranlib-22.1.exe"
+      - "C:/Program Files/llvm-ranlib-22.1"
+      - "C:/Program Files (x86)/bin/llvm-ranlib-22.1.com"
+      - "C:/Program Files (x86)/bin/llvm-ranlib-22.1.exe"
+      - "C:/Program Files (x86)/bin/llvm-ranlib-22.1"
+      - "C:/Program Files (x86)/sbin/llvm-ranlib-22.1.com"
+      - "C:/Program Files (x86)/sbin/llvm-ranlib-22.1.exe"
+      - "C:/Program Files (x86)/sbin/llvm-ranlib-22.1"
+      - "C:/Program Files (x86)/llvm-ranlib-22.1.com"
+      - "C:/Program Files (x86)/llvm-ranlib-22.1.exe"
+      - "C:/Program Files (x86)/llvm-ranlib-22.1"
+      - "C:/msys64/ucrt64/bin/llvm-ranlib-22.1.com"
+      - "C:/msys64/ucrt64/bin/llvm-ranlib-22.1.exe"
+      - "C:/msys64/ucrt64/bin/llvm-ranlib-22.1"
+      - "C:/msys64/ucrt64/sbin/llvm-ranlib-22.1.com"
+      - "C:/msys64/ucrt64/sbin/llvm-ranlib-22.1.exe"
+      - "C:/msys64/ucrt64/sbin/llvm-ranlib-22.1"
+      - "C:/msys64/ucrt64/llvm-ranlib-22.1.com"
+      - "C:/msys64/ucrt64/llvm-ranlib-22.1.exe"
+      - "C:/msys64/ucrt64/llvm-ranlib-22.1"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/bin/llvm-ranlib-22.1.com"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/bin/llvm-ranlib-22.1.exe"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/bin/llvm-ranlib-22.1"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/sbin/llvm-ranlib-22.1.com"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/sbin/llvm-ranlib-22.1.exe"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/sbin/llvm-ranlib-22.1"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/llvm-ranlib-22.1.com"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/llvm-ranlib-22.1.exe"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/llvm-ranlib-22.1"
       - "C:/msys64/ucrt64/bin/llvm-ranlib-22.com"
       - "C:/msys64/ucrt64/bin/llvm-ranlib-22.exe"
       - "C:/msys64/ucrt64/bin/llvm-ranlib-22"
@@ -6857,6 +7215,42 @@ events:
       - "C:/Program Files/Git/cmd/llvm-ranlib-22.com"
       - "C:/Program Files/Git/cmd/llvm-ranlib-22.exe"
       - "C:/Program Files/Git/cmd/llvm-ranlib-22"
+      - "C:/Program Files/bin/llvm-ranlib-22.com"
+      - "C:/Program Files/bin/llvm-ranlib-22.exe"
+      - "C:/Program Files/bin/llvm-ranlib-22"
+      - "C:/Program Files/sbin/llvm-ranlib-22.com"
+      - "C:/Program Files/sbin/llvm-ranlib-22.exe"
+      - "C:/Program Files/sbin/llvm-ranlib-22"
+      - "C:/Program Files/llvm-ranlib-22.com"
+      - "C:/Program Files/llvm-ranlib-22.exe"
+      - "C:/Program Files/llvm-ranlib-22"
+      - "C:/Program Files (x86)/bin/llvm-ranlib-22.com"
+      - "C:/Program Files (x86)/bin/llvm-ranlib-22.exe"
+      - "C:/Program Files (x86)/bin/llvm-ranlib-22"
+      - "C:/Program Files (x86)/sbin/llvm-ranlib-22.com"
+      - "C:/Program Files (x86)/sbin/llvm-ranlib-22.exe"
+      - "C:/Program Files (x86)/sbin/llvm-ranlib-22"
+      - "C:/Program Files (x86)/llvm-ranlib-22.com"
+      - "C:/Program Files (x86)/llvm-ranlib-22.exe"
+      - "C:/Program Files (x86)/llvm-ranlib-22"
+      - "C:/msys64/ucrt64/bin/llvm-ranlib-22.com"
+      - "C:/msys64/ucrt64/bin/llvm-ranlib-22.exe"
+      - "C:/msys64/ucrt64/bin/llvm-ranlib-22"
+      - "C:/msys64/ucrt64/sbin/llvm-ranlib-22.com"
+      - "C:/msys64/ucrt64/sbin/llvm-ranlib-22.exe"
+      - "C:/msys64/ucrt64/sbin/llvm-ranlib-22"
+      - "C:/msys64/ucrt64/llvm-ranlib-22.com"
+      - "C:/msys64/ucrt64/llvm-ranlib-22.exe"
+      - "C:/msys64/ucrt64/llvm-ranlib-22"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/bin/llvm-ranlib-22.com"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/bin/llvm-ranlib-22.exe"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/bin/llvm-ranlib-22"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/sbin/llvm-ranlib-22.com"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/sbin/llvm-ranlib-22.exe"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/sbin/llvm-ranlib-22"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/llvm-ranlib-22.com"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/llvm-ranlib-22.exe"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/llvm-ranlib-22"
       - "C:/msys64/ucrt64/bin/llvm-ranlib22.com"
       - "C:/msys64/ucrt64/bin/llvm-ranlib22.exe"
       - "C:/msys64/ucrt64/bin/llvm-ranlib22"
@@ -7007,6 +7401,42 @@ events:
       - "C:/Program Files/Git/cmd/llvm-ranlib22.com"
       - "C:/Program Files/Git/cmd/llvm-ranlib22.exe"
       - "C:/Program Files/Git/cmd/llvm-ranlib22"
+      - "C:/Program Files/bin/llvm-ranlib22.com"
+      - "C:/Program Files/bin/llvm-ranlib22.exe"
+      - "C:/Program Files/bin/llvm-ranlib22"
+      - "C:/Program Files/sbin/llvm-ranlib22.com"
+      - "C:/Program Files/sbin/llvm-ranlib22.exe"
+      - "C:/Program Files/sbin/llvm-ranlib22"
+      - "C:/Program Files/llvm-ranlib22.com"
+      - "C:/Program Files/llvm-ranlib22.exe"
+      - "C:/Program Files/llvm-ranlib22"
+      - "C:/Program Files (x86)/bin/llvm-ranlib22.com"
+      - "C:/Program Files (x86)/bin/llvm-ranlib22.exe"
+      - "C:/Program Files (x86)/bin/llvm-ranlib22"
+      - "C:/Program Files (x86)/sbin/llvm-ranlib22.com"
+      - "C:/Program Files (x86)/sbin/llvm-ranlib22.exe"
+      - "C:/Program Files (x86)/sbin/llvm-ranlib22"
+      - "C:/Program Files (x86)/llvm-ranlib22.com"
+      - "C:/Program Files (x86)/llvm-ranlib22.exe"
+      - "C:/Program Files (x86)/llvm-ranlib22"
+      - "C:/msys64/ucrt64/bin/llvm-ranlib22.com"
+      - "C:/msys64/ucrt64/bin/llvm-ranlib22.exe"
+      - "C:/msys64/ucrt64/bin/llvm-ranlib22"
+      - "C:/msys64/ucrt64/sbin/llvm-ranlib22.com"
+      - "C:/msys64/ucrt64/sbin/llvm-ranlib22.exe"
+      - "C:/msys64/ucrt64/sbin/llvm-ranlib22"
+      - "C:/msys64/ucrt64/llvm-ranlib22.com"
+      - "C:/msys64/ucrt64/llvm-ranlib22.exe"
+      - "C:/msys64/ucrt64/llvm-ranlib22"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/bin/llvm-ranlib22.com"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/bin/llvm-ranlib22.exe"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/bin/llvm-ranlib22"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/sbin/llvm-ranlib22.com"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/sbin/llvm-ranlib22.exe"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/sbin/llvm-ranlib22"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/llvm-ranlib22.com"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/llvm-ranlib22.exe"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/llvm-ranlib22"
       - "C:/msys64/ucrt64/bin/llvm-ranlib.com"
       - "C:/msys64/ucrt64/bin/llvm-ranlib.exe"
       - "C:/msys64/ucrt64/bin/llvm-ranlib"
@@ -7157,6 +7587,42 @@ events:
       - "C:/Program Files/Git/cmd/llvm-ranlib.com"
       - "C:/Program Files/Git/cmd/llvm-ranlib.exe"
       - "C:/Program Files/Git/cmd/llvm-ranlib"
+      - "C:/Program Files/bin/llvm-ranlib.com"
+      - "C:/Program Files/bin/llvm-ranlib.exe"
+      - "C:/Program Files/bin/llvm-ranlib"
+      - "C:/Program Files/sbin/llvm-ranlib.com"
+      - "C:/Program Files/sbin/llvm-ranlib.exe"
+      - "C:/Program Files/sbin/llvm-ranlib"
+      - "C:/Program Files/llvm-ranlib.com"
+      - "C:/Program Files/llvm-ranlib.exe"
+      - "C:/Program Files/llvm-ranlib"
+      - "C:/Program Files (x86)/bin/llvm-ranlib.com"
+      - "C:/Program Files (x86)/bin/llvm-ranlib.exe"
+      - "C:/Program Files (x86)/bin/llvm-ranlib"
+      - "C:/Program Files (x86)/sbin/llvm-ranlib.com"
+      - "C:/Program Files (x86)/sbin/llvm-ranlib.exe"
+      - "C:/Program Files (x86)/sbin/llvm-ranlib"
+      - "C:/Program Files (x86)/llvm-ranlib.com"
+      - "C:/Program Files (x86)/llvm-ranlib.exe"
+      - "C:/Program Files (x86)/llvm-ranlib"
+      - "C:/msys64/ucrt64/bin/llvm-ranlib.com"
+      - "C:/msys64/ucrt64/bin/llvm-ranlib.exe"
+      - "C:/msys64/ucrt64/bin/llvm-ranlib"
+      - "C:/msys64/ucrt64/sbin/llvm-ranlib.com"
+      - "C:/msys64/ucrt64/sbin/llvm-ranlib.exe"
+      - "C:/msys64/ucrt64/sbin/llvm-ranlib"
+      - "C:/msys64/ucrt64/llvm-ranlib.com"
+      - "C:/msys64/ucrt64/llvm-ranlib.exe"
+      - "C:/msys64/ucrt64/llvm-ranlib"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/bin/llvm-ranlib.com"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/bin/llvm-ranlib.exe"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/bin/llvm-ranlib"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/sbin/llvm-ranlib.com"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/sbin/llvm-ranlib.exe"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/sbin/llvm-ranlib"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/llvm-ranlib.com"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/llvm-ranlib.exe"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/llvm-ranlib"
     found: false
     search_context:
       ENV{PATH}:
@@ -7217,13 +7683,18 @@ events:
         - "C:/Program Files/nodejs/"
         - "C:\\Program Files\\Git\\cmd"
         - "C:/msys64/ucrt64/bin/"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/ClangProject"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue"
   -
     kind: "find-v1"
     backtrace:
       - "C:/msys64/ucrt64/share/cmake/Modules/Compiler/Clang-FindBinUtils.cmake:50 (find_program)"
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
-      - "CMakeLists.txt:2 (project)"
+      - "build/_deps/googletest-src/CMakeLists.txt:6 (project)"
     mode: "program"
     variable: "CMAKE_C_COMPILER_CLANG_SCAN_DEPS"
     description: "`clang-scan-deps` dependency scanner"
@@ -7295,6 +7766,18 @@ events:
       - "C:/Path/To/Sox/Folder/"
       - "C:/Program Files/nodejs/"
       - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/msys64/ucrt64/sbin/"
+      - "C:/msys64/ucrt64/"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/bin/"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/sbin/"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/"
     searched_directories:
       - "C:/msys64/ucrt64/bin/clang-scan-deps-22.1.com"
       - "C:/msys64/ucrt64/bin/clang-scan-deps-22.1.exe"
@@ -7446,6 +7929,42 @@ events:
       - "C:/Program Files/Git/cmd/clang-scan-deps-22.1.com"
       - "C:/Program Files/Git/cmd/clang-scan-deps-22.1.exe"
       - "C:/Program Files/Git/cmd/clang-scan-deps-22.1"
+      - "C:/Program Files/bin/clang-scan-deps-22.1.com"
+      - "C:/Program Files/bin/clang-scan-deps-22.1.exe"
+      - "C:/Program Files/bin/clang-scan-deps-22.1"
+      - "C:/Program Files/sbin/clang-scan-deps-22.1.com"
+      - "C:/Program Files/sbin/clang-scan-deps-22.1.exe"
+      - "C:/Program Files/sbin/clang-scan-deps-22.1"
+      - "C:/Program Files/clang-scan-deps-22.1.com"
+      - "C:/Program Files/clang-scan-deps-22.1.exe"
+      - "C:/Program Files/clang-scan-deps-22.1"
+      - "C:/Program Files (x86)/bin/clang-scan-deps-22.1.com"
+      - "C:/Program Files (x86)/bin/clang-scan-deps-22.1.exe"
+      - "C:/Program Files (x86)/bin/clang-scan-deps-22.1"
+      - "C:/Program Files (x86)/sbin/clang-scan-deps-22.1.com"
+      - "C:/Program Files (x86)/sbin/clang-scan-deps-22.1.exe"
+      - "C:/Program Files (x86)/sbin/clang-scan-deps-22.1"
+      - "C:/Program Files (x86)/clang-scan-deps-22.1.com"
+      - "C:/Program Files (x86)/clang-scan-deps-22.1.exe"
+      - "C:/Program Files (x86)/clang-scan-deps-22.1"
+      - "C:/msys64/ucrt64/bin/clang-scan-deps-22.1.com"
+      - "C:/msys64/ucrt64/bin/clang-scan-deps-22.1.exe"
+      - "C:/msys64/ucrt64/bin/clang-scan-deps-22.1"
+      - "C:/msys64/ucrt64/sbin/clang-scan-deps-22.1.com"
+      - "C:/msys64/ucrt64/sbin/clang-scan-deps-22.1.exe"
+      - "C:/msys64/ucrt64/sbin/clang-scan-deps-22.1"
+      - "C:/msys64/ucrt64/clang-scan-deps-22.1.com"
+      - "C:/msys64/ucrt64/clang-scan-deps-22.1.exe"
+      - "C:/msys64/ucrt64/clang-scan-deps-22.1"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/bin/clang-scan-deps-22.1.com"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/bin/clang-scan-deps-22.1.exe"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/bin/clang-scan-deps-22.1"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/sbin/clang-scan-deps-22.1.com"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/sbin/clang-scan-deps-22.1.exe"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/sbin/clang-scan-deps-22.1"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/clang-scan-deps-22.1.com"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/clang-scan-deps-22.1.exe"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/clang-scan-deps-22.1"
       - "C:/msys64/ucrt64/bin/clang-scan-deps-22.com"
       - "C:/msys64/ucrt64/bin/clang-scan-deps-22.exe"
       - "C:/msys64/ucrt64/bin/clang-scan-deps-22"
@@ -7596,6 +8115,42 @@ events:
       - "C:/Program Files/Git/cmd/clang-scan-deps-22.com"
       - "C:/Program Files/Git/cmd/clang-scan-deps-22.exe"
       - "C:/Program Files/Git/cmd/clang-scan-deps-22"
+      - "C:/Program Files/bin/clang-scan-deps-22.com"
+      - "C:/Program Files/bin/clang-scan-deps-22.exe"
+      - "C:/Program Files/bin/clang-scan-deps-22"
+      - "C:/Program Files/sbin/clang-scan-deps-22.com"
+      - "C:/Program Files/sbin/clang-scan-deps-22.exe"
+      - "C:/Program Files/sbin/clang-scan-deps-22"
+      - "C:/Program Files/clang-scan-deps-22.com"
+      - "C:/Program Files/clang-scan-deps-22.exe"
+      - "C:/Program Files/clang-scan-deps-22"
+      - "C:/Program Files (x86)/bin/clang-scan-deps-22.com"
+      - "C:/Program Files (x86)/bin/clang-scan-deps-22.exe"
+      - "C:/Program Files (x86)/bin/clang-scan-deps-22"
+      - "C:/Program Files (x86)/sbin/clang-scan-deps-22.com"
+      - "C:/Program Files (x86)/sbin/clang-scan-deps-22.exe"
+      - "C:/Program Files (x86)/sbin/clang-scan-deps-22"
+      - "C:/Program Files (x86)/clang-scan-deps-22.com"
+      - "C:/Program Files (x86)/clang-scan-deps-22.exe"
+      - "C:/Program Files (x86)/clang-scan-deps-22"
+      - "C:/msys64/ucrt64/bin/clang-scan-deps-22.com"
+      - "C:/msys64/ucrt64/bin/clang-scan-deps-22.exe"
+      - "C:/msys64/ucrt64/bin/clang-scan-deps-22"
+      - "C:/msys64/ucrt64/sbin/clang-scan-deps-22.com"
+      - "C:/msys64/ucrt64/sbin/clang-scan-deps-22.exe"
+      - "C:/msys64/ucrt64/sbin/clang-scan-deps-22"
+      - "C:/msys64/ucrt64/clang-scan-deps-22.com"
+      - "C:/msys64/ucrt64/clang-scan-deps-22.exe"
+      - "C:/msys64/ucrt64/clang-scan-deps-22"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/bin/clang-scan-deps-22.com"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/bin/clang-scan-deps-22.exe"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/bin/clang-scan-deps-22"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/sbin/clang-scan-deps-22.com"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/sbin/clang-scan-deps-22.exe"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/sbin/clang-scan-deps-22"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/clang-scan-deps-22.com"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/clang-scan-deps-22.exe"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/clang-scan-deps-22"
       - "C:/msys64/ucrt64/bin/clang-scan-deps22.com"
       - "C:/msys64/ucrt64/bin/clang-scan-deps22.exe"
       - "C:/msys64/ucrt64/bin/clang-scan-deps22"
@@ -7746,6 +8301,42 @@ events:
       - "C:/Program Files/Git/cmd/clang-scan-deps22.com"
       - "C:/Program Files/Git/cmd/clang-scan-deps22.exe"
       - "C:/Program Files/Git/cmd/clang-scan-deps22"
+      - "C:/Program Files/bin/clang-scan-deps22.com"
+      - "C:/Program Files/bin/clang-scan-deps22.exe"
+      - "C:/Program Files/bin/clang-scan-deps22"
+      - "C:/Program Files/sbin/clang-scan-deps22.com"
+      - "C:/Program Files/sbin/clang-scan-deps22.exe"
+      - "C:/Program Files/sbin/clang-scan-deps22"
+      - "C:/Program Files/clang-scan-deps22.com"
+      - "C:/Program Files/clang-scan-deps22.exe"
+      - "C:/Program Files/clang-scan-deps22"
+      - "C:/Program Files (x86)/bin/clang-scan-deps22.com"
+      - "C:/Program Files (x86)/bin/clang-scan-deps22.exe"
+      - "C:/Program Files (x86)/bin/clang-scan-deps22"
+      - "C:/Program Files (x86)/sbin/clang-scan-deps22.com"
+      - "C:/Program Files (x86)/sbin/clang-scan-deps22.exe"
+      - "C:/Program Files (x86)/sbin/clang-scan-deps22"
+      - "C:/Program Files (x86)/clang-scan-deps22.com"
+      - "C:/Program Files (x86)/clang-scan-deps22.exe"
+      - "C:/Program Files (x86)/clang-scan-deps22"
+      - "C:/msys64/ucrt64/bin/clang-scan-deps22.com"
+      - "C:/msys64/ucrt64/bin/clang-scan-deps22.exe"
+      - "C:/msys64/ucrt64/bin/clang-scan-deps22"
+      - "C:/msys64/ucrt64/sbin/clang-scan-deps22.com"
+      - "C:/msys64/ucrt64/sbin/clang-scan-deps22.exe"
+      - "C:/msys64/ucrt64/sbin/clang-scan-deps22"
+      - "C:/msys64/ucrt64/clang-scan-deps22.com"
+      - "C:/msys64/ucrt64/clang-scan-deps22.exe"
+      - "C:/msys64/ucrt64/clang-scan-deps22"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/bin/clang-scan-deps22.com"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/bin/clang-scan-deps22.exe"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/bin/clang-scan-deps22"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/sbin/clang-scan-deps22.com"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/sbin/clang-scan-deps22.exe"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/sbin/clang-scan-deps22"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/clang-scan-deps22.com"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/clang-scan-deps22.exe"
+      - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue/clang-scan-deps22"
       - "C:/msys64/ucrt64/bin/clang-scan-deps.com"
     found: "C:/msys64/ucrt64/bin/clang-scan-deps.exe"
     search_context:
@@ -7807,18 +8398,23 @@ events:
         - "C:/Program Files/nodejs/"
         - "C:\\Program Files\\Git\\cmd"
         - "C:/msys64/ucrt64/bin/"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/ClangProject"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue"
   -
     kind: "try_compile-v1"
     backtrace:
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:123 (try_compile)"
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
+      - "build/_deps/googletest-src/CMakeLists.txt:6 (project)"
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/CMakeFiles/CMakeScratch/TryCompile-xuamiy"
-      binary: "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/CMakeFiles/CMakeScratch/TryCompile-xuamiy"
+      source: "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/CMakeFiles/CMakeScratch/TryCompile-rlx8iz"
+      binary: "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/CMakeFiles/CMakeScratch/TryCompile-rlx8iz"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/msys64/ucrt64/bin/clang-scan-deps.exe"
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
@@ -7829,16 +8425,16 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: false
       stdout: |
-        Change Dir: 'C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/CMakeFiles/CMakeScratch/TryCompile-xuamiy'
+        Change Dir: 'C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/CMakeFiles/CMakeScratch/TryCompile-rlx8iz'
         
-        Run Build Command(s): C:/msys64/ucrt64/bin/ninja.exe -v cmTC_460f7
-        [1/2] C:\\msys64\\ucrt64\\bin\\clang.exe   -v -MD -MT CMakeFiles/cmTC_460f7.dir/CMakeCCompilerABI.c.obj -MF CMakeFiles\\cmTC_460f7.dir\\CMakeCCompilerABI.c.obj.d -o CMakeFiles/cmTC_460f7.dir/CMakeCCompilerABI.c.obj -c C:/msys64/ucrt64/share/cmake/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): C:/msys64/ucrt64/bin/ninja.exe -v cmTC_6f349
+        [1/2] C:\\msys64\\ucrt64\\bin\\clang.exe   -v -MD -MT CMakeFiles/cmTC_6f349.dir/CMakeCCompilerABI.c.obj -MF CMakeFiles\\cmTC_6f349.dir\\CMakeCCompilerABI.c.obj.d -o CMakeFiles/cmTC_6f349.dir/CMakeCCompilerABI.c.obj -c C:/msys64/ucrt64/share/cmake/Modules/CMakeCCompilerABI.c
         clang version 22.1.8 (https://github.com/msys2/MINGW-packages d34feaaa1d0aff624c870910b6f2589aa40d20de)
         Target: x86_64-w64-windows-gnu
         Thread model: posix
         InstalledDir: C:/msys64/ucrt64/bin
          (in-process)
-         "C:/msys64/ucrt64/bin/clang.exe" -cc1 -triple x86_64-w64-windows-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -fno-sized-deallocation -fno-use-init-array -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb "-fdebug-compilation-dir=C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/CMakeFiles/CMakeScratch/TryCompile-xuamiy" -v "-fcoverage-compilation-dir=C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/CMakeFiles/CMakeScratch/TryCompile-xuamiy" -resource-dir C:/msys64/ucrt64/lib/clang/22 -dependency-file "CMakeFiles\\\\cmTC_460f7.dir\\\\CMakeCCompilerABI.c.obj.d" -MT CMakeFiles/cmTC_460f7.dir/CMakeCCompilerABI.c.obj -sys-header-deps -internal-isystem C:/msys64/ucrt64/lib/clang/22/include -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/include -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/usr/include -internal-isystem C:/msys64/ucrt64/include -ferror-limit 19 -fno-use-cxa-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -exception-model=seh -faddrsig -o CMakeFiles/cmTC_460f7.dir/CMakeCCompilerABI.c.obj -x c C:/msys64/ucrt64/share/cmake/Modules/CMakeCCompilerABI.c
+         "C:/msys64/ucrt64/bin/clang.exe" -cc1 -triple x86_64-w64-windows-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -fno-sized-deallocation -fno-use-init-array -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb "-fdebug-compilation-dir=C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/CMakeFiles/CMakeScratch/TryCompile-rlx8iz" -v "-fcoverage-compilation-dir=C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/CMakeFiles/CMakeScratch/TryCompile-rlx8iz" -resource-dir C:/msys64/ucrt64/lib/clang/22 -dependency-file "CMakeFiles\\\\cmTC_6f349.dir\\\\CMakeCCompilerABI.c.obj.d" -MT CMakeFiles/cmTC_6f349.dir/CMakeCCompilerABI.c.obj -sys-header-deps -internal-isystem C:/msys64/ucrt64/lib/clang/22/include -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/include -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/usr/include -internal-isystem C:/msys64/ucrt64/include -ferror-limit 19 -fno-use-cxa-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -exception-model=seh -faddrsig -o CMakeFiles/cmTC_6f349.dir/CMakeCCompilerABI.c.obj -x c C:/msys64/ucrt64/share/cmake/Modules/CMakeCCompilerABI.c
         clang -cc1 version 22.1.8 based upon LLVM 22.1.8 default target x86_64-w64-windows-gnu
         ignoring nonexistent directory "C:/msys64/ucrt64/x86_64-w64-mingw32/include"
         ignoring nonexistent directory "C:/msys64/ucrt64/x86_64-w64-mingw32/usr/include"
@@ -7847,12 +8443,12 @@ events:
          C:/msys64/ucrt64/lib/clang/22/include
          C:/msys64/ucrt64/include
         End of search list.
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\msys64\\ucrt64\\bin\\clang.exe  -v -Wl,-v CMakeFiles/cmTC_460f7.dir/CMakeCCompilerABI.c.obj -o cmTC_460f7.exe -Wl,--out-implib,libcmTC_460f7.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\msys64\\ucrt64\\bin\\clang.exe  -v -Wl,-v CMakeFiles/cmTC_6f349.dir/CMakeCCompilerABI.c.obj -o cmTC_6f349.exe -Wl,--out-implib,libcmTC_6f349.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
         clang version 22.1.8 (https://github.com/msys2/MINGW-packages d34feaaa1d0aff624c870910b6f2589aa40d20de)
         Target: x86_64-w64-windows-gnu
         Thread model: posix
         InstalledDir: C:/msys64/ucrt64/bin
-         "C:/msys64/ucrt64/bin/ld" -m i386pep -Bdynamic -o cmTC_460f7.exe C:/msys64/ucrt64/lib/crt2.o C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o -LC:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0 -LC:/msys64/ucrt64/x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/x86_64-w64-mingw32/mingw/lib -LC:/msys64/ucrt64/lib -v CMakeFiles/cmTC_460f7.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_460f7.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o
+         "C:/msys64/ucrt64/bin/ld" -m i386pep -Bdynamic -o cmTC_6f349.exe C:/msys64/ucrt64/lib/crt2.o C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o -LC:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0 -LC:/msys64/ucrt64/x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/x86_64-w64-mingw32/mingw/lib -LC:/msys64/ucrt64/lib -v CMakeFiles/cmTC_6f349.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_6f349.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o
         GNU ld (GNU Binutils) 2.47.20260726
         
       exitCode: 0
@@ -7861,7 +8457,7 @@ events:
     backtrace:
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:255 (message)"
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
+      - "build/_deps/googletest-src/CMakeLists.txt:6 (project)"
     message: |
       Parsed C implicit include dir info: rv=done
         found start of include info
@@ -7879,21 +8475,21 @@ events:
     backtrace:
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:291 (message)"
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
+      - "build/_deps/googletest-src/CMakeLists.txt:6 (project)"
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild))("|,| |$)]
-        ignore line: [Change Dir: 'C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/CMakeFiles/CMakeScratch/TryCompile-xuamiy']
+        ignore line: [Change Dir: 'C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/CMakeFiles/CMakeScratch/TryCompile-rlx8iz']
         ignore line: []
-        ignore line: [Run Build Command(s): C:/msys64/ucrt64/bin/ninja.exe -v cmTC_460f7]
-        ignore line: [[1/2] C:\\msys64\\ucrt64\\bin\\clang.exe   -v -MD -MT CMakeFiles/cmTC_460f7.dir/CMakeCCompilerABI.c.obj -MF CMakeFiles\\cmTC_460f7.dir\\CMakeCCompilerABI.c.obj.d -o CMakeFiles/cmTC_460f7.dir/CMakeCCompilerABI.c.obj -c C:/msys64/ucrt64/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): C:/msys64/ucrt64/bin/ninja.exe -v cmTC_6f349]
+        ignore line: [[1/2] C:\\msys64\\ucrt64\\bin\\clang.exe   -v -MD -MT CMakeFiles/cmTC_6f349.dir/CMakeCCompilerABI.c.obj -MF CMakeFiles\\cmTC_6f349.dir\\CMakeCCompilerABI.c.obj.d -o CMakeFiles/cmTC_6f349.dir/CMakeCCompilerABI.c.obj -c C:/msys64/ucrt64/share/cmake/Modules/CMakeCCompilerABI.c]
         ignore line: [clang version 22.1.8 (https://github.com/msys2/MINGW-packages d34feaaa1d0aff624c870910b6f2589aa40d20de)]
         ignore line: [Target: x86_64-w64-windows-gnu]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: C:/msys64/ucrt64/bin]
         ignore line: [ (in-process)]
-        ignore line: [ "C:/msys64/ucrt64/bin/clang.exe" -cc1 -triple x86_64-w64-windows-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -fno-sized-deallocation -fno-use-init-array -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb "-fdebug-compilation-dir=C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/CMakeFiles/CMakeScratch/TryCompile-xuamiy" -v "-fcoverage-compilation-dir=C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/CMakeFiles/CMakeScratch/TryCompile-xuamiy" -resource-dir C:/msys64/ucrt64/lib/clang/22 -dependency-file "CMakeFiles\\\\cmTC_460f7.dir\\\\CMakeCCompilerABI.c.obj.d" -MT CMakeFiles/cmTC_460f7.dir/CMakeCCompilerABI.c.obj -sys-header-deps -internal-isystem C:/msys64/ucrt64/lib/clang/22/include -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/include -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/usr/include -internal-isystem C:/msys64/ucrt64/include -ferror-limit 19 -fno-use-cxa-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -exception-model=seh -faddrsig -o CMakeFiles/cmTC_460f7.dir/CMakeCCompilerABI.c.obj -x c C:/msys64/ucrt64/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [ "C:/msys64/ucrt64/bin/clang.exe" -cc1 -triple x86_64-w64-windows-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -fno-sized-deallocation -fno-use-init-array -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb "-fdebug-compilation-dir=C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/CMakeFiles/CMakeScratch/TryCompile-rlx8iz" -v "-fcoverage-compilation-dir=C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/CMakeFiles/CMakeScratch/TryCompile-rlx8iz" -resource-dir C:/msys64/ucrt64/lib/clang/22 -dependency-file "CMakeFiles\\\\cmTC_6f349.dir\\\\CMakeCCompilerABI.c.obj.d" -MT CMakeFiles/cmTC_6f349.dir/CMakeCCompilerABI.c.obj -sys-header-deps -internal-isystem C:/msys64/ucrt64/lib/clang/22/include -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/include -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/usr/include -internal-isystem C:/msys64/ucrt64/include -ferror-limit 19 -fno-use-cxa-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -exception-model=seh -faddrsig -o CMakeFiles/cmTC_6f349.dir/CMakeCCompilerABI.c.obj -x c C:/msys64/ucrt64/share/cmake/Modules/CMakeCCompilerABI.c]
         ignore line: [clang -cc1 version 22.1.8 based upon LLVM 22.1.8 default target x86_64-w64-windows-gnu]
         ignore line: [ignoring nonexistent directory "C:/msys64/ucrt64/x86_64-w64-mingw32/include"]
         ignore line: [ignoring nonexistent directory "C:/msys64/ucrt64/x86_64-w64-mingw32/usr/include"]
@@ -7902,20 +8498,20 @@ events:
         ignore line: [ C:/msys64/ucrt64/lib/clang/22/include]
         ignore line: [ C:/msys64/ucrt64/include]
         ignore line: [End of search list.]
-        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\msys64\\ucrt64\\bin\\clang.exe  -v -Wl -v CMakeFiles/cmTC_460f7.dir/CMakeCCompilerABI.c.obj -o cmTC_460f7.exe -Wl --out-implib libcmTC_460f7.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
+        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\msys64\\ucrt64\\bin\\clang.exe  -v -Wl -v CMakeFiles/cmTC_6f349.dir/CMakeCCompilerABI.c.obj -o cmTC_6f349.exe -Wl --out-implib libcmTC_6f349.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
         ignore line: [clang version 22.1.8 (https://github.com/msys2/MINGW-packages d34feaaa1d0aff624c870910b6f2589aa40d20de)]
         ignore line: [Target: x86_64-w64-windows-gnu]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: C:/msys64/ucrt64/bin]
-        link line: [ "C:/msys64/ucrt64/bin/ld" -m i386pep -Bdynamic -o cmTC_460f7.exe C:/msys64/ucrt64/lib/crt2.o C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o -LC:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0 -LC:/msys64/ucrt64/x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/x86_64-w64-mingw32/mingw/lib -LC:/msys64/ucrt64/lib -v CMakeFiles/cmTC_460f7.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_460f7.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o] ==> linker [C:/msys64/ucrt64/bin/ld]
-        link line: [ "C:/msys64/ucrt64/bin/ld" -m i386pep -Bdynamic -o cmTC_460f7.exe C:/msys64/ucrt64/lib/crt2.o C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o -LC:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0 -LC:/msys64/ucrt64/x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/x86_64-w64-mingw32/mingw/lib -LC:/msys64/ucrt64/lib -v CMakeFiles/cmTC_460f7.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_460f7.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o] ==> linker architecture flags [-m;i386pep]
-        link line: [ "C:/msys64/ucrt64/bin/ld" -m i386pep -Bdynamic -o cmTC_460f7.exe C:/msys64/ucrt64/lib/crt2.o C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o -LC:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0 -LC:/msys64/ucrt64/x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/x86_64-w64-mingw32/mingw/lib -LC:/msys64/ucrt64/lib -v CMakeFiles/cmTC_460f7.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_460f7.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o]
+        link line: [ "C:/msys64/ucrt64/bin/ld" -m i386pep -Bdynamic -o cmTC_6f349.exe C:/msys64/ucrt64/lib/crt2.o C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o -LC:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0 -LC:/msys64/ucrt64/x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/x86_64-w64-mingw32/mingw/lib -LC:/msys64/ucrt64/lib -v CMakeFiles/cmTC_6f349.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_6f349.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o] ==> linker [C:/msys64/ucrt64/bin/ld]
+        link line: [ "C:/msys64/ucrt64/bin/ld" -m i386pep -Bdynamic -o cmTC_6f349.exe C:/msys64/ucrt64/lib/crt2.o C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o -LC:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0 -LC:/msys64/ucrt64/x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/x86_64-w64-mingw32/mingw/lib -LC:/msys64/ucrt64/lib -v CMakeFiles/cmTC_6f349.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_6f349.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o] ==> linker architecture flags [-m;i386pep]
+        link line: [ "C:/msys64/ucrt64/bin/ld" -m i386pep -Bdynamic -o cmTC_6f349.exe C:/msys64/ucrt64/lib/crt2.o C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o -LC:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0 -LC:/msys64/ucrt64/x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/x86_64-w64-mingw32/mingw/lib -LC:/msys64/ucrt64/lib -v CMakeFiles/cmTC_6f349.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_6f349.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o]
           arg [C:/msys64/ucrt64/bin/ld] ==> ignore
           arg [-m] ==> ignore
           arg [i386pep] ==> ignore
           arg [-Bdynamic] ==> search dynamic
           arg [-o] ==> ignore
-          arg [cmTC_460f7.exe] ==> ignore
+          arg [cmTC_6f349.exe] ==> ignore
           arg [C:/msys64/ucrt64/lib/crt2.o] ==> obj [C:/msys64/ucrt64/lib/crt2.o]
           arg [C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o] ==> obj [C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o]
           arg [-LC:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0] ==> dir [C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0]
@@ -7923,9 +8519,9 @@ events:
           arg [-LC:/msys64/ucrt64/x86_64-w64-mingw32/mingw/lib] ==> dir [C:/msys64/ucrt64/x86_64-w64-mingw32/mingw/lib]
           arg [-LC:/msys64/ucrt64/lib] ==> dir [C:/msys64/ucrt64/lib]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_460f7.dir/CMakeCCompilerABI.c.obj] ==> ignore
+          arg [CMakeFiles/cmTC_6f349.dir/CMakeCCompilerABI.c.obj] ==> ignore
           arg [--out-implib] ==> ignore
-          arg [libcmTC_460f7.dll.a] ==> ignore
+          arg [libcmTC_6f349.dll.a] ==> ignore
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore
@@ -7970,14 +8566,10 @@ events:
       - "C:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:41 (message)"
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:337 (cmake_determine_linker_id)"
       - "C:/msys64/ucrt64/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
+      - "build/_deps/googletest-src/CMakeLists.txt:6 (project)"
     message: |
       Running the C compiler's linker: "C:/msys64/ucrt64/bin/ld" "-v"
       GNU ld (GNU Binutils) 2.47.20260726
-...
-
----
-events:
   -
     kind: "find-v1"
     backtrace:
@@ -8230,12 +8822,12 @@ events:
         - "C:/Program Files/nodejs/"
         - "C:\\Program Files\\Git\\cmd"
         - "C:/msys64/ucrt64/bin/"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/ClangProject"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/msys64/ucrt64"
-        - "C:/Program Files (x86)/ClangProject"
+        - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue"
   -
     kind: "find-v1"
     backtrace:
@@ -8631,12 +9223,12 @@ events:
         - "C:/Program Files/nodejs/"
         - "C:\\Program Files\\Git\\cmd"
         - "C:/msys64/ucrt64/bin/"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/ClangProject"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/msys64/ucrt64"
-        - "C:/Program Files (x86)/ClangProject"
+        - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue"
   -
     kind: "find-v1"
     backtrace:
@@ -8731,162 +9323,10 @@ events:
         - "C:/Program Files/nodejs/"
         - "C:\\Program Files\\Git\\cmd"
         - "C:/msys64/ucrt64/bin/"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/ClangProject"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/msys64/ucrt64"
-        - "C:/Program Files (x86)/ClangProject"
-...
-
----
-events:
-  -
-    kind: "find-v1"
-    backtrace:
-      - "CMakeLists.txt:15 (find_program)"
-    mode: "program"
-    variable: "CLANG_TIDY_EXE"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "clang-tidy"
-    candidate_directories:
-      - "C:/msys64/ucrt64/bin/"
-      - "C:/Python314/Scripts/"
-      - "C:/Python314/"
-      - "C:/Python312/Scripts/"
-      - "C:/Python312/"
-      - "C:/Python310/Scripts/"
-      - "C:/Python310/"
-      - "C:/Python38/Scripts/"
-      - "C:/Python38/"
-      - "C:/Program Files (x86)/Razer Chroma SDK/bin/"
-      - "C:/Program Files/Razer Chroma SDK/bin/"
-      - "C:/Program Files (x86)/Razer/ChromaBroadcast/bin/"
-      - "C:/Program Files/Razer/ChromaBroadcast/bin/"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
-      - "C:/Windows/System32/"
-      - "C:/Windows/"
-      - "C:/Windows/System32/wbem/"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files/PuTTY/"
-      - "C:/Program Files/Microsoft VS Code/bin/"
-      - "C:/Program Files/Java/jdk-11.0.5/bin/"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Program Files/Microsoft SQL Server/130/Tools/Binn/"
-      - "C:/ProgramData/chocolatey/bin/"
-      - "C:/Program Files/dotnet/"
-      - "C:/Program Files/Go/bin/"
-      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/"
-      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/"
-      - "C:/Program Files (x86)/Zig/zig-windows-x86_64-0.14.0-dev.3008+7cef585f5/"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
-      - "C:/Users/Redhawk/.cargo/bin/"
-      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
-      - "C:/Users/Redhawk/AppData/Local/Programs/Python/Python37/Scripts/"
-      - "C:/Users/Redhawk/AppData/Local/Programs/Python/Python37/"
-      - "C:/Users/Redhawk/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/texlive/2019/bin/win32/"
-      - "C:/Program Files/heroku/bin/"
-      - "C:/Program Files/JetBrains/PyCharm Community Edition 2023.3.2/bin/"
-      - "C:/Program Files/Neovim/bin/"
-      - "C:/Tools/neovim/nvim-win64/bin/"
-      - "C:/ProgramData/mingw64/mingw64/bin/"
-      - "C:/Users/Redhawk/go/bin/"
-      - "C:/Users/Redhawk/AppData/Roaming/npm/"
-      - "C:/Users/Redhawk/.dotnet/tools/"
-      - "C:/Users/Redhawk/AppData/Local/GitHubDesktop/bin/"
-      - "C:/Program Files (x86)/sox-14-4-2/"
-      - "C:/Path/To/Sox/Folder/"
-      - "C:/Program Files/nodejs/"
-      - "C:/Program Files/Git/cmd/"
-      - "C:/Program Files/bin/"
-      - "C:/Program Files/sbin/"
-      - "C:/Program Files/"
-      - "C:/Program Files (x86)/bin/"
-      - "C:/Program Files (x86)/sbin/"
-      - "C:/Program Files (x86)/"
-      - "C:/msys64/ucrt64/bin/"
-      - "C:/msys64/ucrt64/sbin/"
-      - "C:/msys64/ucrt64/"
-      - "C:/Program Files (x86)/ClangProject/bin/"
-      - "C:/Program Files (x86)/ClangProject/sbin/"
-      - "C:/Program Files (x86)/ClangProject/"
-    searched_directories:
-      - "C:/msys64/ucrt64/bin/clang-tidy.com"
-    found: "C:/msys64/ucrt64/bin/clang-tidy.exe"
-    search_context:
-      ENV{PATH}:
-        - "C:/msys64/ucrt64/bin"
-        - "C:/msys64/ucrt64/bin"
-        - "C:/Python314/Scripts/"
-        - "C:\\Python314\\"
-        - "C:/Python312/Scripts/"
-        - "C:\\Python312\\"
-        - "C:/Python310/Scripts/"
-        - "C:\\Python310\\"
-        - "C:/Python38/Scripts/"
-        - "C:\\Python38\\"
-        - "C:/Program Files (x86)/Razer Chroma SDK/bin"
-        - "C:\\Program Files\\Razer Chroma SDK\\bin"
-        - "C:/Program Files (x86)/Razer/ChromaBroadcast/bin"
-        - "C:\\Program Files\\Razer\\ChromaBroadcast\\bin"
-        - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common"
-        - "C:\\Windows\\system32"
-        - "C:/Windows"
-        - "C:\\Windows\\System32\\Wbem"
-        - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "C:/Program Files/PuTTY/"
-        - "C:\\Program Files\\Microsoft VS Code\\bin"
-        - "C:/Program Files/Java/jdk-11.0.5/bin"
-        - "C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:/Program Files/Microsoft SQL Server/130/Tools/Binn/"
-        - "C:\\ProgramData\\chocolatey\\bin"
-        - "C:/WINDOWS/system32"
-        - "C:\\WINDOWS"
-        - "C:/WINDOWS/System32/Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:/WINDOWS/System32/OpenSSH/"
-        - "C:\\Program Files\\dotnet\\"
-        - "C:/Program Files/Go/bin"
-        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
-        - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/"
-        - "C:\\Program Files (x86)\\Zig\\zig-windows-x86_64-0.14.0-dev.3008+7cef585f5"
-        - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
-        - "C:\\Users\\Redhawk\\.cargo\\bin"
-        - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
-        - "C:\\Users\\Redhawk\\AppData\\Local\\Programs\\Python\\Python37\\Scripts\\"
-        - "C:/Users/Redhawk/AppData/Local/Programs/Python/Python37/"
-        - "C:\\Users\\Redhawk\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:/texlive/2019/bin/win32"
-        - "C:\\Program Files\\heroku\\bin"
-        - "C:/Program Files/JetBrains/PyCharm Community Edition 2023.3.2/bin"
-        - "C:\\Program Files\\Neovim\\bin"
-        - "C:/Tools/neovim/nvim-win64/bin"
-        - "C:\\ProgramData\\mingw64\\mingw64\\bin"
-        - "C:/Users/Redhawk/go/bin"
-        - "C:\\Users\\Redhawk\\AppData\\Roaming\\npm"
-        - "C:/Users/Redhawk/.dotnet/tools"
-        - "C:\\Users\\Redhawk\\AppData\\Local\\GitHubDesktop\\bin"
-        - "C:/Program Files (x86)/sox-14-4-2"
-        - "C:\\Path\\To\\Sox\\Folder"
-        - "C:/Program Files/nodejs/"
-        - "C:\\Program Files\\Git\\cmd"
-        - "C:/msys64/ucrt64/bin/"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/ClangProject"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "C:/Program Files"
-        - "C:/Program Files (x86)"
-        - "C:/msys64/ucrt64"
-        - "C:/Program Files (x86)/ClangProject"
+        - "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue"
 ...

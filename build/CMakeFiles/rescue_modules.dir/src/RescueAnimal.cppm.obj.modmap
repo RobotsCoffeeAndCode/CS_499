@@ -1,0 +1,2 @@
+-x c++-module
+-fmodule-output="CMakeFiles/rescue_modules.dir/rescue_animal.pcm"
