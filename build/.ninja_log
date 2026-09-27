@@ -1,64 +1,23 @@
 # ninja log v7
-26	228	8122422927259185	CMakeFiles/app.dir/src/main.cpp.obj.ddi	95e6f6185cfe6944
-11	251	8122422927119171	CMakeFiles/unit_tests.dir/tests/test_main.cpp.obj.ddi	9716252558b804ac
-228	274	8122422929669183	CMakeFiles/app.dir/CXX.dd	4f9d8c5704d29e2c
-228	274	8122422929669183	CMakeFiles/app.dir/CXXModules.json	4f9d8c5704d29e2c
-228	274	8122422929669183	CMakeFiles/app.dir/src/main.cpp.obj.modmap	4f9d8c5704d29e2c
-251	295	8122422929889182	CMakeFiles/unit_tests.dir/CXX.dd	9ae2f67564cbb8a5
-251	295	8122422929889182	CMakeFiles/unit_tests.dir/CXXModules.json	9ae2f67564cbb8a5
-251	295	8122422929889182	CMakeFiles/unit_tests.dir/tests/test_main.cpp.obj.modmap	9ae2f67564cbb8a5
-33	1580	8122409465874487	_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	e95651e850056512
-49	1973	8122409466034497	_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj	3ce6c7d98ce1fed5
-41	2607	8122409465954486	_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj	6552dd7d5392a1c1
-16	5452	8122409465704484	_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	15a2c0992589815e
-10	244	8122414317359154	lib/libgtest.a	2dcec27ea8478b8d
-31	186	8122417529409154	lib/libgtest_main.a	7acfdd8e9515dae0
-42	226	8122417529529161	lib/libgmock.a	5b35e7b29991e6d5
-226	372	8122417531359160	lib/libgmock_main.a	ae719fb906c32461
-297	4038	8122422929969165	CMakeFiles/unit_tests.dir/tests/test_main.cpp.obj	cf310928e093cd41
-4039	4236	8122422967389163	unit_tests.exe	64435a47bd06b5c8
-4236	4308	8122422969359165	CMakeFiles/run_all_tests	2db7c9c61697968c
-4236	4308	8122422969359165	C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/CMakeFiles/run_all_tests	2db7c9c61697968c
-275	6462	8122422929759166	CMakeFiles/app.dir/src/main.cpp.obj	3262c81130c63e55
-6462	6637	8122422991619149	app.exe	896ec08bdd0356a
-19	62	8122435970849160	CMakeFiles/unit_tests.dir/CXX.dd	9ae2f67564cbb8a5
-19	62	8122435970849160	CMakeFiles/unit_tests.dir/CXXModules.json	9ae2f67564cbb8a5
-19	62	8122435970849160	CMakeFiles/unit_tests.dir/tests/test_main.cpp.obj.modmap	9ae2f67564cbb8a5
-68	125	8122435971329166	CMakeFiles/run_all_tests	2db7c9c61697968c
-68	125	8122435971329166	C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/CMakeFiles/run_all_tests	2db7c9c61697968c
-8	208	8122435970739156	CMakeFiles/app.dir/src/main.cpp.obj.ddi	95e6f6185cfe6944
-209	249	8122435972739157	CMakeFiles/app.dir/CXX.dd	4f9d8c5704d29e2c
-209	249	8122435972739157	CMakeFiles/app.dir/CXXModules.json	4f9d8c5704d29e2c
-209	249	8122435972739157	CMakeFiles/app.dir/src/main.cpp.obj.modmap	4f9d8c5704d29e2c
-250	6373	8122435973159159	CMakeFiles/app.dir/src/main.cpp.obj	3262c81130c63e55
-6374	6550	8122436034389157	app.exe	896ec08bdd0356a
-19	56	8122439100779151	CMakeFiles/run_all_tests	2db7c9c61697968c
-19	56	8122439100779151	C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/CMakeFiles/run_all_tests	2db7c9c61697968c
-8	194	8122439100669152	CMakeFiles/app.dir/src/main.cpp.obj.ddi	95e6f6185cfe6944
-194	234	8122439102529154	CMakeFiles/app.dir/CXX.dd	4f9d8c5704d29e2c
-194	234	8122439102529154	CMakeFiles/app.dir/CXXModules.json	4f9d8c5704d29e2c
-194	234	8122439102529154	CMakeFiles/app.dir/src/main.cpp.obj.modmap	4f9d8c5704d29e2c
-20	56	8122439511609152	CMakeFiles/run_all_tests	2db7c9c61697968c
-20	56	8122439511609152	C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/CMakeFiles/run_all_tests	2db7c9c61697968c
-9	191	8122439511499154	CMakeFiles/app.dir/src/main.cpp.obj.ddi	95e6f6185cfe6944
-191	231	8122439513329163	CMakeFiles/app.dir/CXX.dd	4f9d8c5704d29e2c
-191	231	8122439513329163	CMakeFiles/app.dir/CXXModules.json	4f9d8c5704d29e2c
-191	231	8122439513329163	CMakeFiles/app.dir/src/main.cpp.obj.modmap	4f9d8c5704d29e2c
-232	4074	8122439513739160	CMakeFiles/app.dir/src/main.cpp.obj	3262c81130c63e55
-4074	4263	8122439552149155	app.exe	896ec08bdd0356a
-19	56	8122445498109155	CMakeFiles/run_all_tests	2db7c9c61697968c
-19	56	8122445498109155	C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/CMakeFiles/run_all_tests	2db7c9c61697968c
-8	199	8122445497999160	CMakeFiles/app.dir/src/main.cpp.obj.ddi	95e6f6185cfe6944
-199	239	8122445499909156	CMakeFiles/app.dir/CXX.dd	4f9d8c5704d29e2c
-199	239	8122445499909156	CMakeFiles/app.dir/CXXModules.json	4f9d8c5704d29e2c
-199	239	8122445499909156	CMakeFiles/app.dir/src/main.cpp.obj.modmap	4f9d8c5704d29e2c
-240	14990	8122445500329172	CMakeFiles/app.dir/src/main.cpp.obj	3262c81130c63e55
-14990	15194	8122445647829177	app.exe	896ec08bdd0356a
-20	61	8122448249730828	CMakeFiles/run_all_tests	2db7c9c61697968c
-20	61	8122448249730828	C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/CMakeFiles/run_all_tests	2db7c9c61697968c
-8	208	8122448249610833	CMakeFiles/app.dir/src/main.cpp.obj.ddi	95e6f6185cfe6944
-208	251	8122448251610836	CMakeFiles/app.dir/CXX.dd	4f9d8c5704d29e2c
-208	251	8122448251610836	CMakeFiles/app.dir/CXXModules.json	4f9d8c5704d29e2c
-208	251	8122448251610836	CMakeFiles/app.dir/src/main.cpp.obj.modmap	4f9d8c5704d29e2c
-253	15005	8122448252060832	CMakeFiles/app.dir/src/main.cpp.obj	3262c81130c63e55
-15006	15208	8122448399590829	app.exe	896ec08bdd0356a
+25	278	8122457430407558	CMakeFiles/app.dir/src/main.cpp.obj.ddi	ae02810620554b84
+5	287	8122457430217551	CMakeFiles/unit_tests.dir/tests/test_main.cpp.obj.ddi	4d2dc41502fabdeb
+278	331	8122457433397560	CMakeFiles/app.dir/CXX.dd	4f9d8c5704d29e2c
+278	331	8122457433397560	CMakeFiles/app.dir/CXXModules.json	4f9d8c5704d29e2c
+278	331	8122457433397560	CMakeFiles/app.dir/src/main.cpp.obj.modmap	4f9d8c5704d29e2c
+287	343	8122457433477557	CMakeFiles/unit_tests.dir/CXX.dd	9ae2f67564cbb8a5
+287	343	8122457433477557	CMakeFiles/unit_tests.dir/CXXModules.json	9ae2f67564cbb8a5
+287	343	8122457433477557	CMakeFiles/unit_tests.dir/tests/test_main.cpp.obj.modmap	9ae2f67564cbb8a5
+37	1710	8122457430537548	_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	375db1d8c719caa
+56	2124	8122457430717561	_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj	6469f160542310ee
+47	2813	8122457430627558	_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj	7c9af40468ef557d
+352	4339	8122457433687569	CMakeFiles/unit_tests.dir/tests/test_main.cpp.obj	53a23b1c4ec82167
+16	5663	8122457430327560	_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	373edd4a77f29353
+5665	5881	8122457486807564	lib/libgtest.a	2dcec27ea8478b8d
+5881	6019	8122457488967539	lib/libgtest_main.a	7acfdd8e9515dae0
+5892	6062	8122457489077546	lib/libgmock.a	5b35e7b29991e6d5
+6062	6195	8122457490787587	lib/libgmock_main.a	ae719fb906c32461
+6019	6218	8122457490347604	unit_tests.exe	64435a47bd06b5c8
+6218	6290	8122457492347547	CMakeFiles/run_all_tests	5a871a902f73b562
+6218	6290	8122457492347547	C:/Users/Redhawk/Desktop/CapstoneProject/build/CMakeFiles/run_all_tests	5a871a902f73b562
+333	15516	8122457433497558	CMakeFiles/app.dir/src/main.cpp.obj	c81ef2ab2941d904
+15516	15689	8122457585327545	app.exe	896ec08bdd0356a

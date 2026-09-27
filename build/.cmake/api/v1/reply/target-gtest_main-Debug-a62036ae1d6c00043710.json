@@ -3,7 +3,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "lib/libgtest.a"
+			"path" : "lib/libgtest_main.a"
 		}
 	],
 	"backtrace" : 3,
@@ -16,6 +16,7 @@
 			"cxx_library",
 			"install",
 			"install_project",
+			"target_link_libraries",
 			"add_compile_options",
 			"include_directories",
 			"target_compile_features"
@@ -34,7 +35,7 @@
 			{
 				"command" : 2,
 				"file" : 1,
-				"line" : 123,
+				"line" : 141,
 				"parent" : 0
 			},
 			{
@@ -62,22 +63,28 @@
 				"parent" : 4
 			},
 			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 153,
+				"parent" : 0
+			},
+			{
 				"file" : 2
 			},
 			{
-				"command" : 5,
+				"command" : 6,
 				"file" : 2,
 				"line" : 19,
-				"parent" : 6
+				"parent" : 7
 			},
 			{
-				"command" : 6,
+				"command" : 7,
 				"file" : 1,
 				"line" : 113,
 				"parent" : 0
 			},
 			{
-				"command" : 7,
+				"command" : 8,
 				"file" : 0,
 				"line" : 198,
 				"parent" : 2
@@ -89,6 +96,13 @@
 		"major" : 2,
 		"minor" : 11
 	},
+	"compileDependencies" : 
+	[
+		{
+			"backtrace" : 6,
+			"id" : "gtest::@1ea2dfc0605fe3ab2a3f"
+		}
+	],
 	"compileGroups" : 
 	[
 		{
@@ -101,35 +115,37 @@
 					"fragment" : "-Wall -Wshadow -Wconversion -Wundef -DGTEST_HAS_PTHREAD=0 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Winline -Wredundant-decls -Wchar-subscripts"
 				},
 				{
-					"backtrace" : 7,
+					"backtrace" : 8,
 					"fragment" : "-Wall"
 				},
 				{
-					"backtrace" : 7,
+					"backtrace" : 8,
 					"fragment" : "-Wextra"
 				},
 				{
-					"backtrace" : 7,
+					"backtrace" : 8,
 					"fragment" : "-Wpedantic"
 				},
 				{
-					"backtrace" : 7,
+					"backtrace" : 8,
 					"fragment" : "-Wconversion"
 				},
 				{
-					"backtrace" : 7,
+					"backtrace" : 8,
 					"fragment" : "-Wshadow"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 8,
-					"path" : "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src/googletest/include"
+					"backtrace" : 9,
+					"isSystem" : true,
+					"path" : "C:/Users/Redhawk/Desktop/CapstoneProject/build/_deps/googletest-src/googletest/include"
 				},
 				{
-					"backtrace" : 8,
-					"path" : "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src/googletest"
+					"backtrace" : 9,
+					"isSystem" : true,
+					"path" : "C:/Users/Redhawk/Desktop/CapstoneProject/build/_deps/googletest-src/googletest"
 				}
 			],
 			"language" : "CXX",
@@ -137,7 +153,7 @@
 			{
 				"backtraces" : 
 				[
-					9
+					10
 				],
 				"standard" : "20"
 			},
@@ -147,7 +163,14 @@
 			]
 		}
 	],
-	"id" : "gtest::@1ea2dfc0605fe3ab2a3f",
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 6,
+			"id" : "gtest::@1ea2dfc0605fe3ab2a3f"
+		}
+	],
+	"id" : "gtest_main::@1ea2dfc0605fe3ab2a3f",
 	"install" : 
 	{
 		"destinations" : 
@@ -162,8 +185,29 @@
 			"path" : "C:/Program Files (x86)/Graszio_Salvare_Animal_Rescue"
 		}
 	},
-	"name" : "gtest",
-	"nameOnDisk" : "libgtest.a",
+	"interfaceCompileDependencies" : 
+	[
+		{
+			"backtrace" : 6,
+			"id" : "gtest::@1ea2dfc0605fe3ab2a3f"
+		}
+	],
+	"interfaceLinkLibraries" : 
+	[
+		{
+			"backtrace" : 6,
+			"id" : "gtest::@1ea2dfc0605fe3ab2a3f"
+		}
+	],
+	"linkLibraries" : 
+	[
+		{
+			"backtrace" : 6,
+			"id" : "gtest::@1ea2dfc0605fe3ab2a3f"
+		}
+	],
+	"name" : "gtest_main",
+	"nameOnDisk" : "libgtest_main.a",
 	"paths" : 
 	{
 		"build" : "_deps/googletest-build/googletest",
@@ -188,7 +232,7 @@
 				3
 			],
 			"compileGroupIndex" : 0,
-			"path" : "build/_deps/googletest-src/googletest/src/gtest-all.cc",
+			"path" : "build/_deps/googletest-src/googletest/src/gtest_main.cc",
 			"sourceGroupIndex" : 0
 		}
 	],

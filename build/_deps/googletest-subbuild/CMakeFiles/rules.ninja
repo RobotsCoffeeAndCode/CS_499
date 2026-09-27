@@ -23,7 +23,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = C:\msys64\ucrt64\bin\cmake.exe --regenerate-during-build -S"C:\Users\Redhawk\Desktop\Google Drive\SNHU\CS-499\build\_deps\googletest-subbuild" -B"C:\Users\Redhawk\Desktop\Google Drive\SNHU\CS-499\build\_deps\googletest-subbuild"
+  command = C:\msys64\ucrt64\bin\cmake.exe --regenerate-during-build -SC:\Users\Redhawk\Desktop\CapstoneProject\build\_deps\googletest-subbuild -BC:\Users\Redhawk\Desktop\CapstoneProject\build\_deps\googletest-subbuild
   description = Re-running CMake...
   generator = 1
 

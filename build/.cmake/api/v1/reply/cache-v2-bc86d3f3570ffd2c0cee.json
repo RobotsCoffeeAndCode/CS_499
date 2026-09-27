@@ -79,7 +79,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build"
+			"value" : "c:/Users/Redhawk/Desktop/CapstoneProject/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -163,10 +163,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Full path to the compiler used for language <LANG>. Set by CMake during compiler detection on the first configure; users may override on the command line to select a specific toolchain."
+					"value" : "CXX compiler"
 				}
 			],
-			"type" : "FILEPATH",
+			"type" : "STRING",
 			"value" : "C:/msys64/ucrt64/bin/clang++.exe"
 		},
 		{
@@ -323,10 +323,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Full path to the compiler used for language <LANG>. Set by CMake during compiler detection on the first configure; users may override on the command line to select a specific toolchain."
+					"value" : "C compiler"
 				}
 			],
-			"type" : "FILEPATH",
+			"type" : "STRING",
 			"value" : "C:/msys64/ucrt64/bin/clang.exe"
 		},
 		{
@@ -655,7 +655,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/CMakeFiles/pkgRedirects"
+			"value" : "C:/Users/Redhawk/Desktop/CapstoneProject/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -727,7 +727,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499"
+			"value" : "C:/Users/Redhawk/Desktop/CapstoneProject"
 		},
 		{
 			"name" : "CMAKE_INSTALL_BINDIR",
@@ -1263,7 +1263,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "1.1"
+			"value" : "1.0"
 		},
 		{
 			"name" : "CMAKE_PROJECT_VERSION_MAJOR",
@@ -1287,7 +1287,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "1"
+			"value" : "0"
 		},
 		{
 			"name" : "CMAKE_PROJECT_VERSION_PATCH",
@@ -1727,7 +1727,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps"
+			"value" : "C:/Users/Redhawk/Desktop/CapstoneProject/build/_deps"
 		},
 		{
 			"name" : "FETCHCONTENT_FULLY_DISCONNECTED",
@@ -1823,7 +1823,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build"
+			"value" : "C:/Users/Redhawk/Desktop/CapstoneProject/build"
 		},
 		{
 			"name" : "Graszio_Salvare_Animal_Rescue_IS_TOP_LEVEL",
@@ -1847,7 +1847,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499"
+			"value" : "C:/Users/Redhawk/Desktop/CapstoneProject"
 		},
 		{
 			"name" : "INSTALL_GTEST",
@@ -1979,7 +1979,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-build/googletest/generated"
+			"value" : "C:/Users/Redhawk/Desktop/CapstoneProject/build/_deps/googletest-build/googletest/generated"
 		},
 		{
 			"name" : "gmock_BINARY_DIR",
@@ -1991,7 +1991,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-build/googlemock"
+			"value" : "C:/Users/Redhawk/Desktop/CapstoneProject/build/_deps/googletest-build/googlemock"
 		},
 		{
 			"name" : "gmock_IS_TOP_LEVEL",
@@ -2015,7 +2015,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src/googlemock"
+			"value" : "C:/Users/Redhawk/Desktop/CapstoneProject/build/_deps/googletest-src/googlemock"
 		},
 		{
 			"name" : "gmock_build_tests",
@@ -2043,7 +2043,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-build"
+			"value" : "C:/Users/Redhawk/Desktop/CapstoneProject/build/_deps/googletest-build"
 		},
 		{
 			"name" : "googletest-distribution_IS_TOP_LEVEL",
@@ -2067,7 +2067,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src"
+			"value" : "C:/Users/Redhawk/Desktop/CapstoneProject/build/_deps/googletest-src"
 		},
 		{
 			"name" : "gtest_BINARY_DIR",
@@ -2079,7 +2079,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-build/googletest"
+			"value" : "C:/Users/Redhawk/Desktop/CapstoneProject/build/_deps/googletest-build/googletest"
 		},
 		{
 			"name" : "gtest_IS_TOP_LEVEL",
@@ -2103,7 +2103,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src/googletest"
+			"value" : "C:/Users/Redhawk/Desktop/CapstoneProject/build/_deps/googletest-src/googletest"
 		},
 		{
 			"name" : "gtest_build_samples",

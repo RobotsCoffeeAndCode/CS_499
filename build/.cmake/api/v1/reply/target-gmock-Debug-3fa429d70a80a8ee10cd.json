@@ -3,7 +3,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "lib/libgtest_main.a"
+			"path" : "lib/libgmock.a"
 		}
 	],
 	"backtrace" : 3,
@@ -24,7 +24,7 @@
 		"files" : 
 		[
 			"build/_deps/googletest-src/googletest/cmake/internal_utils.cmake",
-			"build/_deps/googletest-src/googletest/CMakeLists.txt",
+			"build/_deps/googletest-src/googlemock/CMakeLists.txt",
 			"CMakeLists.txt"
 		],
 		"nodes" : 
@@ -35,7 +35,7 @@
 			{
 				"command" : 2,
 				"file" : 1,
-				"line" : 141,
+				"line" : 96,
 				"parent" : 0
 			},
 			{
@@ -53,7 +53,7 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 158,
+				"line" : 115,
 				"parent" : 0
 			},
 			{
@@ -65,7 +65,7 @@
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 153,
+				"line" : 97,
 				"parent" : 0
 			},
 			{
@@ -80,7 +80,7 @@
 			{
 				"command" : 7,
 				"file" : 1,
-				"line" : 113,
+				"line" : 74,
 				"parent" : 0
 			},
 			{
@@ -139,13 +139,21 @@
 			[
 				{
 					"backtrace" : 9,
-					"isSystem" : true,
-					"path" : "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src/googletest/include"
+					"path" : "C:/Users/Redhawk/Desktop/CapstoneProject/build/_deps/googletest-src/googlemock/include"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "C:/Users/Redhawk/Desktop/CapstoneProject/build/_deps/googletest-src/googlemock"
 				},
 				{
 					"backtrace" : 9,
 					"isSystem" : true,
-					"path" : "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src/googletest"
+					"path" : "C:/Users/Redhawk/Desktop/CapstoneProject/build/_deps/googletest-src/googletest/include"
+				},
+				{
+					"backtrace" : 9,
+					"isSystem" : true,
+					"path" : "C:/Users/Redhawk/Desktop/CapstoneProject/build/_deps/googletest-src/googletest"
 				}
 			],
 			"language" : "CXX",
@@ -170,7 +178,7 @@
 			"id" : "gtest::@1ea2dfc0605fe3ab2a3f"
 		}
 	],
-	"id" : "gtest_main::@1ea2dfc0605fe3ab2a3f",
+	"id" : "gmock::@0f7bb11d64f3678238c7",
 	"install" : 
 	{
 		"destinations" : 
@@ -206,12 +214,12 @@
 			"id" : "gtest::@1ea2dfc0605fe3ab2a3f"
 		}
 	],
-	"name" : "gtest_main",
-	"nameOnDisk" : "libgtest_main.a",
+	"name" : "gmock",
+	"nameOnDisk" : "libgmock.a",
 	"paths" : 
 	{
-		"build" : "_deps/googletest-build/googletest",
-		"source" : "build/_deps/googletest-src/googletest"
+		"build" : "_deps/googletest-build/googlemock",
+		"source" : "build/_deps/googletest-src/googlemock"
 	},
 	"sourceGroups" : 
 	[
@@ -232,7 +240,7 @@
 				3
 			],
 			"compileGroupIndex" : 0,
-			"path" : "build/_deps/googletest-src/googletest/src/gtest_main.cc",
+			"path" : "build/_deps/googletest-src/googlemock/src/gmock-all.cc",
 			"sourceGroupIndex" : 0
 		}
 	],

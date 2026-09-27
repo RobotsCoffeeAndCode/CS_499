@@ -6,27 +6,27 @@
 	"config" : "Debug",
 	"cxx-modules" : {},
 	"database-info" : null,
-	"dir-cur-bld" : "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build",
-	"dir-cur-src" : "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499",
-	"dir-top-bld" : "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build",
-	"dir-top-src" : "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499",
+	"dir-cur-bld" : "C:/Users/Redhawk/Desktop/CapstoneProject/build",
+	"dir-cur-src" : "C:/Users/Redhawk/Desktop/CapstoneProject",
+	"dir-top-bld" : "C:/Users/Redhawk/Desktop/CapstoneProject/build",
+	"dir-top-src" : "C:/Users/Redhawk/Desktop/CapstoneProject",
 	"exports" : [],
 	"forward-modules-from-target-dirs" : [],
 	"include-dirs" : 
 	[
-		"C:\\Users\\Redhawk\\Desktop\\Google Drive\\SNHU\\CS-499\\include",
+		"C:\\Users\\Redhawk\\Desktop\\CapstoneProject\\include",
 		"_deps\\googletest-src\\googletest\\include",
 		"_deps\\googletest-src\\googletest"
 	],
 	"language" : "CXX",
 	"linked-target-dirs" : [],
-	"module-dir" : "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/CMakeFiles/unit_tests.dir",
+	"module-dir" : "C:/Users/Redhawk/Desktop/CapstoneProject/build/CMakeFiles/unit_tests.dir",
 	"sources" : 
 	{
 		"CMakeFiles/unit_tests.dir/tests/test_main.cpp.obj" : 
 		{
 			"language" : "CXX",
-			"source" : "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/tests/test_main.cpp"
+			"source" : "C:/Users/Redhawk/Desktop/CapstoneProject/tests/test_main.cpp"
 		}
 	}
 }
