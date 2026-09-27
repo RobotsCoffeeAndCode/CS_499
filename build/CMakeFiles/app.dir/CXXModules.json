@@ -1,49 +1,5 @@
 {
-	"modules" : 
-	{
-		"dog" : 
-		{
-			"bmi" : "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/CMakeFiles/app.dir/dog.pcm",
-			"is-private" : false
-		},
-		"monkey" : 
-		{
-			"bmi" : "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/CMakeFiles/app.dir/monkey.pcm",
-			"is-private" : false
-		},
-		"rescue_animal" : 
-		{
-			"bmi" : "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/CMakeFiles/app.dir/rescue_animal.pcm",
-			"is-private" : false
-		}
-	},
-	"references" : 
-	{
-		"dog" : 
-		{
-			"lookup-method" : "by-name",
-			"path" : "CMakeFiles/app.dir/dog.pcm"
-		},
-		"monkey" : 
-		{
-			"lookup-method" : "by-name",
-			"path" : "CMakeFiles/app.dir/monkey.pcm"
-		},
-		"rescue_animal" : 
-		{
-			"lookup-method" : "by-name",
-			"path" : "CMakeFiles/app.dir/rescue_animal.pcm"
-		}
-	},
-	"usages" : 
-	{
-		"dog" : 
-		[
-			"rescue_animal"
-		],
-		"monkey" : 
-		[
-			"rescue_animal"
-		]
-	}
+	"modules" : {},
+	"references" : {},
+	"usages" : {}
 }

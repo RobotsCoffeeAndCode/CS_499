@@ -53,6 +53,7 @@ build CMakeFiles/app.dir/src/main.cpp.obj.ddi: CXX_SCAN__app_Debug C$:/Users/Red
   DEP_FILE = CMakeFiles\app.dir\src\main.cpp.obj.ddi.d
   DYNDEP_INTERMEDIATE_FILE = CMakeFiles\app.dir\src\main.cpp.obj.ddi
   FLAGS = -g -std=c++20 -Wall -Wextra -Wpedantic -Wconversion -Wshadow
+  INCLUDES = -I"C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/include"
   OBJ_FILE = CMakeFiles\app.dir\src\main.cpp.obj
   PREPROCESSED_OUTPUT_FILE = CMakeFiles\app.dir\src\main.cpp.obj.ddi.i
 
@@ -62,66 +63,13 @@ build CMakeFiles/app.dir/src/main.cpp.obj: CXX_COMPILER__app_scanned_Debug C$:/U
   DEP_FILE = CMakeFiles\app.dir\src\main.cpp.obj.d
   DYNDEP_MODULE_MAP_FILE = CMakeFiles\app.dir\src\main.cpp.obj.modmap
   FLAGS = -g -std=c++20 -Wall -Wextra -Wpedantic -Wconversion -Wshadow
+  INCLUDES = -I"C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/include"
   OBJECT_DIR = CMakeFiles\app.dir
   OBJECT_FILE_DIR = CMakeFiles\app.dir\src
   TARGET_SUPPORT_DIR = CMakeFiles\app.dir
   dyndep = CMakeFiles/app.dir/CXX.dd
 
-build CMakeFiles/app.dir/src/RescueAnimal.cppm.obj.ddi: CXX_SCAN__app_Debug C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/src/RescueAnimal.cppm || cmake_object_order_depends_target_app
-  DEP_FILE = CMakeFiles\app.dir\src\RescueAnimal.cppm.obj.ddi.d
-  DYNDEP_INTERMEDIATE_FILE = CMakeFiles\app.dir\src\RescueAnimal.cppm.obj.ddi
-  FLAGS = -g -std=c++20 -Wall -Wextra -Wpedantic -Wconversion -Wshadow
-  OBJ_FILE = CMakeFiles\app.dir\src\RescueAnimal.cppm.obj
-  PREPROCESSED_OUTPUT_FILE = CMakeFiles\app.dir\src\RescueAnimal.cppm.obj.ddi.i
-
-build CMakeFiles/app.dir/src/RescueAnimal.cppm.obj: CXX_COMPILER__app_scanned_Debug C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/src/RescueAnimal.cppm | CMakeFiles/app.dir/src/RescueAnimal.cppm.obj.modmap || cmake_object_order_depends_target_app CMakeFiles/app.dir/CXX.dd
-  CODE_CHECK = C:\msys64\ucrt64\bin\cmake.exe -E __run_co_compile --tidy="C:/msys64/ucrt64/bin/clang-tidy.exe;--config-file=C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/.clang-tidy;--extra-arg-before=--driver-mode=g++" --source="C:\Users\Redhawk\Desktop\Google Drive\SNHU\CS-499\src\RescueAnimal.cppm" -- 
-  CONFIG = Debug
-  DEP_FILE = CMakeFiles\app.dir\src\RescueAnimal.cppm.obj.d
-  DYNDEP_MODULE_MAP_FILE = CMakeFiles\app.dir\src\RescueAnimal.cppm.obj.modmap
-  FLAGS = -g -std=c++20 -Wall -Wextra -Wpedantic -Wconversion -Wshadow
-  OBJECT_DIR = CMakeFiles\app.dir
-  OBJECT_FILE_DIR = CMakeFiles\app.dir\src
-  TARGET_SUPPORT_DIR = CMakeFiles\app.dir
-  dyndep = CMakeFiles/app.dir/CXX.dd
-
-build CMakeFiles/app.dir/src/Dog.cppm.obj.ddi: CXX_SCAN__app_Debug C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/src/Dog.cppm || cmake_object_order_depends_target_app
-  DEP_FILE = CMakeFiles\app.dir\src\Dog.cppm.obj.ddi.d
-  DYNDEP_INTERMEDIATE_FILE = CMakeFiles\app.dir\src\Dog.cppm.obj.ddi
-  FLAGS = -g -std=c++20 -Wall -Wextra -Wpedantic -Wconversion -Wshadow
-  OBJ_FILE = CMakeFiles\app.dir\src\Dog.cppm.obj
-  PREPROCESSED_OUTPUT_FILE = CMakeFiles\app.dir\src\Dog.cppm.obj.ddi.i
-
-build CMakeFiles/app.dir/src/Dog.cppm.obj: CXX_COMPILER__app_scanned_Debug C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/src/Dog.cppm | CMakeFiles/app.dir/src/Dog.cppm.obj.modmap || cmake_object_order_depends_target_app CMakeFiles/app.dir/CXX.dd
-  CODE_CHECK = C:\msys64\ucrt64\bin\cmake.exe -E __run_co_compile --tidy="C:/msys64/ucrt64/bin/clang-tidy.exe;--config-file=C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/.clang-tidy;--extra-arg-before=--driver-mode=g++" --source="C:\Users\Redhawk\Desktop\Google Drive\SNHU\CS-499\src\Dog.cppm" -- 
-  CONFIG = Debug
-  DEP_FILE = CMakeFiles\app.dir\src\Dog.cppm.obj.d
-  DYNDEP_MODULE_MAP_FILE = CMakeFiles\app.dir\src\Dog.cppm.obj.modmap
-  FLAGS = -g -std=c++20 -Wall -Wextra -Wpedantic -Wconversion -Wshadow
-  OBJECT_DIR = CMakeFiles\app.dir
-  OBJECT_FILE_DIR = CMakeFiles\app.dir\src
-  TARGET_SUPPORT_DIR = CMakeFiles\app.dir
-  dyndep = CMakeFiles/app.dir/CXX.dd
-
-build CMakeFiles/app.dir/src/Monkey.cppm.obj.ddi: CXX_SCAN__app_Debug C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/src/Monkey.cppm || cmake_object_order_depends_target_app
-  DEP_FILE = CMakeFiles\app.dir\src\Monkey.cppm.obj.ddi.d
-  DYNDEP_INTERMEDIATE_FILE = CMakeFiles\app.dir\src\Monkey.cppm.obj.ddi
-  FLAGS = -g -std=c++20 -Wall -Wextra -Wpedantic -Wconversion -Wshadow
-  OBJ_FILE = CMakeFiles\app.dir\src\Monkey.cppm.obj
-  PREPROCESSED_OUTPUT_FILE = CMakeFiles\app.dir\src\Monkey.cppm.obj.ddi.i
-
-build CMakeFiles/app.dir/src/Monkey.cppm.obj: CXX_COMPILER__app_scanned_Debug C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/src/Monkey.cppm | CMakeFiles/app.dir/src/Monkey.cppm.obj.modmap || cmake_object_order_depends_target_app CMakeFiles/app.dir/CXX.dd
-  CODE_CHECK = C:\msys64\ucrt64\bin\cmake.exe -E __run_co_compile --tidy="C:/msys64/ucrt64/bin/clang-tidy.exe;--config-file=C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/.clang-tidy;--extra-arg-before=--driver-mode=g++" --source="C:\Users\Redhawk\Desktop\Google Drive\SNHU\CS-499\src\Monkey.cppm" -- 
-  CONFIG = Debug
-  DEP_FILE = CMakeFiles\app.dir\src\Monkey.cppm.obj.d
-  DYNDEP_MODULE_MAP_FILE = CMakeFiles\app.dir\src\Monkey.cppm.obj.modmap
-  FLAGS = -g -std=c++20 -Wall -Wextra -Wpedantic -Wconversion -Wshadow
-  OBJECT_DIR = CMakeFiles\app.dir
-  OBJECT_FILE_DIR = CMakeFiles\app.dir\src
-  TARGET_SUPPORT_DIR = CMakeFiles\app.dir
-  dyndep = CMakeFiles/app.dir/CXX.dd
-
-build CMakeFiles/app.dir/CXX.dd | CMakeFiles/app.dir/CXXModules.json CMakeFiles/app.dir/src/main.cpp.obj.modmap CMakeFiles/app.dir/src/RescueAnimal.cppm.obj.modmap CMakeFiles/app.dir/src/Dog.cppm.obj.modmap CMakeFiles/app.dir/src/Monkey.cppm.obj.modmap: CXX_DYNDEP__app_Debug CMakeFiles/app.dir/src/main.cpp.obj.ddi CMakeFiles/app.dir/src/RescueAnimal.cppm.obj.ddi CMakeFiles/app.dir/src/Dog.cppm.obj.ddi CMakeFiles/app.dir/src/Monkey.cppm.obj.ddi | C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/build/CMakeFiles/app.dir/CXXDependInfo.json
+build CMakeFiles/app.dir/CXX.dd | CMakeFiles/app.dir/CXXModules.json CMakeFiles/app.dir/src/main.cpp.obj.modmap: CXX_DYNDEP__app_Debug CMakeFiles/app.dir/src/main.cpp.obj.ddi | C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/build/CMakeFiles/app.dir/CXXDependInfo.json
 
 
 # =============================================================================
@@ -131,7 +79,7 @@ build CMakeFiles/app.dir/CXX.dd | CMakeFiles/app.dir/CXXModules.json CMakeFiles/
 #############################################
 # Link the executable app.exe
 
-build app.exe: CXX_EXECUTABLE_LINKER__app_Debug CMakeFiles/app.dir/src/main.cpp.obj CMakeFiles/app.dir/src/RescueAnimal.cppm.obj CMakeFiles/app.dir/src/Dog.cppm.obj CMakeFiles/app.dir/src/Monkey.cppm.obj
+build app.exe: CXX_EXECUTABLE_LINKER__app_Debug CMakeFiles/app.dir/src/main.cpp.obj
   CONFIG = Debug
   FLAGS = -g
   LINK_FLAGS = -fuse-ld=lld -static
@@ -157,16 +105,17 @@ build CMakeFiles/unit_tests.dir/tests/test_main.cpp.obj.ddi: CXX_SCAN__unit_test
   DEP_FILE = CMakeFiles\unit_tests.dir\tests\test_main.cpp.obj.ddi.d
   DYNDEP_INTERMEDIATE_FILE = CMakeFiles\unit_tests.dir\tests\test_main.cpp.obj.ddi
   FLAGS = -g -std=c++20 -Wall -Wextra -Wpedantic -Wconversion -Wshadow
-  INCLUDES = -isystem "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src/googletest/include" -isystem "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src/googletest"
+  INCLUDES = -I"C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/include" -isystem "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src/googletest/include" -isystem "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src/googletest"
   OBJ_FILE = CMakeFiles\unit_tests.dir\tests\test_main.cpp.obj
   PREPROCESSED_OUTPUT_FILE = CMakeFiles\unit_tests.dir\tests\test_main.cpp.obj.ddi.i
 
 build CMakeFiles/unit_tests.dir/tests/test_main.cpp.obj: CXX_COMPILER__unit_tests_scanned_Debug C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/tests/test_main.cpp | CMakeFiles/unit_tests.dir/tests/test_main.cpp.obj.modmap || cmake_object_order_depends_target_unit_tests CMakeFiles/unit_tests.dir/CXX.dd
+  CODE_CHECK = C:\msys64\ucrt64\bin\cmake.exe -E __run_co_compile --tidy="C:/msys64/ucrt64/bin/clang-tidy.exe;--config-file=C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/.clang-tidy;--extra-arg-before=--driver-mode=g++" --source="C:\Users\Redhawk\Desktop\Google Drive\SNHU\CS-499\tests\test_main.cpp" -- 
   CONFIG = Debug
   DEP_FILE = CMakeFiles\unit_tests.dir\tests\test_main.cpp.obj.d
   DYNDEP_MODULE_MAP_FILE = CMakeFiles\unit_tests.dir\tests\test_main.cpp.obj.modmap
   FLAGS = -g -std=c++20 -Wall -Wextra -Wpedantic -Wconversion -Wshadow
-  INCLUDES = -isystem "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src/googletest/include" -isystem "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src/googletest"
+  INCLUDES = -I"C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/include" -isystem "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src/googletest/include" -isystem "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src/googletest"
   OBJECT_DIR = CMakeFiles\unit_tests.dir
   OBJECT_FILE_DIR = CMakeFiles\unit_tests.dir\tests
   TARGET_SUPPORT_DIR = CMakeFiles\unit_tests.dir
@@ -188,7 +137,7 @@ build unit_tests.exe: CXX_EXECUTABLE_LINKER__unit_tests_Debug CMakeFiles/unit_te
   LINK_FLAGS = -fuse-ld=lld -static
   LINK_LIBRARIES = lib/libgtest_main.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\unit_tests.dir
-  POST_BUILD = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Redhawk\Desktop\Google Drive\SNHU\CS-499\build" && "C:\Users\Redhawk\Desktop\Google Drive\SNHU\CS-499\build\unit_tests.exe""
+  POST_BUILD = cd .
   PRE_LINK = cd .
   TARGET_FILE = unit_tests.exe
   TARGET_IMPLIB = libunit_tests.dll.a
@@ -382,26 +331,14 @@ build _deps/googletest-build/install/strip: phony _deps/googletest-build/CMakeFi
 
 build cmake_object_order_depends_target_gmock: phony || cmake_object_order_depends_target_gtest
 
-build _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj.ddi: CXX_SCAN__gmock_Debug C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/build/_deps/googletest-src/googlemock/src/gmock-all.cc || cmake_object_order_depends_target_gmock
-  DEP_FILE = _deps\googletest-build\googlemock\CMakeFiles\gmock.dir\src\gmock-all.cc.obj.ddi.d
-  DYNDEP_INTERMEDIATE_FILE = _deps\googletest-build\googlemock\CMakeFiles\gmock.dir\src\gmock-all.cc.obj.ddi
-  FLAGS = -g -std=c++20 -Wall -Wshadow -Wconversion -Wundef -DGTEST_HAS_PTHREAD=0 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Winline -Wredundant-decls -Wchar-subscripts
-  INCLUDES = -I"C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src/googlemock/include" -I"C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src/googlemock" -isystem "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src/googletest/include" -isystem "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src/googletest"
-  OBJ_FILE = _deps\googletest-build\googlemock\CMakeFiles\gmock.dir\src\gmock-all.cc.obj
-  PREPROCESSED_OUTPUT_FILE = _deps\googletest-build\googlemock\CMakeFiles\gmock.dir\src\gmock-all.cc.obj.ddi.i
-
-build _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj: CXX_COMPILER__gmock_scanned_Debug C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/build/_deps/googletest-src/googlemock/src/gmock-all.cc | _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj.modmap || cmake_object_order_depends_target_gmock _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/CXX.dd
+build _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj: CXX_COMPILER__gmock_unscanned_Debug C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/build/_deps/googletest-src/googlemock/src/gmock-all.cc || cmake_object_order_depends_target_gmock
   CONFIG = Debug
   DEP_FILE = _deps\googletest-build\googlemock\CMakeFiles\gmock.dir\src\gmock-all.cc.obj.d
-  DYNDEP_MODULE_MAP_FILE = _deps\googletest-build\googlemock\CMakeFiles\gmock.dir\src\gmock-all.cc.obj.modmap
-  FLAGS = -g -std=c++20 -Wall -Wshadow -Wconversion -Wundef -DGTEST_HAS_PTHREAD=0 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Winline -Wredundant-decls -Wchar-subscripts
+  FLAGS = -g -std=c++20 -Wall -Wshadow -Wconversion -Wundef -DGTEST_HAS_PTHREAD=0 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Winline -Wredundant-decls -Wchar-subscripts -Wall -Wextra -Wpedantic -Wconversion -Wshadow
   INCLUDES = -I"C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src/googlemock/include" -I"C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src/googlemock" -isystem "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src/googletest/include" -isystem "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src/googletest"
   OBJECT_DIR = _deps\googletest-build\googlemock\CMakeFiles\gmock.dir
   OBJECT_FILE_DIR = _deps\googletest-build\googlemock\CMakeFiles\gmock.dir\src
   TARGET_SUPPORT_DIR = _deps\googletest-build\googlemock\CMakeFiles\gmock.dir
-  dyndep = _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/CXX.dd
-
-build _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/CXX.dd | _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/CXXModules.json _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj.modmap: CXX_DYNDEP__gmock_Debug _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj.ddi | C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/build/_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/CXXDependInfo.json
 
 
 # =============================================================================
@@ -430,26 +367,14 @@ build lib/libgmock.a: CXX_STATIC_LIBRARY_LINKER__gmock_Debug _deps/googletest-bu
 
 build cmake_object_order_depends_target_gmock_main: phony || cmake_object_order_depends_target_gmock cmake_object_order_depends_target_gtest
 
-build _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj.ddi: CXX_SCAN__gmock_main_Debug C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/build/_deps/googletest-src/googlemock/src/gmock_main.cc || cmake_object_order_depends_target_gmock_main
-  DEP_FILE = _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\src\gmock_main.cc.obj.ddi.d
-  DYNDEP_INTERMEDIATE_FILE = _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\src\gmock_main.cc.obj.ddi
-  FLAGS = -g -std=c++20 -Wall -Wshadow -Wconversion -Wundef -DGTEST_HAS_PTHREAD=0 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Winline -Wredundant-decls -Wchar-subscripts
-  INCLUDES = -isystem "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src/googlemock/include" -isystem "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src/googlemock" -isystem "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src/googletest/include" -isystem "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src/googletest"
-  OBJ_FILE = _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\src\gmock_main.cc.obj
-  PREPROCESSED_OUTPUT_FILE = _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\src\gmock_main.cc.obj.ddi.i
-
-build _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj: CXX_COMPILER__gmock_main_scanned_Debug C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/build/_deps/googletest-src/googlemock/src/gmock_main.cc | _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj.modmap || cmake_object_order_depends_target_gmock_main _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/CXX.dd
+build _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj: CXX_COMPILER__gmock_main_unscanned_Debug C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/build/_deps/googletest-src/googlemock/src/gmock_main.cc || cmake_object_order_depends_target_gmock_main
   CONFIG = Debug
   DEP_FILE = _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\src\gmock_main.cc.obj.d
-  DYNDEP_MODULE_MAP_FILE = _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\src\gmock_main.cc.obj.modmap
-  FLAGS = -g -std=c++20 -Wall -Wshadow -Wconversion -Wundef -DGTEST_HAS_PTHREAD=0 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Winline -Wredundant-decls -Wchar-subscripts
+  FLAGS = -g -std=c++20 -Wall -Wshadow -Wconversion -Wundef -DGTEST_HAS_PTHREAD=0 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Winline -Wredundant-decls -Wchar-subscripts -Wall -Wextra -Wpedantic -Wconversion -Wshadow
   INCLUDES = -isystem "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src/googlemock/include" -isystem "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src/googlemock" -isystem "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src/googletest/include" -isystem "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src/googletest"
   OBJECT_DIR = _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir
   OBJECT_FILE_DIR = _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\src
   TARGET_SUPPORT_DIR = _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir
-  dyndep = _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/CXX.dd
-
-build _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/CXX.dd | _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/CXXModules.json _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj.modmap: CXX_DYNDEP__gmock_main_Debug _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj.ddi | C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/build/_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/CXXDependInfo.json
 
 
 # =============================================================================
@@ -560,26 +485,14 @@ build _deps/googletest-build/googlemock/install/strip: phony _deps/googletest-bu
 
 build cmake_object_order_depends_target_gtest: phony || .
 
-build _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj.ddi: CXX_SCAN__gtest_Debug C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/build/_deps/googletest-src/googletest/src/gtest-all.cc || cmake_object_order_depends_target_gtest
-  DEP_FILE = _deps\googletest-build\googletest\CMakeFiles\gtest.dir\src\gtest-all.cc.obj.ddi.d
-  DYNDEP_INTERMEDIATE_FILE = _deps\googletest-build\googletest\CMakeFiles\gtest.dir\src\gtest-all.cc.obj.ddi
-  FLAGS = -g -std=c++20 -Wall -Wshadow -Wconversion -Wundef -DGTEST_HAS_PTHREAD=0 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Winline -Wredundant-decls -Wchar-subscripts
-  INCLUDES = -I"C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src/googletest/include" -I"C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src/googletest"
-  OBJ_FILE = _deps\googletest-build\googletest\CMakeFiles\gtest.dir\src\gtest-all.cc.obj
-  PREPROCESSED_OUTPUT_FILE = _deps\googletest-build\googletest\CMakeFiles\gtest.dir\src\gtest-all.cc.obj.ddi.i
-
-build _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj: CXX_COMPILER__gtest_scanned_Debug C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/build/_deps/googletest-src/googletest/src/gtest-all.cc | _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj.modmap || cmake_object_order_depends_target_gtest _deps/googletest-build/googletest/CMakeFiles/gtest.dir/CXX.dd
+build _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj: CXX_COMPILER__gtest_unscanned_Debug C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/build/_deps/googletest-src/googletest/src/gtest-all.cc || cmake_object_order_depends_target_gtest
   CONFIG = Debug
   DEP_FILE = _deps\googletest-build\googletest\CMakeFiles\gtest.dir\src\gtest-all.cc.obj.d
-  DYNDEP_MODULE_MAP_FILE = _deps\googletest-build\googletest\CMakeFiles\gtest.dir\src\gtest-all.cc.obj.modmap
-  FLAGS = -g -std=c++20 -Wall -Wshadow -Wconversion -Wundef -DGTEST_HAS_PTHREAD=0 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Winline -Wredundant-decls -Wchar-subscripts
+  FLAGS = -g -std=c++20 -Wall -Wshadow -Wconversion -Wundef -DGTEST_HAS_PTHREAD=0 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Winline -Wredundant-decls -Wchar-subscripts -Wall -Wextra -Wpedantic -Wconversion -Wshadow
   INCLUDES = -I"C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src/googletest/include" -I"C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src/googletest"
   OBJECT_DIR = _deps\googletest-build\googletest\CMakeFiles\gtest.dir
   OBJECT_FILE_DIR = _deps\googletest-build\googletest\CMakeFiles\gtest.dir\src
   TARGET_SUPPORT_DIR = _deps\googletest-build\googletest\CMakeFiles\gtest.dir
-  dyndep = _deps/googletest-build/googletest/CMakeFiles/gtest.dir/CXX.dd
-
-build _deps/googletest-build/googletest/CMakeFiles/gtest.dir/CXX.dd | _deps/googletest-build/googletest/CMakeFiles/gtest.dir/CXXModules.json _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj.modmap: CXX_DYNDEP__gtest_Debug _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj.ddi | C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/build/_deps/googletest-build/googletest/CMakeFiles/gtest.dir/CXXDependInfo.json
 
 
 # =============================================================================
@@ -608,26 +521,14 @@ build lib/libgtest.a: CXX_STATIC_LIBRARY_LINKER__gtest_Debug _deps/googletest-bu
 
 build cmake_object_order_depends_target_gtest_main: phony || cmake_object_order_depends_target_gtest
 
-build _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj.ddi: CXX_SCAN__gtest_main_Debug C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/build/_deps/googletest-src/googletest/src/gtest_main.cc || cmake_object_order_depends_target_gtest_main
-  DEP_FILE = _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir\src\gtest_main.cc.obj.ddi.d
-  DYNDEP_INTERMEDIATE_FILE = _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir\src\gtest_main.cc.obj.ddi
-  FLAGS = -g -std=c++20 -Wall -Wshadow -Wconversion -Wundef -DGTEST_HAS_PTHREAD=0 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Winline -Wredundant-decls -Wchar-subscripts
-  INCLUDES = -isystem "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src/googletest/include" -isystem "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src/googletest"
-  OBJ_FILE = _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir\src\gtest_main.cc.obj
-  PREPROCESSED_OUTPUT_FILE = _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir\src\gtest_main.cc.obj.ddi.i
-
-build _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj: CXX_COMPILER__gtest_main_scanned_Debug C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/build/_deps/googletest-src/googletest/src/gtest_main.cc | _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj.modmap || cmake_object_order_depends_target_gtest_main _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/CXX.dd
+build _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj: CXX_COMPILER__gtest_main_unscanned_Debug C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/build/_deps/googletest-src/googletest/src/gtest_main.cc || cmake_object_order_depends_target_gtest_main
   CONFIG = Debug
   DEP_FILE = _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir\src\gtest_main.cc.obj.d
-  DYNDEP_MODULE_MAP_FILE = _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir\src\gtest_main.cc.obj.modmap
-  FLAGS = -g -std=c++20 -Wall -Wshadow -Wconversion -Wundef -DGTEST_HAS_PTHREAD=0 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Winline -Wredundant-decls -Wchar-subscripts
+  FLAGS = -g -std=c++20 -Wall -Wshadow -Wconversion -Wundef -DGTEST_HAS_PTHREAD=0 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Winline -Wredundant-decls -Wchar-subscripts -Wall -Wextra -Wpedantic -Wconversion -Wshadow
   INCLUDES = -isystem "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src/googletest/include" -isystem "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/_deps/googletest-src/googletest"
   OBJECT_DIR = _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir
   OBJECT_FILE_DIR = _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir\src
   TARGET_SUPPORT_DIR = _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir
-  dyndep = _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/CXX.dd
-
-build _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/CXX.dd | _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/CXXModules.json _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj.modmap: CXX_DYNDEP__gtest_main_Debug _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj.ddi | C$:/Users/Redhawk/Desktop/Google$ Drive/SNHU/CS-499/build/_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/CXXDependInfo.json
 
 
 # =============================================================================

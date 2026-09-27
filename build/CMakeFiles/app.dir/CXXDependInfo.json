@@ -4,72 +4,7 @@
 	"compiler-id" : "Clang",
 	"compiler-simulate-id" : "",
 	"config" : "Debug",
-	"cxx-modules" : 
-	{
-		"CMakeFiles/app.dir/src/Dog.cppm.obj" : 
-		{
-			"bmi-only" : false,
-			"compile-features" : [],
-			"compile-options" : 
-			[
-				"-Wall",
-				"-Wextra",
-				"-Wpedantic",
-				"-Wconversion",
-				"-Wshadow"
-			],
-			"definitions" : [],
-			"destination" : null,
-			"include-directories" : [],
-			"name" : "my_modules",
-			"relative-directory" : "src",
-			"source" : "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/src/Dog.cppm",
-			"type" : "CXX_MODULES",
-			"visibility" : "PUBLIC"
-		},
-		"CMakeFiles/app.dir/src/Monkey.cppm.obj" : 
-		{
-			"bmi-only" : false,
-			"compile-features" : [],
-			"compile-options" : 
-			[
-				"-Wall",
-				"-Wextra",
-				"-Wpedantic",
-				"-Wconversion",
-				"-Wshadow"
-			],
-			"definitions" : [],
-			"destination" : null,
-			"include-directories" : [],
-			"name" : "my_modules",
-			"relative-directory" : "src",
-			"source" : "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/src/Monkey.cppm",
-			"type" : "CXX_MODULES",
-			"visibility" : "PUBLIC"
-		},
-		"CMakeFiles/app.dir/src/RescueAnimal.cppm.obj" : 
-		{
-			"bmi-only" : false,
-			"compile-features" : [],
-			"compile-options" : 
-			[
-				"-Wall",
-				"-Wextra",
-				"-Wpedantic",
-				"-Wconversion",
-				"-Wshadow"
-			],
-			"definitions" : [],
-			"destination" : null,
-			"include-directories" : [],
-			"name" : "my_modules",
-			"relative-directory" : "src",
-			"source" : "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/src/RescueAnimal.cppm",
-			"type" : "CXX_MODULES",
-			"visibility" : "PUBLIC"
-		}
-	},
+	"cxx-modules" : {},
 	"database-info" : null,
 	"dir-cur-bld" : "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build",
 	"dir-cur-src" : "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499",
@@ -77,7 +12,10 @@
 	"dir-top-src" : "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499",
 	"exports" : [],
 	"forward-modules-from-target-dirs" : [],
-	"include-dirs" : [],
+	"include-dirs" : 
+	[
+		"C:\\Users\\Redhawk\\Desktop\\Google Drive\\SNHU\\CS-499\\include"
+	],
 	"language" : "CXX",
 	"linked-target-dirs" : [],
 	"module-dir" : "C:/Users/Redhawk/Desktop/Google Drive/SNHU/CS-499/build/CMakeFiles/app.dir",

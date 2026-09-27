@@ -1,3 +1,0 @@
--x c++-module
--fmodule-output="CMakeFiles/app.dir/monkey.pcm"
--fmodule-file="rescue_animal=CMakeFiles/app.dir/rescue_animal.pcm"

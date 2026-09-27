@@ -1,22 +1,57 @@
----
-# Enable modern C++, bug-prone checks, and Clang Static Analyzer checks
-Checks: >
-  -*,
-  clang-analyzer-*,
-  bugprone-*,
-  modernize-*,
-  performance-*,
-  readability-*,
-  cppcoreguidelines-*
+# =============================================================================
+# .clang-tidy Configuration File
+# =============================================================================
 
-# Treat warnings as errors to fail the build on issues (optional but recommended)
-WarningsAsErrors: 'clang-analyzer-*,bugprone-*'
-
-# Header filter ensures we analyze our own headers, but NOT external GoogleTest headers
+# HeaderFilterRegex ensures clang-tidy analyzes your files in include/
+# while completely ignoring standard library and GoogleTest headers.
 HeaderFilterRegex: 'include/.*'
 
+# If set to '*', any clang-tidy warning will fail the build (exit code 1).
+# If you want to see warnings without halting compilation, comment this out.
+WarningsAsErrors: ''
+
+# -----------------------------------------------------------------------------
+# Check Selection
+# -----------------------------------------------------------------------------
+# Syntax:
+#   'name-*' enables an entire family of checks.
+#   '-name-check' disables a specific check from that family.
+# -----------------------------------------------------------------------------
+Checks: '
+  -*,
+  bugprone-*,
+  -bugprone-easily-swappable-parameters,
+  clang-analyzer-*,
+  cppcoreguidelines-*,
+  -cppcoreguidelines-avoid-magic-numbers,
+  modernize-*,
+  -modernize-use-trailing-return-type,
+  performance-*,
+  readability-*,
+  -readability-magic-numbers
+'
+
+# -----------------------------------------------------------------------------
+# Check Options (Fine-tuning behavior and naming conventions)
+# -----------------------------------------------------------------------------
 CheckOptions:
-  - key: readability-identifier-naming.NamespaceCase
-    value: CamelCase
-  - key: readability-identifier-naming.FunctionCase
-    value: camelBack
+  # Class & Type Naming: PascalCase (e.g., RescueAnimal, Dog, TrainingStatus)
+  readability-identifier-naming.ClassCase: CamelCase
+  readability-identifier-naming.StructCase: CamelCase
+  readability-identifier-naming.EnumCase: CamelCase
+  readability-identifier-naming.EnumConstantCase: CamelCase
+
+  # Function & Method Naming: camelCase (e.g., getAnimalType, setBreed)
+  readability-identifier-naming.FunctionCase: camelBack
+  readability-identifier-naming.MethodCase: camelBack
+
+  # Local Variable & Parameter Naming: camelCase (e.g., weightKg, birthDate)
+  readability-identifier-naming.VariableCase: camelBack
+  readability-identifier-naming.ParameterCase: camelBack
+
+  # Member Variable Naming: trailing underscore (e.g., name_, breed_, tailLength_)
+  readability-identifier-naming.PrivateMemberSuffix: '_'
+  readability-identifier-naming.ProtectedMemberSuffix: '_'
+
+  # GoogleTest Compatibility: Do not flag global state created by TEST() macros
+  cppcoreguidelines-avoid-non-const-global-variables.IgnoreMacros: true

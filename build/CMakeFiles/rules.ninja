@@ -105,7 +105,7 @@ rule CXX_COMPILER__unit_tests_unscanned_Debug
 
 rule CXX_EXECUTABLE_LINKER__unit_tests_Debug
   command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && C:\msys64\ucrt64\bin\clang++.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
-  description = Linking CXX executable $TARGET_FILE; Running Google Test suite post-build...
+  description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
 
 

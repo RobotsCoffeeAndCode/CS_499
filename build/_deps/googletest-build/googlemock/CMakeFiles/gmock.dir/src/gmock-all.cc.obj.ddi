@@ -1,9 +1,0 @@
-{
-  "revision": 0,
-  "rules": [
-    {
-      "primary-output": "_deps\\googletest-build\\googlemock\\CMakeFiles\\gmock.dir\\src\\gmock-all.cc.obj"
-    }
-  ],
-  "version": 1
-}

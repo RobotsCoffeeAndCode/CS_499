@@ -2,12 +2,7 @@
   "revision": 0,
   "rules": [
     {
-      "primary-output": "CMakeFiles\\app.dir\\src\\main.cpp.obj",
-      "requires": [
-        {
-          "logical-name": "dog"
-        }
-      ]
+      "primary-output": "CMakeFiles\\app.dir\\src\\main.cpp.obj"
     }
   ],
   "version": 1
