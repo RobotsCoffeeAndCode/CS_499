@@ -1,0 +1,9 @@
+{
+  "revision": 0,
+  "rules": [
+    {
+      "primary-output": "CMakeFiles\\rescue_utils.dir\\src\\RescueUtils.cpp.obj"
+    }
+  ],
+  "version": 1
+}

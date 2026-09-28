@@ -1,6 +1,12 @@
 [
 {
   "directory": "C:/Users/Redhawk/Desktop/CapstoneProject/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/Redhawk/Desktop/CapstoneProject/include -g -std=c++20 -Wall -Wextra -Wpedantic -Wconversion -Wshadow @CMakeFiles\\rescue_utils.dir\\src\\RescueUtils.cpp.obj.modmap -o CMakeFiles\\rescue_utils.dir\\src\\RescueUtils.cpp.obj -c C:\\Users\\Redhawk\\Desktop\\CapstoneProject\\src\\RescueUtils.cpp",
+  "file": "C:/Users/Redhawk/Desktop/CapstoneProject/src/RescueUtils.cpp",
+  "output": "C:/Users/Redhawk/Desktop/CapstoneProject/build/CMakeFiles/rescue_utils.dir/src/RescueUtils.cpp.obj"
+},
+{
+  "directory": "C:/Users/Redhawk/Desktop/CapstoneProject/build",
   "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/Redhawk/Desktop/CapstoneProject/include -g -std=c++20 -Wall -Wextra -Wpedantic -Wconversion -Wshadow @CMakeFiles\\app.dir\\src\\main.cpp.obj.modmap -o CMakeFiles\\app.dir\\src\\main.cpp.obj -c C:\\Users\\Redhawk\\Desktop\\CapstoneProject\\src\\main.cpp",
   "file": "C:/Users/Redhawk/Desktop/CapstoneProject/src/main.cpp",
   "output": "C:/Users/Redhawk/Desktop/CapstoneProject/build/CMakeFiles/app.dir/src/main.cpp.obj"

@@ -31,19 +31,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 76,
+				"line" : 102,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 101,
+				"line" : 130,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 78,
+				"line" : 104,
 				"parent" : 0
 			},
 			{
@@ -58,7 +58,7 @@
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 19,
+				"line" : 24,
 				"parent" : 0
 			}
 		]
@@ -73,6 +73,10 @@
 		{
 			"backtrace" : 3,
 			"id" : "rescue_animals::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "rescue_utils::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 3,
@@ -149,6 +153,10 @@
 		{
 			"backtrace" : 3,
 			"id" : "gtest_main::@1ea2dfc0605fe3ab2a3f"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "rescue_utils::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "unit_tests::@6890427a1f51a3e7e1df",
@@ -172,6 +180,11 @@
 			},
 			{
 				"backtrace" : 3,
+				"fragment" : "librescue_utils.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
 				"fragment" : "lib\\libgtest_main.a",
 				"role" : "libraries"
 			},
@@ -192,6 +205,10 @@
 		{
 			"backtrace" : 3,
 			"id" : "rescue_animals::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "rescue_utils::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 3,

@@ -30,25 +30,31 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 50,
+				"line" : 75,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 102,
+				"line" : 131,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 51,
+				"line" : 77,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 76,
 				"parent" : 0
 			},
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 19,
+				"line" : 24,
 				"parent" : 0
 			}
 		]
@@ -61,8 +67,12 @@
 	"compileDependencies" : 
 	[
 		{
-			"backtrace" : 3,
+			"backtrace" : 4,
 			"id" : "rescue_animals::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "rescue_utils::@6890427a1f51a3e7e1df"
 		}
 	],
 	"compileGroups" : 
@@ -74,30 +84,30 @@
 					"fragment" : "-g -std=c++20"
 				},
 				{
-					"backtrace" : 4,
+					"backtrace" : 5,
 					"fragment" : "-Wall"
 				},
 				{
-					"backtrace" : 4,
+					"backtrace" : 5,
 					"fragment" : "-Wextra"
 				},
 				{
-					"backtrace" : 4,
+					"backtrace" : 5,
 					"fragment" : "-Wpedantic"
 				},
 				{
-					"backtrace" : 4,
+					"backtrace" : 5,
 					"fragment" : "-Wconversion"
 				},
 				{
-					"backtrace" : 4,
+					"backtrace" : 5,
 					"fragment" : "-Wshadow"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"path" : "C:/Users/Redhawk/Desktop/CapstoneProject/include"
 				}
 			],
@@ -114,6 +124,13 @@
 			[
 				0
 			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "rescue_utils::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "app::@6890427a1f51a3e7e1df",
@@ -136,6 +153,11 @@
 				"role" : "flags"
 			},
 			{
+				"backtrace" : 3,
+				"fragment" : "librescue_utils.a",
+				"role" : "libraries"
+			},
+			{
 				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
 				"role" : "libraries"
 			}
@@ -145,8 +167,12 @@
 	"linkLibraries" : 
 	[
 		{
-			"backtrace" : 3,
+			"backtrace" : 4,
 			"id" : "rescue_animals::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "rescue_utils::@6890427a1f51a3e7e1df"
 		}
 	],
 	"name" : "app",
