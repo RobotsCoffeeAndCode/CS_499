@@ -12,6 +12,7 @@
 #include "Monkey.hpp"
 #include "RescueAnimal.hpp"
 #include "RescueUtils.hpp"
+#include "ContinentGraph.hpp"
 
 // This ensures I don't have to prefix every call from RescueUtils
 // with RescueUtils::
@@ -311,14 +312,64 @@ void printAnimals(
   }
 }
 
+// Generates and returns the bi-directional weighted graph representation
+[[nodiscard]] auto generateContinentGraph() -> graph::ContinentGraph {
+
+  // generate a graph with seven vertices / nodes
+  graph::ContinentGraph graph(7);
+
+  // All dollar amounts below are calculated by multiplying
+  // $0.18 times the miles between the continents geographical
+  // centers rounded to the nearest 100th
+
+  // 0 = Africa
+  // The first line below sets the cost to travel 
+  // from 0 (Africa) to 1 (Antarctica) to $1,100
+  graph.addEdge(0, 1, 1200);
+  graph.addEdge(0, 2, 930);
+  graph.addEdge(0, 3, 1400);
+  graph.addEdge(0, 4, 650);
+
+  // 1 = Antarctica
+  graph.addEdge(1, 3, 800);
+  graph.addEdge(1, 6, 900);
+
+  // 2 = Asia
+  graph.addEdge(2, 3, 1000);
+  graph.addEdge(2, 4, 500);
+  graph.addEdge(2, 5, 1100);
+
+  // 3 = Australia
+  graph.addEdge(3, 5, 1600);
+  graph.addEdge(3, 6, 1700);
+
+  // 4 = Europe
+  graph.addEdge(4, 5, 840);
+
+  // 5 = North America
+  graph.addEdge(5, 6, 930);
+
+  // 6 = South America (already defined)
+
+  return graph;
+
+}
+
 // Entry point of program execution
 int main() {
   std::vector<std::unique_ptr<RescueAnimal>> rescueAnimalList;
 
+  // TODO change this to one seeding function that generates random animals
   initializeDogList(rescueAnimalList);
   initializeMonkeyList(rescueAnimalList);
 
+  // Make the continent graph data structure (see function above)
+  graph::ContinentGraph continentGraph = generateContinentGraph();
+
+
   std::cout << "Welcome to Grazioso Salvare.\n";
+
+  continentGraph.printGraph();
 
   std::string userInput;
 

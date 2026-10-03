@@ -90,13 +90,80 @@ build librescue_utils.a: CXX_STATIC_LIBRARY_LINKER__rescue_utils_Debug CMakeFile
   TARGET_SUPPORT_DIR = CMakeFiles\rescue_utils.dir
 
 # =============================================================================
+# Object build statements for STATIC_LIBRARY target graph
+
+
+#############################################
+# Order-only phony target for graph
+
+build cmake_object_order_depends_target_graph: phony || .
+
+build CMakeFiles/graph.dir/src/ContinentGraph.cpp.obj.ddi: CXX_SCAN__graph_Debug C$:/Users/Redhawk/Desktop/CapstoneProject/src/ContinentGraph.cpp || cmake_object_order_depends_target_graph
+  DEP_FILE = CMakeFiles\graph.dir\src\ContinentGraph.cpp.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = CMakeFiles\graph.dir\src\ContinentGraph.cpp.obj.ddi
+  FLAGS = -g -std=c++20 -Wall -Wextra -Wpedantic -Wconversion -Wshadow
+  INCLUDES = -IC:/Users/Redhawk/Desktop/CapstoneProject/include
+  OBJ_FILE = CMakeFiles\graph.dir\src\ContinentGraph.cpp.obj
+  PREPROCESSED_OUTPUT_FILE = CMakeFiles\graph.dir\src\ContinentGraph.cpp.obj.ddi.i
+
+build CMakeFiles/graph.dir/src/ContinentGraph.cpp.obj: CXX_COMPILER__graph_scanned_Debug C$:/Users/Redhawk/Desktop/CapstoneProject/src/ContinentGraph.cpp | CMakeFiles/graph.dir/src/ContinentGraph.cpp.obj.modmap || cmake_object_order_depends_target_graph CMakeFiles/graph.dir/CXX.dd
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\graph.dir\src\ContinentGraph.cpp.obj.d
+  DYNDEP_MODULE_MAP_FILE = CMakeFiles\graph.dir\src\ContinentGraph.cpp.obj.modmap
+  FLAGS = -g -std=c++20 -Wall -Wextra -Wpedantic -Wconversion -Wshadow
+  INCLUDES = -IC:/Users/Redhawk/Desktop/CapstoneProject/include
+  OBJECT_DIR = CMakeFiles\graph.dir
+  OBJECT_FILE_DIR = CMakeFiles\graph.dir\src
+  TARGET_SUPPORT_DIR = CMakeFiles\graph.dir
+  dyndep = CMakeFiles/graph.dir/CXX.dd
+
+build CMakeFiles/graph.dir/src/Dijkstra.cpp.obj.ddi: CXX_SCAN__graph_Debug C$:/Users/Redhawk/Desktop/CapstoneProject/src/Dijkstra.cpp || cmake_object_order_depends_target_graph
+  DEP_FILE = CMakeFiles\graph.dir\src\Dijkstra.cpp.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = CMakeFiles\graph.dir\src\Dijkstra.cpp.obj.ddi
+  FLAGS = -g -std=c++20 -Wall -Wextra -Wpedantic -Wconversion -Wshadow
+  INCLUDES = -IC:/Users/Redhawk/Desktop/CapstoneProject/include
+  OBJ_FILE = CMakeFiles\graph.dir\src\Dijkstra.cpp.obj
+  PREPROCESSED_OUTPUT_FILE = CMakeFiles\graph.dir\src\Dijkstra.cpp.obj.ddi.i
+
+build CMakeFiles/graph.dir/src/Dijkstra.cpp.obj: CXX_COMPILER__graph_scanned_Debug C$:/Users/Redhawk/Desktop/CapstoneProject/src/Dijkstra.cpp | CMakeFiles/graph.dir/src/Dijkstra.cpp.obj.modmap || cmake_object_order_depends_target_graph CMakeFiles/graph.dir/CXX.dd
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\graph.dir\src\Dijkstra.cpp.obj.d
+  DYNDEP_MODULE_MAP_FILE = CMakeFiles\graph.dir\src\Dijkstra.cpp.obj.modmap
+  FLAGS = -g -std=c++20 -Wall -Wextra -Wpedantic -Wconversion -Wshadow
+  INCLUDES = -IC:/Users/Redhawk/Desktop/CapstoneProject/include
+  OBJECT_DIR = CMakeFiles\graph.dir
+  OBJECT_FILE_DIR = CMakeFiles\graph.dir\src
+  TARGET_SUPPORT_DIR = CMakeFiles\graph.dir
+  dyndep = CMakeFiles/graph.dir/CXX.dd
+
+build CMakeFiles/graph.dir/CXX.dd | CMakeFiles/graph.dir/CXXModules.json CMakeFiles/graph.dir/src/ContinentGraph.cpp.obj.modmap CMakeFiles/graph.dir/src/Dijkstra.cpp.obj.modmap: CXX_DYNDEP__graph_Debug CMakeFiles/graph.dir/src/ContinentGraph.cpp.obj.ddi CMakeFiles/graph.dir/src/Dijkstra.cpp.obj.ddi | C$:/Users/Redhawk/Desktop/CapstoneProject/build/CMakeFiles/graph.dir/CXXDependInfo.json
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target graph
+
+
+#############################################
+# Link the static library libgraph.a
+
+build libgraph.a: CXX_STATIC_LIBRARY_LINKER__graph_Debug CMakeFiles/graph.dir/src/ContinentGraph.cpp.obj CMakeFiles/graph.dir/src/Dijkstra.cpp.obj
+  CONFIG = Debug
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = CMakeFiles\graph.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = libgraph.a
+  TARGET_PDB = graph.a.dbg
+  TARGET_SUPPORT_DIR = CMakeFiles\graph.dir
+
+# =============================================================================
 # Object build statements for EXECUTABLE target app
 
 
 #############################################
 # Order-only phony target for app
 
-build cmake_object_order_depends_target_app: phony || cmake_object_order_depends_target_rescue_utils
+build cmake_object_order_depends_target_app: phony || cmake_object_order_depends_target_graph cmake_object_order_depends_target_rescue_utils
 
 build CMakeFiles/app.dir/src/main.cpp.obj.ddi: CXX_SCAN__app_Debug C$:/Users/Redhawk/Desktop/CapstoneProject/src/main.cpp || cmake_object_order_depends_target_app
   DEP_FILE = CMakeFiles\app.dir\src\main.cpp.obj.ddi.d
@@ -128,11 +195,11 @@ build CMakeFiles/app.dir/CXX.dd | CMakeFiles/app.dir/CXXModules.json CMakeFiles/
 #############################################
 # Link the executable app.exe
 
-build app.exe: CXX_EXECUTABLE_LINKER__app_Debug CMakeFiles/app.dir/src/main.cpp.obj | librescue_utils.a || librescue_utils.a
+build app.exe: CXX_EXECUTABLE_LINKER__app_Debug CMakeFiles/app.dir/src/main.cpp.obj | librescue_utils.a libgraph.a || libgraph.a librescue_utils.a
   CONFIG = Debug
   FLAGS = -g
   LINK_FLAGS = -fuse-ld=lld -static
-  LINK_LIBRARIES = librescue_utils.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = librescue_utils.a  libgraph.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\app.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -148,7 +215,7 @@ build app.exe: CXX_EXECUTABLE_LINKER__app_Debug CMakeFiles/app.dir/src/main.cpp.
 #############################################
 # Order-only phony target for unit_tests
 
-build cmake_object_order_depends_target_unit_tests: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main cmake_object_order_depends_target_rescue_utils
+build cmake_object_order_depends_target_unit_tests: phony || cmake_object_order_depends_target_graph cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main cmake_object_order_depends_target_rescue_utils
 
 build CMakeFiles/unit_tests.dir/tests/test_main.cpp.obj.ddi: CXX_SCAN__unit_tests_Debug C$:/Users/Redhawk/Desktop/CapstoneProject/tests/test_main.cpp || cmake_object_order_depends_target_unit_tests
   DEP_FILE = CMakeFiles\unit_tests.dir\tests\test_main.cpp.obj.ddi.d
@@ -180,11 +247,11 @@ build CMakeFiles/unit_tests.dir/CXX.dd | CMakeFiles/unit_tests.dir/CXXModules.js
 #############################################
 # Link the executable unit_tests.exe
 
-build unit_tests.exe: CXX_EXECUTABLE_LINKER__unit_tests_Debug CMakeFiles/unit_tests.dir/tests/test_main.cpp.obj | librescue_utils.a lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a librescue_utils.a
+build unit_tests.exe: CXX_EXECUTABLE_LINKER__unit_tests_Debug CMakeFiles/unit_tests.dir/tests/test_main.cpp.obj | librescue_utils.a libgraph.a lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a libgraph.a librescue_utils.a
   CONFIG = Debug
   FLAGS = -g
   LINK_FLAGS = -fuse-ld=lld -static
-  LINK_LIBRARIES = librescue_utils.a  lib/libgtest_main.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = librescue_utils.a  libgraph.a  lib/libgtest_main.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\unit_tests.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -280,7 +347,7 @@ build install/strip: phony CMakeFiles/install/strip.util
 #############################################
 # Custom command for CMakeFiles\run_all_tests
 
-build CMakeFiles/run_all_tests | ${cmake_ninja_workdir}CMakeFiles/run_all_tests: CUSTOM_COMMAND unit_tests.exe || lib/libgtest.a lib/libgtest_main.a librescue_utils.a unit_tests.exe
+build CMakeFiles/run_all_tests | ${cmake_ninja_workdir}CMakeFiles/run_all_tests: CUSTOM_COMMAND unit_tests.exe || lib/libgtest.a lib/libgtest_main.a libgraph.a librescue_utils.a unit_tests.exe
   COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Redhawk\Desktop\CapstoneProject\build && C:\Users\Redhawk\Desktop\CapstoneProject\build\unit_tests.exe"
   DESC = Executing test suite on every build...
 
@@ -683,6 +750,8 @@ build gmock: phony lib/libgmock.a
 
 build gmock_main: phony lib/libgmock_main.a
 
+build graph: phony libgraph.a
+
 build gtest: phony lib/libgtest.a
 
 build gtest_main: phony lib/libgtest_main.a
@@ -707,7 +776,7 @@ build unit_tests: phony unit_tests.exe
 #############################################
 # Folder: C:/Users/Redhawk/Desktop/CapstoneProject/build
 
-build all: phony librescue_utils.a app.exe unit_tests.exe run_all_tests _deps/googletest-build/all
+build all: phony librescue_utils.a libgraph.a app.exe unit_tests.exe run_all_tests _deps/googletest-build/all
 
 # =============================================================================
 
