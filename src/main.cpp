@@ -1,5 +1,6 @@
 #include <algorithm>
 #include <array>
+#include <cstddef>
 #include <iomanip>
 #include <iostream>
 #include <memory>
@@ -9,6 +10,7 @@
 #include <vector>
 
 #include "ContinentGraph.hpp"
+#include "Dijkstra.hpp"
 #include "Dog.hpp"
 #include "Monkey.hpp"
 #include "RescueAnimal.hpp"
@@ -34,6 +36,61 @@ void displayMenu() {
   std::cout << "[7] Print a list of all animals\n";
   std::cout << "[q] Quit application\n\n";
   std::cout << "Enter a menu selection\n";
+}
+
+// Takes in a listType (filter parameter) and prints the RescueAnimalServiceList
+// based on its value
+// Side Effect: Prints filtered list output to the console
+void printAnimals(
+    std::string_view listType,
+    const std::vector<std::unique_ptr<RescueAnimal>> &animalList) {
+  std::cout << "|    Name    | Training Status | Service Continent | Reserved "
+               "| Animal Type |\n";
+  std::cout << "---------------------------------------------------------------"
+               "--------------\n";
+
+  auto printRow = [](const RescueAnimal &animal) {
+    std::cout << '|' << std::left << std::setw(12) << animal.getName() << '|'
+              << std::left << std::setw(17) << animal.getTrainingStatus() << '|'
+              << std::left << std::setw(19)
+              << (animal.getInServiceContinent()
+                      ? animal.getInServiceContinent().value()
+                      : "N / A")
+              << '|' << std::left << std::setw(10)
+              << (animal.isReserved() ? "true" : "false") << '|' << std::left
+              << std::setw(13) << animal.getAnimalType() << "|\n";
+  };
+
+  if (listType == "dog") {
+    for (const auto &animal : animalList) {
+      if (animal->getAnimalType() == "Dog") {
+        printRow(*animal);
+      }
+    }
+  } else if (listType == "monkey") {
+    for (const auto &animal : animalList) {
+      if (animal->getAnimalType() == "Monkey") {
+        printRow(*animal);
+      }
+    }
+  } else if (listType == "available") {
+    for (const auto &animal : animalList) {
+      if (!animal->isReserved() &&
+          animal->getTrainingStatus() == "In Service") {
+        printRow(*animal);
+      }
+    }
+  } else if (listType == "reserved") {
+    for (const auto &animal : animalList) {
+      if (animal->isReserved() && animal->getTrainingStatus() == "In Service") {
+        printRow(*animal);
+      }
+    }
+  } else {
+    for (const auto &animal : animalList) {
+      printRow(*animal);
+    }
+  }
 }
 
 // Simple seeding function for dog data in the RescueServiceList
@@ -323,15 +380,16 @@ void reserveAnimal(std::vector<std::unique_ptr<RescueAnimal>> &animalList) {
       continue;
     }
 
-    const std::string country =
-        promptForString("Please input the country you would like service in");
+    const std::string continent =
+        promptForString("Please input the continent you would like service in");
     const std::string_view targetType = isDog ? "Dog" : "Monkey";
 
     RescueAnimal *selected = nullptr;
     for (const auto &animal : animalList) {
       if (animal->getAnimalType() == targetType && !animal->isReserved()) {
-        const auto &inService = animal->getInServiceCountry();
-        if (inService.has_value() && stringCompare(*inService, country)) {
+        const auto &inServiceContinent = animal->getInServiceContinent();
+        if (inServiceContinent.has_value() &&
+            stringCompare(*inServiceContinent, continent)) {
           selected = animal.get();
           break;
         }
@@ -345,55 +403,115 @@ void reserveAnimal(std::vector<std::unique_ptr<RescueAnimal>> &animalList) {
       return;
     }
 
-    std::cout << "We currently have no rescue animals in " << country
+    std::cout << "We currently have no rescue animals in " << continent
               << ", Sorry for the inconvience!\n";
   }
 }
 
-void moveAnimal(std::vector<std::unique_ptr<RescueAnimal>> &animalList) {}
+void moveAnimal(std::vector<std::unique_ptr<RescueAnimal>> &animalList,
+                const graph::ContinentGraph &graph) {
 
-// Takes in a listType (filter parameter) and prints the RescueAnimalServiceList
-// based on its value
-// Side Effect: Prints filtered list output to the console
-void printAnimals(
-    std::string_view listType,
-    const std::vector<std::unique_ptr<RescueAnimal>> &animalList) {
-  std::cout
-      << "|    Name    | Training Status | Continent Acquired | Reserved |\n";
-  std::cout
-      << "--------------------------------------------------------------\n";
+  // Selection of animal
+  // ---------------------------------------------------------------------------
+  std::string name;
+  RescueAnimal *selected = nullptr;
 
-  auto printRow = [](const RescueAnimal &animal) {
-    std::cout << '|' << std::left << std::setw(12) << animal.getName() << '|'
-              << std::left << std::setw(17) << animal.getTrainingStatus() << '|'
-              << std::left << std::setw(18) << animal.getAcquisitionCountry()
-              << '|' << std::left << std::setw(10)
-              << (animal.isReserved() ? "true" : "false") << "|\n";
-  };
+  while (true) {
+    printAnimals("reserved", animalList);
+    name = promptForString(
+        "Please select an active service animal to move by name");
 
-  if (stringCompare(listType, "dog")) {
     for (const auto &animal : animalList) {
-      if (animal->getAnimalType() == "Dog") {
-        printRow(*animal);
+
+      const auto &inServiceContinent = animal->getInServiceContinent();
+
+      // Check if the animal is in-service, currently reserved, with given name
+      if (inServiceContinent.has_value() &&
+          stringCompare(animal->getTrainingStatus(), "In Service") &&
+          animal->isReserved() && stringCompare(animal->getName(), name)) {
+        std::cout << "Got in here!\n";
+        selected = animal.get();
+        break;
       }
     }
-  } else if (stringCompare(listType, "monkey")) {
-    for (const auto &animal : animalList) {
-      if (animal->getAnimalType() == "Monkey") {
-        printRow(*animal);
-      }
+
+    if (selected == nullptr) {
+      std::cout << "Please only select an animal name from the currently "
+                   "in-service and reserved animals.\n";
+      continue;
     }
-  } else if (stringCompare(listType, "available")) {
-    for (const auto &animal : animalList) {
-      if (!animal->isReserved() &&
-          animal->getTrainingStatus() == "In Service") {
-        printRow(*animal);
-      }
+
+    break;
+  }
+
+  // Selection and Validation of desination continent
+  // ---------------------------------------------------------------------------
+  std::string moveDestination;
+
+  while (true) {
+    moveDestination =
+        promptForString("What continent do you want to move this animal to?");
+
+    const auto *match =
+        std::ranges::find_if(kValidContinents, [&](std::string_view valid) {
+          return stringCompare(valid, moveDestination);
+        });
+
+    if (match != kValidContinents.end()) {
+      moveDestination = std::string(*match);
+      break;
     }
-  } else if (stringCompare(listType, "all")) {
-    for (const auto &animal : animalList) {
-      printRow(*animal);
+
+    std::cout << "Please only enter a valid continent, here is a list "
+                 "of valid ones:\n";
+    for (std::string_view validContinents : kValidContinents) {
+      std::cout << '|' << std::left << std::setw(10) << validContinents
+                << "|\n";
     }
+  }
+
+  // Calculate the cost to move the animal and prompt the user for confirmation
+  // ---------------------------------------------------------------------------
+  int cost = 0;
+
+  // Encode the start and destination continents
+  if (selected->getInServiceContinent().has_value()) {
+
+    std::size_t encodedStartingContinent =
+        encodeContinentValue(selected->getInServiceContinent().value());
+    std::size_t encodedDestinationContinent =
+        encodeContinentValue(moveDestination);
+
+    // Run dijkstra's using our encoded continent values
+    auto finalResult = graph::dijkstra(graph, encodedStartingContinent);
+    cost = finalResult.distances[encodedDestinationContinent];
+
+    // Prompt user to make the change given the cost
+    std::cout << "The cost to move " << name << " from "
+              << selected->getInServiceContinent().value() << " to "
+              << moveDestination << " is $" << cost << ".\n";
+  }
+
+  while (true) {
+
+    std::string decision = promptForString(" Confirm move of animal? (Y\\N)");
+    if (stringCompare(decision, "Y")) {
+
+      std::optional<std::string> continent(moveDestination);
+      selected->setInServiceContinent(continent);
+      std::cout << name << " has been moved to " << moveDestination << ".\n";
+
+    } else if (stringCompare(decision, "N")) {
+
+      std::cout << name << " has not been moved.\n";
+
+    } else {
+
+      std::cout << "Please only reply with Y or N.\n";
+      continue;
+    }
+
+    break;
   }
 }
 
@@ -409,7 +527,7 @@ void printAnimals(
 
   // 0 = Africa
   // The first line below sets the cost to travel
-  // from 0 (Africa) to 1 (Antarctica) to $1,100
+  // from 0 (Africa) to 1 (Antarctica) to $1,200
   graph.addEdge(0, 1, 1200);
   graph.addEdge(0, 2, 930);
   graph.addEdge(0, 3, 1400);
@@ -434,7 +552,7 @@ void printAnimals(
   // 5 = North America
   graph.addEdge(5, 6, 930);
 
-  // 6 = South America (already defined)
+  // 6 = South America (already fully defined above)
 
   return graph;
 }
@@ -479,7 +597,7 @@ int main() {
             reserveAnimal(rescueAnimalList);
             break;
           case 3:
-            moveAnimal(rescueAnimalList);
+            moveAnimal(rescueAnimalList, continentGraph);
             break;
           case 4:
             printAnimals("dog", rescueAnimalList);

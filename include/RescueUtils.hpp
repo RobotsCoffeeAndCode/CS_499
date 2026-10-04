@@ -2,6 +2,7 @@
 
 #include <array>
 #include <chrono>
+#include <cstddef>
 #include <optional>
 #include <string>
 #include <string_view>
@@ -56,6 +57,8 @@ inline constexpr std::array<std::string_view, 7> kValidContinents{
 // Validates whether a continent matches the allowed contient values
 [[nodiscard]] auto isValidContinent(std::string_view continent) noexcept 
     -> std::optional<std::string_view>;
+
+auto encodeContinentValue(std::string_view continent) noexcept -> std::size_t;
 
 // Console Input Helpers
 auto promptForString(std::string_view prompt) -> std::string;

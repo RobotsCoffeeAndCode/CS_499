@@ -201,13 +201,13 @@ public:
     acquisitionDate_ = acquisitionDate;
   }
 
-  // Get and Set the origin country of the animal
-  [[nodiscard]] auto getAcquisitionCountry() const noexcept
+  // Get and Set the origin continent of the animal
+  [[nodiscard]] auto getAcquisitionContinent() const noexcept
       -> const std::string & {
     return acquisitionContinent_;
   }
-  void setAcquisitionCountry(std::string country) {
-    acquisitionContinent_ = std::move(country);
+  void setAcquisitionContinent(std::string continent) {
+    acquisitionContinent_ = std::move(continent);
   }
 
   // Get and Set the Training Status of the animal
@@ -222,12 +222,12 @@ public:
   [[nodiscard]] auto isReserved() const noexcept -> bool { return reserved_; }
   void setReserved(bool reserved) noexcept { reserved_ = reserved; }
 
-  // Get and Set the Status of Service and Country of the animal
-  [[nodiscard]] auto getInServiceCountry() const noexcept
+  // Get and Set the Service Continent of the animal
+  [[nodiscard]] auto getInServiceContinent() const noexcept
       -> const std::optional<std::string> & {
     return inServiceContinent_;
   }
-  void setInServiceCountry(std::optional<std::string> country) {
-    inServiceContinent_ = std::move(country);
+  void setInServiceContinent(std::optional<std::string> continent) {
+    inServiceContinent_ = std::move(continent);
   }
 };

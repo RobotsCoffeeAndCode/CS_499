@@ -3,6 +3,7 @@
 #include <algorithm>
 #include <cctype>
 #include <cmath>
+#include <cstddef>
 #include <iostream>
 #include <sstream>
 
@@ -96,6 +97,29 @@ auto isValidContinent(std::string_view continent) noexcept
     return *match;
   }
   return std::nullopt;
+}
+
+auto encodeContinentValue(std::string_view continent) noexcept -> std::size_t {
+
+  std::size_t continentEncoding = 0;
+
+  if(continent == "Africa"){
+    continentEncoding = 0;
+  } else if (continent == "Antarctica"){
+    continentEncoding = 1;
+  }else if (continent == "Asia"){
+    continentEncoding = 2;
+  }else if (continent == "Australia"){
+    continentEncoding = 3;
+  }else if (continent == "Europe"){
+    continentEncoding = 4;
+  }else if (continent == "North America"){
+    continentEncoding = 5;
+  }else if (continent == "South America"){
+    continentEncoding = 6;
+  }
+
+   return continentEncoding;
 }
 
 auto promptForString(std::string_view prompt) -> std::string {
