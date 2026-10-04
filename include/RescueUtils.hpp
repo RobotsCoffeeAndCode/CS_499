@@ -14,6 +14,10 @@ namespace RescueUtils {
 inline constexpr std::array<std::string_view, 6> kValidMonkeySpecies{
     "Capuchin", "Guenon", "Macaque", "Marmoset", "Squirrel", "Tamarin"};
 
+// Valid continent values accepted by the system
+inline constexpr std::array<std::string_view, 7> kValidContinents{
+"Africa","Antarctica","Asia","Australia","Europe","North America","South America"};
+
 // Case-insensitive string comparison
 [[nodiscard]] bool stringCompare(std::string_view lhs,
                                  std::string_view rhs) noexcept;
@@ -47,6 +51,10 @@ inline constexpr std::array<std::string_view, 6> kValidMonkeySpecies{
 
 // Validates whether a species matches the allowed monkey species
 [[nodiscard]] auto isValidMonkeySpecies(std::string_view species) noexcept
+    -> std::optional<std::string_view>;
+
+// Validates whether a continent matches the allowed contient values
+[[nodiscard]] auto isValidContinent(std::string_view continent) noexcept 
     -> std::optional<std::string_view>;
 
 // Console Input Helpers

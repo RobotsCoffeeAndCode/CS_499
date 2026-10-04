@@ -8,11 +8,11 @@
 #include <string_view>
 #include <vector>
 
+#include "ContinentGraph.hpp"
 #include "Dog.hpp"
 #include "Monkey.hpp"
 #include "RescueAnimal.hpp"
 #include "RescueUtils.hpp"
-#include "ContinentGraph.hpp"
 
 // This ensures I don't have to prefix every call from RescueUtils
 // with RescueUtils::
@@ -27,10 +27,11 @@ void displayMenu() {
   std::cout << "\t\t\t\tRescue Animal System Menu\n";
   std::cout << "[1] Intake a new rescue animal\n";
   std::cout << "[2] Reserve an animal\n";
-  std::cout << "[3] Print a list of all dogs\n";
-  std::cout << "[4] Print a list of all monkeys\n";
-  std::cout << "[5] Print a list of all animals that are not reserved\n";
-  std::cout << "[6] Print a list of all animals\n";
+  std::cout << "[3] Move an animal\n";
+  std::cout << "[4] Print a list of all dogs\n";
+  std::cout << "[5] Print a list of all monkeys\n";
+  std::cout << "[6] Print a list of all active animals that are not reserved\n";
+  std::cout << "[7] Print a list of all animals\n";
   std::cout << "[q] Quit application\n\n";
   std::cout << "Enter a menu selection\n";
 }
@@ -39,23 +40,23 @@ void displayMenu() {
 void initializeDogList(std::vector<std::unique_ptr<RescueAnimal>> &animalList) {
   animalList.push_back(std::make_unique<Dog>(
       "Spot", "German Shepherd", Gender::Male, *makeDate(2018, 5, 12), 25.6,
-      *makeDate(2019, 5, 12), "United States", TrainingStatus::Intake, false,
-      "United States"));
+      *makeDate(2019, 5, 12), "North America", TrainingStatus::Intake, false,
+      "North America"));
 
-  animalList.push_back(std::make_unique<Dog>(
-      "Rex", "Great Dane", Gender::Male, *makeDate(2017, 2, 3), 35.2,
-      *makeDate(2020, 2, 3), "United States", TrainingStatus::PhaseI, false,
-      "United States"));
+  animalList.push_back(
+      std::make_unique<Dog>("Rex", "Great Dane", Gender::Male,
+                            *makeDate(2017, 2, 3), 35.2, *makeDate(2020, 2, 3),
+                            "Africa", TrainingStatus::PhaseI, false, "Africa"));
 
   animalList.push_back(std::make_unique<Dog>(
       "Bella", "Chihuahua", Gender::Female, *makeDate(2015, 12, 12), 25.6,
-      *makeDate(2019, 12, 12), "Canada", TrainingStatus::InService, true,
-      "Canada"));
+      *makeDate(2019, 12, 12), "Asia", TrainingStatus::InService, true,
+      "Australia"));
 
   animalList.push_back(std::make_unique<Dog>(
       "Chad", "Chihuahua", Gender::Male, *makeDate(2015, 12, 12), 25.6,
-      *makeDate(2019, 12, 12), "Canada", TrainingStatus::InService, false,
-      "Canada"));
+      *makeDate(2019, 12, 12), "Europe", TrainingStatus::InService, false,
+      "Antarctica"));
 }
 
 // Simple seeding function for monkey data in the RescueServiceList
@@ -63,21 +64,21 @@ void initializeMonkeyList(
     std::vector<std::unique_ptr<RescueAnimal>> &animalList) {
   animalList.push_back(std::make_unique<Monkey>(
       "Rafiki", Gender::Male, *makeDate(2018, 5, 14), 25.6,
-      *makeDate(2019, 5, 14), "United States", TrainingStatus::Intake, false,
-      "United States", 12.0, 180.0, 10.0, "Macaque"));
+      *makeDate(2019, 5, 14), "South America", TrainingStatus::Intake, false,
+      "South America", 12.0, 180.0, 10.0, "Macaque"));
 
   animalList.push_back(std::make_unique<Monkey>(
       "Abu", Gender::Male, *makeDate(2018, 5, 14), 25.6, *makeDate(2019, 5, 14),
-      "United States", TrainingStatus::InService, false, "United States", 12.0,
-      180.0, 10.0, "Marmoset"));
+      "Europe", TrainingStatus::InService, false, "Australia", 12.0, 180.0,
+      10.0, "Marmoset"));
 
   animalList.push_back(std::make_unique<Monkey>(
       "Harambe", Gender::Male, *makeDate(2018, 5, 14), 25.6,
-      *makeDate(2019, 5, 14), "United States", TrainingStatus::InService, true,
-      "United States", 12.0, 180.0, 10.0, "Squirrel"));
+      *makeDate(2019, 5, 14), "North America", TrainingStatus::InService, true,
+      "South America", 12.0, 180.0, 10.0, "Squirrel"));
 }
 
-// Function to add a new dog object to the RescueAnimalServiceList 
+// Function to add a new dog object to the RescueAnimalServiceList
 // Side Effect: Will add a new Dog to the RescueAnimalServiceList
 void intakeNewDog(std::vector<std::unique_ptr<RescueAnimal>> &animalList) {
   const std::string name = promptForString("What is the dog's name?");
@@ -97,24 +98,63 @@ void intakeNewDog(std::vector<std::unique_ptr<RescueAnimal>> &animalList) {
       "What is the weight of the dog?", "Please enter a valid weight.");
   const auto acquisitionDate =
       promptForDate("What is the acquisition date of the dog?");
-  const std::string acquisitionCountry =
-      promptForString("What is the acquisition country of the dog?");
+
+  std::string acquisitionContinent;
+  while (true) {
+    acquisitionContinent =
+        promptForString("What continent was the dog acquired on?");
+    const auto *match =
+        std::ranges::find_if(kValidContinents, [&](std::string_view valid) {
+          return stringCompare(valid, acquisitionContinent);
+        });
+    if (match != kValidContinents.end()) {
+      acquisitionContinent = std::string(*match);
+      break;
+    }
+
+    std::cout << "Please only enter a valid continent, here is a list "
+                 "of valid ones:\n";
+    for (std::string_view validContinents : kValidContinents) {
+      std::cout << '|' << std::left << std::setw(10) << validContinents
+                << "|\n";
+    }
+  }
+
   const TrainingStatus trainingStatus = parseTrainingStatus(
       promptForString("What is the training status of the dog?"));
   const bool reserved = promptForBool(
       "What is the reservation status of the dog? (true or false)");
 
-  const std::string serviceCountry =
-      promptForString("What is the service country of the dog?");
-  std::optional<std::string> inServiceCountry =
-      serviceCountry.empty() || stringCompare(serviceCountry, "none")
-          ? std::nullopt
-          : std::optional<std::string>{serviceCountry};
+  std::string serviceContinent;
+  while (true) {
+    serviceContinent =
+        promptForString("What continent should the dog start service in?");
+    const auto *match =
+        std::ranges::find_if(kValidContinents, [&](std::string_view valid) {
+          return stringCompare(valid, serviceContinent);
+        });
+    if (match != kValidContinents.end()) {
+      serviceContinent = std::string(*match);
+      break;
+    }
 
-  animalList.push_back(
-      std::make_unique<Dog>(name, breed, gender, birthDate, weight,
-                            acquisitionDate, acquisitionCountry, trainingStatus,
-                            reserved, std::move(inServiceCountry)));
+    std::cout << "Please only enter a valid continent, here is a list "
+                 "of valid ones:\n";
+    for (std::string_view validContinents : kValidContinents) {
+      std::cout << '|' << std::left << std::setw(10) << validContinents
+                << "|\n";
+    }
+  }
+
+  std::optional<std::string> inServiceContinent =
+      serviceContinent.empty() || stringCompare(serviceContinent, "none")
+          ? std::nullopt
+          : std::optional<std::string>{serviceContinent};
+
+  animalList.push_back(std::make_unique<Dog>(
+      name, breed, gender, birthDate, weight, acquisitionDate,
+      acquisitionContinent, trainingStatus, reserved,
+      std::move(inServiceContinent)));
 
   std::cout << name << " has been added to the database\n";
 }
@@ -138,19 +178,58 @@ void intakeNewMonkey(std::vector<std::unique_ptr<RescueAnimal>> &animalList) {
       "What is the weight of the monkey?", "Please enter a valid weight.");
   const auto acquisitionDate =
       promptForDate("What is the acquisition date of the monkey?");
-  const std::string acquisitionCountry =
-      promptForString("What is the acquisition country of the monkey?");
+
+  std::string acquisitionContinent;
+  while (true) {
+    acquisitionContinent =
+        promptForString("What continent was the monkey acquired on?");
+    const auto *match =
+        std::ranges::find_if(kValidContinents, [&](std::string_view valid) {
+          return stringCompare(valid, acquisitionContinent);
+        });
+    if (match != kValidContinents.end()) {
+      acquisitionContinent = std::string(*match);
+      break;
+    }
+
+    std::cout << "Please only enter a valid continent, here is a list "
+                 "of valid ones:\n";
+    for (std::string_view validContinents : kValidContinents) {
+      std::cout << '|' << std::left << std::setw(10) << validContinents
+                << "|\n";
+    }
+  }
+
   const TrainingStatus trainingStatus = parseTrainingStatus(
       promptForString("What is the training status of the monkey?"));
   const bool reserved = promptForBool(
       "What is the reservation status of the monkey? (true or false)");
 
-  const std::string serviceCountry =
-      promptForString("What is the service country of the monkey?");
-  std::optional<std::string> inServiceCountry =
-      serviceCountry.empty() || stringCompare(serviceCountry, "none")
+  std::string serviceContinent;
+  while (true) {
+    serviceContinent =
+        promptForString("What continent should the monkey start service in?");
+    const auto *match =
+        std::ranges::find_if(kValidContinents, [&](std::string_view valid) {
+          return stringCompare(valid, serviceContinent);
+        });
+    if (match != kValidContinents.end()) {
+      serviceContinent = std::string(*match);
+      break;
+    }
+
+    std::cout << "Please only enter a valid continent, here is a list "
+                 "of valid ones:\n";
+    for (std::string_view validContinents : kValidContinents) {
+      std::cout << '|' << std::left << std::setw(10) << validContinents
+                << "|\n";
+    }
+  }
+
+  std::optional<std::string> inServiceContinent =
+      serviceContinent.empty() || stringCompare(serviceContinent, "none")
           ? std::nullopt
-          : std::optional<std::string>{serviceCountry};
+          : std::optional<std::string>{serviceContinent};
 
   const double tailLength = promptForPositiveDouble(
       "What is the length of the monkey's tail?",
@@ -182,16 +261,16 @@ void intakeNewMonkey(std::vector<std::unique_ptr<RescueAnimal>> &animalList) {
   }
 
   animalList.push_back(std::make_unique<Monkey>(
-      name, gender, birthDate, weight, acquisitionDate, acquisitionCountry,
-      trainingStatus, reserved, std::move(inServiceCountry), tailLength, height,
-      bodyLength, species));
+      name, gender, birthDate, weight, acquisitionDate, acquisitionContinent,
+      trainingStatus, reserved, std::move(inServiceContinent), tailLength,
+      height, bodyLength, species));
 
   std::cout << name << " has been added to the database\n";
 }
 
 // Asks the user the type of animal and calls its associated intake function
 // Side Effect: Will add a new animal to the RescueAnimalServiceList
-void intakeNewAnimal(std::vector<std::unique_ptr<RescueAnimal>> &animalList){
+void intakeNewAnimal(std::vector<std::unique_ptr<RescueAnimal>> &animalList) {
   while (true) {
     const std::string animalType = promptForString(
         "Please input the animal you would like to reserve (\"dog\" or "
@@ -209,18 +288,22 @@ void intakeNewAnimal(std::vector<std::unique_ptr<RescueAnimal>> &animalList){
                    "available rescue animals at this time\n";
       continue;
     }
-  
-    if(isDog){
+
+    if (isDog) {
       intakeNewDog(animalList);
+      std::cout << "The dog has been added to the service list.\n";
     } else {
       intakeNewMonkey(animalList);
+      std::cout << "The monkey has been added to the service list.\n";
     }
 
+    return;
   }
 }
 
 // Changes an unreserved animals status to reserved
-// Side Effect: Will change the reserved type on an animal in RescueAnimalServiceList
+// Side Effect: Will change the reserved type on an animal in
+// RescueAnimalServiceList
 void reserveAnimal(std::vector<std::unique_ptr<RescueAnimal>> &animalList) {
   while (true) {
     const std::string animalType = promptForString(
@@ -267,14 +350,16 @@ void reserveAnimal(std::vector<std::unique_ptr<RescueAnimal>> &animalList) {
   }
 }
 
-// Takes in a listType (filter parameter) and prints the RescueAnimalServiceList 
+void moveAnimal(std::vector<std::unique_ptr<RescueAnimal>> &animalList) {}
+
+// Takes in a listType (filter parameter) and prints the RescueAnimalServiceList
 // based on its value
 // Side Effect: Prints filtered list output to the console
 void printAnimals(
     std::string_view listType,
     const std::vector<std::unique_ptr<RescueAnimal>> &animalList) {
   std::cout
-      << "|    Name    | Training Status | Country Acquired | Reserved |\n";
+      << "|    Name    | Training Status | Continent Acquired | Reserved |\n";
   std::cout
       << "--------------------------------------------------------------\n";
 
@@ -305,9 +390,9 @@ void printAnimals(
         printRow(*animal);
       }
     }
-  } else if (stringCompare(listType, "all")){
+  } else if (stringCompare(listType, "all")) {
     for (const auto &animal : animalList) {
-        printRow(*animal);
+      printRow(*animal);
     }
   }
 }
@@ -323,7 +408,7 @@ void printAnimals(
   // centers rounded to the nearest 100th
 
   // 0 = Africa
-  // The first line below sets the cost to travel 
+  // The first line below sets the cost to travel
   // from 0 (Africa) to 1 (Antarctica) to $1,100
   graph.addEdge(0, 1, 1200);
   graph.addEdge(0, 2, 930);
@@ -352,7 +437,6 @@ void printAnimals(
   // 6 = South America (already defined)
 
   return graph;
-
 }
 
 // Entry point of program execution
@@ -365,7 +449,6 @@ int main() {
 
   // Make the continent graph data structure (see function above)
   graph::ContinentGraph continentGraph = generateContinentGraph();
-
 
   std::cout << "Welcome to Grazioso Salvare.\n";
 
@@ -387,7 +470,7 @@ int main() {
         std::size_t idx = 0;
         const int selection = std::stoi(userInput, &idx);
 
-        if (idx == userInput.length() && selection >= 1 && selection <= 6) {
+        if (idx == userInput.length() && selection >= 1 && selection <= 7) {
           switch (selection) {
           case 1:
             intakeNewAnimal(rescueAnimalList);
@@ -396,15 +479,18 @@ int main() {
             reserveAnimal(rescueAnimalList);
             break;
           case 3:
-            printAnimals("dog", rescueAnimalList);
+            moveAnimal(rescueAnimalList);
             break;
           case 4:
-            printAnimals("monkey", rescueAnimalList);
+            printAnimals("dog", rescueAnimalList);
             break;
           case 5:
-            printAnimals("available", rescueAnimalList);
+            printAnimals("monkey", rescueAnimalList);
             break;
           case 6:
+            printAnimals("available", rescueAnimalList);
+            break;
+          case 7:
             printAnimals("all", rescueAnimalList);
             break;
           default:
@@ -417,7 +503,7 @@ int main() {
         std::cout
             << "Please only enter an integer or the letter \"q\" or \"Q\"\n";
       } catch (const std::out_of_range &) {
-        std::cout << "The inputted number must be in the range 1-6\n";
+        std::cout << "The inputted number must be in the range 1-7\n";
       }
     }
 

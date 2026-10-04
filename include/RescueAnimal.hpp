@@ -97,7 +97,7 @@ private:
   std::chrono::year_month_day acquisitionDate_{};
 
   // Where the animal was acquired as a string
-  std::string acquisitionCountry_;
+  std::string acquisitionContinent_;
 
   // The TrainingStatus of the animal (see enum above class def)
   TrainingStatus trainingStatus_{TrainingStatus::Intake};
@@ -107,7 +107,7 @@ private:
 
   // Optional to represent 1) if the animal is in service by the bool val
   // 2) what country they are in service in by the data val
-  std::optional<std::string> inServiceCountry_{std::nullopt};
+  std::optional<std::string> inServiceContinent_{std::nullopt};
 
   // Data members and functions only accessible by this class and its children
 protected:
@@ -122,9 +122,9 @@ protected:
                bool reserved, std::optional<std::string> inServiceCountry)
       : name_{std::move(name)}, gender_{gender}, birthDate_{birthDate},
         weightKg_{weightKg}, acquisitionDate_{acquisitionDate},
-        acquisitionCountry_{std::move(acquisitionCountry)},
+        acquisitionContinent_{std::move(acquisitionCountry)},
         trainingStatus_{trainingStatus}, reserved_{reserved},
-        inServiceCountry_{std::move(inServiceCountry)} {}
+        inServiceContinent_{std::move(inServiceCountry)} {}
 
   // Protect copy/move operations to prevent slicing
   // slicing is when a child loses its unique data members due to
@@ -204,10 +204,10 @@ public:
   // Get and Set the origin country of the animal
   [[nodiscard]] auto getAcquisitionCountry() const noexcept
       -> const std::string & {
-    return acquisitionCountry_;
+    return acquisitionContinent_;
   }
   void setAcquisitionCountry(std::string country) {
-    acquisitionCountry_ = std::move(country);
+    acquisitionContinent_ = std::move(country);
   }
 
   // Get and Set the Training Status of the animal
@@ -225,9 +225,9 @@ public:
   // Get and Set the Status of Service and Country of the animal
   [[nodiscard]] auto getInServiceCountry() const noexcept
       -> const std::optional<std::string> & {
-    return inServiceCountry_;
+    return inServiceContinent_;
   }
   void setInServiceCountry(std::optional<std::string> country) {
-    inServiceCountry_ = std::move(country);
+    inServiceContinent_ = std::move(country);
   }
 };

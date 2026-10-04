@@ -23,6 +23,7 @@ auto parseDateString(const std::string &str)
       separator = ' ';
     }
   }
+
   std::istringstream iss{cleaned};
   int year = 0;
   int month = 0;
@@ -73,11 +74,25 @@ auto parseTrainingStatus(std::string_view str) noexcept -> TrainingStatus {
 
 auto isValidMonkeySpecies(std::string_view species) noexcept
     -> std::optional<std::string_view> {
-  const auto *match = std::ranges::find_if(
-      kValidMonkeySpecies,
-      [&](std::string_view valid) { return stringCompare(valid, species); });
+  const auto *match =
+      std::ranges::find_if(kValidMonkeySpecies, [&](std::string_view valid) {
+        return stringCompare(valid, species);
+      });
 
   if (match != kValidMonkeySpecies.end()) {
+    return *match;
+  }
+  return std::nullopt;
+}
+
+auto isValidContinent(std::string_view continent) noexcept
+    -> std::optional<std::string_view> {
+  const auto *match =
+      std::ranges::find_if(kValidContinents, [&](std::string_view valid) {
+        return stringCompare(valid, continent);
+      });
+
+  if (match != kValidContinents.end()) {
     return *match;
   }
   return std::nullopt;
@@ -102,8 +117,8 @@ auto promptForDate(std::string_view prompt) -> std::chrono::year_month_day {
   }
 }
 
-auto promptForPositiveDouble(std::string_view prompt,
-                            std::string_view errorMsg) -> double {
+auto promptForPositiveDouble(std::string_view prompt, std::string_view errorMsg)
+    -> double {
   while (true) {
     std::string str = promptForString(prompt);
     try {
@@ -113,7 +128,7 @@ auto promptForPositiveDouble(std::string_view prompt,
         return std::abs(val);
       }
     } catch (...) {
-        std::cout << "There was a problem in promtForPositiveDouble" << '\n';
+      std::cout << "There was a problem in promtForPositiveDouble" << '\n';
     }
     std::cout << errorMsg << '\n';
   }
