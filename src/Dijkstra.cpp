@@ -25,6 +25,7 @@ DijkstraResult dijkstra(const ContinentGraph &graph, std::size_t startVertex) {
   }
 
   std::vector<int> distances(numOfVertices, DijkstraResult::infinity);
+
   // Predecessor of a node initialized to itself
   std::vector<std::size_t> predecessors(numOfVertices);
   for (std::size_t i = 0; i < numOfVertices; ++i) {
@@ -43,7 +44,7 @@ DijkstraResult dijkstra(const ContinentGraph &graph, std::size_t startVertex) {
     const auto [currentDist, u] = prioq.top();
     prioq.pop();
 
-    // Stale entry check: a shorter path to u was already processed
+    // If a shorter path to u was already found, just continue 
     if (currentDist > distances[u]) {
       continue;
     }

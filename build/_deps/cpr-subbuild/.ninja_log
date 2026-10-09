@@ -1,0 +1,21 @@
+# ninja log v7
+2	92	8132844183519141	cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-mkdir	f9be42a248ce60d2
+2	92	8132844183519141	C:/Users/Redhawk/Desktop/CapstoneProject/build/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-mkdir	f9be42a248ce60d2
+93	1898	8132844201564131	cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-download	3a44e447adfecf0d
+93	1898	8132844201564131	C:/Users/Redhawk/Desktop/CapstoneProject/build/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-download	3a44e447adfecf0d
+1898	2097	8132844201654132	cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-update	295fc6dd31b33e10
+1898	2097	8132844201654132	C:/Users/Redhawk/Desktop/CapstoneProject/build/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-update	295fc6dd31b33e10
+2097	2188	8132844204464194	cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-patch	fd6daa772f16af99
+2097	2188	8132844204464194	C:/Users/Redhawk/Desktop/CapstoneProject/build/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-patch	fd6daa772f16af99
+2188	2280	8132844205387479	cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-configure	aba9cc733af5e10c
+2188	2280	8132844205387479	C:/Users/Redhawk/Desktop/CapstoneProject/build/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-configure	aba9cc733af5e10c
+2280	2369	8132844206277033	cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-build	a4ca02082b7e795a
+2280	2369	8132844206277033	C:/Users/Redhawk/Desktop/CapstoneProject/build/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-build	a4ca02082b7e795a
+2369	2464	8132844207229478	cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-install	d3c54ced33f43858
+2369	2464	8132844207229478	C:/Users/Redhawk/Desktop/CapstoneProject/build/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-install	d3c54ced33f43858
+2464	2554	8132844208125374	cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-test	4f5694100e6472b8
+2464	2554	8132844208125374	C:/Users/Redhawk/Desktop/CapstoneProject/build/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-test	4f5694100e6472b8
+2554	2677	8132844209365948	CMakeFiles/cpr-populate-complete	d7384acf5965fb88
+2554	2677	8132844209365948	cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-done	d7384acf5965fb88
+2554	2677	8132844209365948	C:/Users/Redhawk/Desktop/CapstoneProject/build/_deps/cpr-subbuild/CMakeFiles/cpr-populate-complete	d7384acf5965fb88
+2554	2677	8132844209365948	C:/Users/Redhawk/Desktop/CapstoneProject/build/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-done	d7384acf5965fb88

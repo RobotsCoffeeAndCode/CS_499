@@ -14,7 +14,10 @@
 	"forward-modules-from-target-dirs" : [],
 	"include-dirs" : 
 	[
-		"C:\\Users\\Redhawk\\Desktop\\CapstoneProject\\include"
+		"C:\\Users\\Redhawk\\Desktop\\CapstoneProject\\include",
+		"_deps\\cpr-src\\include",
+		"_deps\\cpr-build\\cpr_generated_includes",
+		"_deps\\nlohmann_json-src\\include"
 	],
 	"language" : "CXX",
 	"linked-target-dirs" : [],

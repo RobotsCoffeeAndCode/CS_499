@@ -15,6 +15,15 @@
 #include "Monkey.hpp"
 #include "RescueAnimal.hpp"
 #include "RescueUtils.hpp"
+#include "SupabaseClient.hpp"
+
+// Credentials for Supabase Database Setup
+const std::string kSupabaseUrl = "https://ldgztfeciviygfaiqwtr.supabase.co";
+const std::string kSupabseAnonKey =
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9."
+    "eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxkZ3p0ZmVjaXZpeWdmYWlxd3RyIiwicm9sZSI6Im"
+    "Fub24iLCJpYXQiOjE3OTE1NzMyODQsImV4cCI6MjEwNzE0OTI4NH0.ZOnUir1_"
+    "t0e8kl9IWJbIMr939hn3YTnr6OayM5RLpFw";
 
 // This ensures I don't have to prefix every call from RescueUtils
 // with RescueUtils::
@@ -24,6 +33,46 @@ using namespace RescueUtils;
 // Core Application Functions
 // ============================================================================
 
+// Login screen and functionality, needed to access rest of application
+bool handleUserLogin(auth::SupabaseClient &client) {
+  while (true) {
+    std::cout << "\n=== Grazioso Salvare Authentication ===\n";
+    std::cout << "[1] Sign In\n";
+    std::cout << "[2] Sign Up (New Account)\n";
+    std::cout << "[q] Exit\n";
+    std::string choice = promptForString("Select an option:");
+
+    if (stringCompare(choice, "q")) {
+      return false;
+    }
+
+    if (choice == "1" || choice == "2") {
+      std::string email = promptForString("Enter email:");
+      const std::string password = promptForString("Enter password:");
+
+      // If the username was "admin" convert it to email representation
+      if (email == "admin") {
+        email = "admin@grazioso.local";
+      }
+
+      if (choice == "1") {
+        if (client.signIn(email, password)) {
+          std::cout << "Login successful. Welcome back!\n";
+          return true;
+        }
+        std::cout << "Invalid credentials. Please try again.\n";
+      } else {
+        if (client.signUp(email, password)) {
+          std::cout << "Registration complete. Please sign in.\n";
+        } else {
+          std::cout << "Sign up failed. Please check password requirements.\n";
+        }
+      }
+    }
+  }
+}
+
+// Displays the text for the main menu
 void displayMenu() {
   std::cout << "\n\n";
   std::cout << "\t\t\t\tRescue Animal System Menu\n";
@@ -559,11 +608,19 @@ void moveAnimal(std::vector<std::unique_ptr<RescueAnimal>> &animalList,
 
 // Entry point of program execution
 int main() {
-  std::vector<std::unique_ptr<RescueAnimal>> rescueAnimalList;
 
-  // TODO change this to one seeding function that generates random animals
-  initializeDogList(rescueAnimalList);
-  initializeMonkeyList(rescueAnimalList);
+  // Must be run before ANY other code will end execution if user never logs in
+  auth::SupabaseClient client(kSupabaseUrl, kSupabseAnonKey);
+  if(!handleUserLogin(client)){
+    std::cout << "Exiting application.\n";
+    return 0;
+  }
+
+  // Pull the authenticated users list of animals from supabase
+  std::vector<std::unique_ptr<RescueAnimal>> rescueAnimalList =
+      client.fetchAnimals();
+  std::cout << "Loaded " << rescueAnimalList.size()
+            << " animal records for this session.\n";
 
   // Make the continent graph data structure (see function above)
   graph::ContinentGraph continentGraph = generateContinentGraph();

@@ -1,0 +1,33 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "GNU",
+	"compiler-id" : "Clang",
+	"compiler-simulate-id" : "",
+	"config" : "Debug",
+	"cxx-modules" : {},
+	"database-info" : null,
+	"dir-cur-bld" : "C:/Users/Redhawk/Desktop/CapstoneProject/build",
+	"dir-cur-src" : "C:/Users/Redhawk/Desktop/CapstoneProject",
+	"dir-top-bld" : "C:/Users/Redhawk/Desktop/CapstoneProject/build",
+	"dir-top-src" : "C:/Users/Redhawk/Desktop/CapstoneProject",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : 
+	[
+		"C:\\Users\\Redhawk\\Desktop\\CapstoneProject\\include",
+		"_deps\\cpr-src\\include",
+		"_deps\\cpr-build\\cpr_generated_includes",
+		"_deps\\nlohmann_json-src\\include"
+	],
+	"language" : "CXX",
+	"linked-target-dirs" : [],
+	"module-dir" : "C:/Users/Redhawk/Desktop/CapstoneProject/build/CMakeFiles/supabase_client.dir",
+	"sources" : 
+	{
+		"CMakeFiles/supabase_client.dir/src/SupabaseClient.cpp.obj" : 
+		{
+			"language" : "CXX",
+			"source" : "C:/Users/Redhawk/Desktop/CapstoneProject/src/SupabaseClient.cpp"
+		}
+	}
+}
