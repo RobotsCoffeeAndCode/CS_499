@@ -17,6 +17,12 @@ struct UserSession {
 };
 
 class SupabaseClient {
+
+private:
+  std::string projectUrl_;
+  std::string anonKey_;
+  std::optional<UserSession> currentSession_;
+
 public:
   SupabaseClient(std::string projectUrl, std::string anonKey);
 
@@ -32,10 +38,6 @@ public:
   [[nodiscard]] std::vector<std::unique_ptr<RescueAnimal>> fetchAnimals() const;
   [[nodiscard]] bool saveAnimal(const RescueAnimal &animal) const;
 
-private:
-  std::string projectUrl_;
-  std::string anonKey_;
-  std::optional<UserSession> currentSession_;
 };
 
 } // namespace auth

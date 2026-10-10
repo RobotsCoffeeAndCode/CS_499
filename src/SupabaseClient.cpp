@@ -22,11 +22,10 @@ bool SupabaseClient::signIn(const std::string &email,
       projectUrl_ + "/auth/v1/token?grant_type=password";
   const json payload = {{"email", email}, {"password", password}};
 
-  const auto response =
-      cpr::Post(cpr::Url{endpoint},
-                cpr::Header{{"apikey", anonKey_},
-                            {"Content-Type", "application/json"}},
-                cpr::Body{payload.dump()});
+  const auto response = cpr::Post(
+      cpr::Url{endpoint},
+      cpr::Header{{"apikey", anonKey_}, {"Authorization", "Bearer " + anonKey_}, {"Content-Type", "application/json"}},
+      cpr::Body{payload.dump()});
 
   if (response.status_code != 200) {
     std::cerr << "Sign-in error (" << response.status_code
@@ -35,11 +34,11 @@ bool SupabaseClient::signIn(const std::string &email,
   }
 
   const auto body = json::parse(response.text);
-  currentSession_ = UserSession{
-      .accessToken = body.at("access_token").get<std::string>(),
-      .refreshToken = body.at("refresh_token").get<std::string>(),
-      .userId = body.at("user").at("id").get<std::string>(),
-      .email = body.at("user").at("email").get<std::string>()};
+  currentSession_ =
+      UserSession{.accessToken = body.at("access_token").get<std::string>(),
+                  .refreshToken = body.at("refresh_token").get<std::string>(),
+                  .userId = body.at("user").at("id").get<std::string>(),
+                  .email = body.at("user").at("email").get<std::string>()};
 
   return true;
 }
@@ -49,11 +48,10 @@ bool SupabaseClient::signUp(const std::string &email,
   const std::string endpoint = projectUrl_ + "/auth/v1/signup";
   const json payload = {{"email", email}, {"password", password}};
 
-  const auto response =
-      cpr::Post(cpr::Url{endpoint},
-                cpr::Header{{"apikey", anonKey_},
-                            {"Content-Type", "application/json"}},
-                cpr::Body{payload.dump()});
+  const auto response = cpr::Post(
+      cpr::Url{endpoint},
+      cpr::Header{{"apikey", anonKey_}, {"Authorization", "Bearer " + anonKey_}, {"Content-Type", "application/json"}},
+      cpr::Body{payload.dump()});
 
   if (response.status_code != 200 && response.status_code != 201) {
     std::cerr << "Sign-up error (" << response.status_code
@@ -84,9 +82,8 @@ SupabaseClient::fetchAnimals() const {
   const std::string endpoint = projectUrl_ + "/rest/v1/rescue_animals?select=*";
   const auto response = cpr::Get(
       cpr::Url{endpoint},
-      cpr::Header{
-          {"apikey", anonKey_},
-          {"Authorization", "Bearer " + currentSession_->accessToken}});
+      cpr::Header{{"apikey", anonKey_},
+                  {"Authorization", "Bearer " + currentSession_->accessToken}});
 
   if (response.status_code != 200) {
     std::cerr << "Fetch error (" << response.status_code
@@ -99,8 +96,8 @@ SupabaseClient::fetchAnimals() const {
     const std::string type = item.value("animal_type", "");
     const std::string name = item.value("name", "");
     const Gender gender = RescueUtils::parseGender(item.value("gender", ""));
-    const auto birth = RescueUtils::parseDateString(
-        item.value("birth_date", "2000-01-01"));
+    const auto birth =
+        RescueUtils::parseDateString(item.value("birth_date", "2000-01-01"));
     const auto acq = RescueUtils::parseDateString(
         item.value("acquisition_date", "2000-01-01"));
     const double weight = item.value("weight_kg", 0.0);
@@ -127,8 +124,8 @@ SupabaseClient::fetchAnimals() const {
       const double body = item.value("body_length", 0.0);
       animals.push_back(std::make_unique<Monkey>(
           name, gender, birth.value_or(std::chrono::year_month_day{}), weight,
-          acq.value_or(std::chrono::year_month_day{}), origin, status,
-          reserved, std::move(serviceContinent), tail, height, body, species));
+          acq.value_or(std::chrono::year_month_day{}), origin, status, reserved,
+          std::move(serviceContinent), tail, height, body, species));
     }
   }
 
@@ -142,19 +139,18 @@ bool SupabaseClient::saveAnimal(const RescueAnimal &animal) const {
 
   const std::string endpoint = projectUrl_ + "/rest/v1/rescue_animals";
 
-  json payload = {
-      {"user_id", currentSession_->userId},
-      {"name", animal.getName()},
-      {"animal_type", std::string(animal.getAnimalType())},
-      {"gender", std::string(animal.getGender())},
-      {"weight_kg", animal.getWeightKg()},
-      {"acquisition_continent", animal.getAcquisitionContinent()},
-      {"training_status", std::string(animal.getTrainingStatus())},
-      {"reserved", animal.isReserved()},
-      {"in_service_continent",
-       animal.getInServiceContinent().has_value()
-           ? json(animal.getInServiceContinent().value())
-           : json(nullptr)}};
+  json payload = {{"user_id", currentSession_->userId},
+                  {"name", animal.getName()},
+                  {"animal_type", std::string(animal.getAnimalType())},
+                  {"gender", std::string(animal.getGender())},
+                  {"weight_kg", animal.getWeightKg()},
+                  {"acquisition_continent", animal.getAcquisitionContinent()},
+                  {"training_status", std::string(animal.getTrainingStatus())},
+                  {"reserved", animal.isReserved()},
+                  {"in_service_continent",
+                   animal.getInServiceContinent().has_value()
+                       ? json(animal.getInServiceContinent().value())
+                       : json(nullptr)}};
 
   if (animal.getAnimalType() == "Dog") {
     const auto &dog = dynamic_cast<const Dog &>(animal);
@@ -169,11 +165,10 @@ bool SupabaseClient::saveAnimal(const RescueAnimal &animal) const {
 
   const auto response = cpr::Post(
       cpr::Url{endpoint},
-      cpr::Header{
-          {"apikey", anonKey_},
-          {"Authorization", "Bearer " + currentSession_->accessToken},
-          {"Content-Type", "application/json"},
-          {"Prefer", "return=minimal"}},
+      cpr::Header{{"apikey", anonKey_},
+                  {"Authorization", "Bearer " + currentSession_->accessToken},
+                  {"Content-Type", "application/json"},
+                  {"Prefer", "return=minimal"}},
       cpr::Body{payload.dump()});
 
   return response.status_code == 201;

@@ -627,8 +627,6 @@ int main() {
 
   std::cout << "Welcome to Grazioso Salvare.\n";
 
-  continentGraph.printGraph();
-
   std::string userInput;
 
   while (true) {
