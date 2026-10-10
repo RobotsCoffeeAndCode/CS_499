@@ -53,7 +53,7 @@ build CMakeFiles/rescue_utils.dir/src/RescueUtils.cpp.obj.ddi: CXX_SCAN__rescue_
   DEFINES = -DCURL_STATICLIB
   DEP_FILE = CMakeFiles\rescue_utils.dir\src\RescueUtils.cpp.obj.ddi.d
   DYNDEP_INTERMEDIATE_FILE = CMakeFiles\rescue_utils.dir\src\RescueUtils.cpp.obj.ddi
-  FLAGS = -g -std=c++20 -Wall -Wextra -Wpedantic -Wconversion -Wshadow
+  FLAGS = -g -std=c++20 -Wall -Wextra -Wshadow
   INCLUDES = -IC:/Users/Redhawk/Desktop/CapstoneProject/include
   OBJ_FILE = CMakeFiles\rescue_utils.dir\src\RescueUtils.cpp.obj
   PREPROCESSED_OUTPUT_FILE = CMakeFiles\rescue_utils.dir\src\RescueUtils.cpp.obj.ddi.i
@@ -64,7 +64,7 @@ build CMakeFiles/rescue_utils.dir/src/RescueUtils.cpp.obj: CXX_COMPILER__rescue_
   DEFINES = -DCURL_STATICLIB
   DEP_FILE = CMakeFiles\rescue_utils.dir\src\RescueUtils.cpp.obj.d
   DYNDEP_MODULE_MAP_FILE = CMakeFiles\rescue_utils.dir\src\RescueUtils.cpp.obj.modmap
-  FLAGS = -g -std=c++20 -Wall -Wextra -Wpedantic -Wconversion -Wshadow
+  FLAGS = -g -std=c++20 -Wall -Wextra -Wshadow
   INCLUDES = -IC:/Users/Redhawk/Desktop/CapstoneProject/include
   OBJECT_DIR = CMakeFiles\rescue_utils.dir
   OBJECT_FILE_DIR = CMakeFiles\rescue_utils.dir\src
@@ -107,7 +107,7 @@ build CMakeFiles/graph.dir/src/ContinentGraph.cpp.obj.ddi: CXX_SCAN__graph_Debug
   DEFINES = -DCURL_STATICLIB
   DEP_FILE = CMakeFiles\graph.dir\src\ContinentGraph.cpp.obj.ddi.d
   DYNDEP_INTERMEDIATE_FILE = CMakeFiles\graph.dir\src\ContinentGraph.cpp.obj.ddi
-  FLAGS = -g -std=c++20 -Wall -Wextra -Wpedantic -Wconversion -Wshadow
+  FLAGS = -g -std=c++20 -Wall -Wextra -Wshadow
   INCLUDES = -IC:/Users/Redhawk/Desktop/CapstoneProject/include
   OBJ_FILE = CMakeFiles\graph.dir\src\ContinentGraph.cpp.obj
   PREPROCESSED_OUTPUT_FILE = CMakeFiles\graph.dir\src\ContinentGraph.cpp.obj.ddi.i
@@ -118,7 +118,7 @@ build CMakeFiles/graph.dir/src/ContinentGraph.cpp.obj: CXX_COMPILER__graph_scann
   DEFINES = -DCURL_STATICLIB
   DEP_FILE = CMakeFiles\graph.dir\src\ContinentGraph.cpp.obj.d
   DYNDEP_MODULE_MAP_FILE = CMakeFiles\graph.dir\src\ContinentGraph.cpp.obj.modmap
-  FLAGS = -g -std=c++20 -Wall -Wextra -Wpedantic -Wconversion -Wshadow
+  FLAGS = -g -std=c++20 -Wall -Wextra -Wshadow
   INCLUDES = -IC:/Users/Redhawk/Desktop/CapstoneProject/include
   OBJECT_DIR = CMakeFiles\graph.dir
   OBJECT_FILE_DIR = CMakeFiles\graph.dir\src
@@ -131,7 +131,7 @@ build CMakeFiles/graph.dir/src/Dijkstra.cpp.obj.ddi: CXX_SCAN__graph_Debug C$:/U
   DEFINES = -DCURL_STATICLIB
   DEP_FILE = CMakeFiles\graph.dir\src\Dijkstra.cpp.obj.ddi.d
   DYNDEP_INTERMEDIATE_FILE = CMakeFiles\graph.dir\src\Dijkstra.cpp.obj.ddi
-  FLAGS = -g -std=c++20 -Wall -Wextra -Wpedantic -Wconversion -Wshadow
+  FLAGS = -g -std=c++20 -Wall -Wextra -Wshadow
   INCLUDES = -IC:/Users/Redhawk/Desktop/CapstoneProject/include
   OBJ_FILE = CMakeFiles\graph.dir\src\Dijkstra.cpp.obj
   PREPROCESSED_OUTPUT_FILE = CMakeFiles\graph.dir\src\Dijkstra.cpp.obj.ddi.i
@@ -142,7 +142,7 @@ build CMakeFiles/graph.dir/src/Dijkstra.cpp.obj: CXX_COMPILER__graph_scanned_Deb
   DEFINES = -DCURL_STATICLIB
   DEP_FILE = CMakeFiles\graph.dir\src\Dijkstra.cpp.obj.d
   DYNDEP_MODULE_MAP_FILE = CMakeFiles\graph.dir\src\Dijkstra.cpp.obj.modmap
-  FLAGS = -g -std=c++20 -Wall -Wextra -Wpedantic -Wconversion -Wshadow
+  FLAGS = -g -std=c++20 -Wall -Wextra -Wshadow
   INCLUDES = -IC:/Users/Redhawk/Desktop/CapstoneProject/include
   OBJECT_DIR = CMakeFiles\graph.dir
   OBJECT_FILE_DIR = CMakeFiles\graph.dir\src
@@ -185,7 +185,7 @@ build CMakeFiles/supabase_client.dir/src/SupabaseClient.cpp.obj.ddi: CXX_SCAN__s
   DEFINES = -DCURL_STATICLIB
   DEP_FILE = CMakeFiles\supabase_client.dir\src\SupabaseClient.cpp.obj.ddi.d
   DYNDEP_INTERMEDIATE_FILE = CMakeFiles\supabase_client.dir\src\SupabaseClient.cpp.obj.ddi
-  FLAGS = -g -std=c++20 -Wall -Wextra -Wpedantic -Wconversion -Wshadow
+  FLAGS = -g -std=c++20 -Wall -Wextra -Wshadow
   INCLUDES = -IC:/Users/Redhawk/Desktop/CapstoneProject/include -IC:/Users/Redhawk/Desktop/CapstoneProject/build/_deps/cpr-src/include -IC:/Users/Redhawk/Desktop/CapstoneProject/build/_deps/cpr-build/cpr_generated_includes -IC:/Users/Redhawk/Desktop/CapstoneProject/build/_deps/nlohmann_json-src/include
   OBJ_FILE = CMakeFiles\supabase_client.dir\src\SupabaseClient.cpp.obj
   PREPROCESSED_OUTPUT_FILE = CMakeFiles\supabase_client.dir\src\SupabaseClient.cpp.obj.ddi.i
@@ -196,7 +196,7 @@ build CMakeFiles/supabase_client.dir/src/SupabaseClient.cpp.obj: CXX_COMPILER__s
   DEFINES = -DCURL_STATICLIB
   DEP_FILE = CMakeFiles\supabase_client.dir\src\SupabaseClient.cpp.obj.d
   DYNDEP_MODULE_MAP_FILE = CMakeFiles\supabase_client.dir\src\SupabaseClient.cpp.obj.modmap
-  FLAGS = -g -std=c++20 -Wall -Wextra -Wpedantic -Wconversion -Wshadow
+  FLAGS = -g -std=c++20 -Wall -Wextra -Wshadow
   INCLUDES = -IC:/Users/Redhawk/Desktop/CapstoneProject/include -IC:/Users/Redhawk/Desktop/CapstoneProject/build/_deps/cpr-src/include -IC:/Users/Redhawk/Desktop/CapstoneProject/build/_deps/cpr-build/cpr_generated_includes -IC:/Users/Redhawk/Desktop/CapstoneProject/build/_deps/nlohmann_json-src/include
   OBJECT_DIR = CMakeFiles\supabase_client.dir
   OBJECT_FILE_DIR = CMakeFiles\supabase_client.dir\src
@@ -239,7 +239,7 @@ build CMakeFiles/app.dir/src/main.cpp.obj.ddi: CXX_SCAN__app_Debug C$:/Users/Red
   DEFINES = -DCURL_STATICLIB
   DEP_FILE = CMakeFiles\app.dir\src\main.cpp.obj.ddi.d
   DYNDEP_INTERMEDIATE_FILE = CMakeFiles\app.dir\src\main.cpp.obj.ddi
-  FLAGS = -g -std=c++20 -Wall -Wextra -Wpedantic -Wconversion -Wshadow
+  FLAGS = -g -std=c++20 -Wall -Wextra -Wshadow
   INCLUDES = -IC:/Users/Redhawk/Desktop/CapstoneProject/include -IC:/Users/Redhawk/Desktop/CapstoneProject/build/_deps/cpr-src/include -IC:/Users/Redhawk/Desktop/CapstoneProject/build/_deps/cpr-build/cpr_generated_includes -IC:/Users/Redhawk/Desktop/CapstoneProject/build/_deps/nlohmann_json-src/include
   OBJ_FILE = CMakeFiles\app.dir\src\main.cpp.obj
   PREPROCESSED_OUTPUT_FILE = CMakeFiles\app.dir\src\main.cpp.obj.ddi.i
@@ -250,7 +250,7 @@ build CMakeFiles/app.dir/src/main.cpp.obj: CXX_COMPILER__app_scanned_Debug C$:/U
   DEFINES = -DCURL_STATICLIB
   DEP_FILE = CMakeFiles\app.dir\src\main.cpp.obj.d
   DYNDEP_MODULE_MAP_FILE = CMakeFiles\app.dir\src\main.cpp.obj.modmap
-  FLAGS = -g -std=c++20 -Wall -Wextra -Wpedantic -Wconversion -Wshadow
+  FLAGS = -g -std=c++20 -Wall -Wextra -Wshadow
   INCLUDES = -IC:/Users/Redhawk/Desktop/CapstoneProject/include -IC:/Users/Redhawk/Desktop/CapstoneProject/build/_deps/cpr-src/include -IC:/Users/Redhawk/Desktop/CapstoneProject/build/_deps/cpr-build/cpr_generated_includes -IC:/Users/Redhawk/Desktop/CapstoneProject/build/_deps/nlohmann_json-src/include
   OBJECT_DIR = CMakeFiles\app.dir
   OBJECT_FILE_DIR = CMakeFiles\app.dir\src
@@ -296,7 +296,7 @@ build CMakeFiles/unit_tests.dir/tests/test_main.cpp.obj.ddi: CXX_SCAN__unit_test
   DEFINES = -DCURL_STATICLIB
   DEP_FILE = CMakeFiles\unit_tests.dir\tests\test_main.cpp.obj.ddi.d
   DYNDEP_INTERMEDIATE_FILE = CMakeFiles\unit_tests.dir\tests\test_main.cpp.obj.ddi
-  FLAGS = -g -std=c++20 -Wall -Wextra -Wpedantic -Wconversion -Wshadow
+  FLAGS = -g -std=c++20 -Wall -Wextra -Wshadow
   INCLUDES = -IC:/Users/Redhawk/Desktop/CapstoneProject/include -IC:/Users/Redhawk/Desktop/CapstoneProject/build/_deps/cpr-src/include -IC:/Users/Redhawk/Desktop/CapstoneProject/build/_deps/cpr-build/cpr_generated_includes -IC:/Users/Redhawk/Desktop/CapstoneProject/build/_deps/nlohmann_json-src/include -isystem C:/Users/Redhawk/Desktop/CapstoneProject/build/_deps/googletest-src/googletest/include -isystem C:/Users/Redhawk/Desktop/CapstoneProject/build/_deps/googletest-src/googletest
   OBJ_FILE = CMakeFiles\unit_tests.dir\tests\test_main.cpp.obj
   PREPROCESSED_OUTPUT_FILE = CMakeFiles\unit_tests.dir\tests\test_main.cpp.obj.ddi.i
@@ -307,7 +307,7 @@ build CMakeFiles/unit_tests.dir/tests/test_main.cpp.obj: CXX_COMPILER__unit_test
   DEFINES = -DCURL_STATICLIB
   DEP_FILE = CMakeFiles\unit_tests.dir\tests\test_main.cpp.obj.d
   DYNDEP_MODULE_MAP_FILE = CMakeFiles\unit_tests.dir\tests\test_main.cpp.obj.modmap
-  FLAGS = -g -std=c++20 -Wall -Wextra -Wpedantic -Wconversion -Wshadow
+  FLAGS = -g -std=c++20 -Wall -Wextra -Wshadow
   INCLUDES = -IC:/Users/Redhawk/Desktop/CapstoneProject/include -IC:/Users/Redhawk/Desktop/CapstoneProject/build/_deps/cpr-src/include -IC:/Users/Redhawk/Desktop/CapstoneProject/build/_deps/cpr-build/cpr_generated_includes -IC:/Users/Redhawk/Desktop/CapstoneProject/build/_deps/nlohmann_json-src/include -isystem C:/Users/Redhawk/Desktop/CapstoneProject/build/_deps/googletest-src/googletest/include -isystem C:/Users/Redhawk/Desktop/CapstoneProject/build/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles\unit_tests.dir
   OBJECT_FILE_DIR = CMakeFiles\unit_tests.dir\tests

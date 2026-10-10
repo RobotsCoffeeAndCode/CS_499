@@ -38,6 +38,11 @@ public:
   [[nodiscard]] std::vector<std::unique_ptr<RescueAnimal>> fetchAnimals() const;
   [[nodiscard]] bool saveAnimal(const RescueAnimal &animal) const;
 
+  [[nodiscard]] bool updateAnimalReservation(const std::string &animalName,
+                                             bool reserved) const;
+  [[nodiscard]] bool
+  updateAnimalLocation(const std::string &animalName,
+                       const std::optional<std::string> &continent) const;
 };
 
 } // namespace auth

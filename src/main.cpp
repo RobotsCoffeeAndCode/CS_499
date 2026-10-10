@@ -18,8 +18,8 @@
 #include "SupabaseClient.hpp"
 
 // Credentials for Supabase Database Setup
-const std::string kSupabaseUrl = "https://ldgztfeciviygfaiqwtr.supabase.co";
-const std::string kSupabseAnonKey =
+const std::string supabaseUrl = "https://ldgztfeciviygfaiqwtr.supabase.co";
+const std::string supabseAnonKey =
     "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9."
     "eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxkZ3p0ZmVjaXZpeWdmYWlxd3RyIiwicm9sZSI6Im"
     "Fub24iLCJpYXQiOjE3OTE1NzMyODQsImV4cCI6MjEwNzE0OTI4NH0.ZOnUir1_"
@@ -186,7 +186,8 @@ void initializeMonkeyList(
 
 // Function to add a new dog object to the RescueAnimalServiceList
 // Side Effect: Will add a new Dog to the RescueAnimalServiceList
-void intakeNewDog(std::vector<std::unique_ptr<RescueAnimal>> &animalList) {
+void intakeNewDog(std::vector<std::unique_ptr<RescueAnimal>> &animalList,
+                  const auth::SupabaseClient &client) {
   const std::string name = promptForString("What is the dog's name?");
   for (const auto &animal : animalList) {
     if (animal->getAnimalType() == "Dog" &&
@@ -257,17 +258,23 @@ void intakeNewDog(std::vector<std::unique_ptr<RescueAnimal>> &animalList) {
           ? std::nullopt
           : std::optional<std::string>{serviceContinent};
 
-  animalList.push_back(std::make_unique<Dog>(
-      name, breed, gender, birthDate, weight, acquisitionDate,
-      acquisitionContinent, trainingStatus, reserved,
-      std::move(inServiceContinent)));
+  auto newDog = std::make_unique<Dog>(name, breed, gender, birthDate, weight,
+                                      acquisitionDate, acquisitionContinent,
+                                      trainingStatus, reserved,
+                                      std::move(inServiceContinent));
 
-  std::cout << name << " has been added to the database\n";
+  if (client.saveAnimal(*newDog)) {
+    std::cout << name << " has been added to the database\n";
+    animalList.push_back(std::move(newDog));
+  } else {
+    std::cout << "Error: Failed to save " << name << " to remote database.\n";
+  }
 }
 
 // Function to add a new monkey object to the RescueAnimalServiceList
 // Side Effect: Will add a new monkey to the RescueAnimalServiceList
-void intakeNewMonkey(std::vector<std::unique_ptr<RescueAnimal>> &animalList) {
+void intakeNewMonkey(std::vector<std::unique_ptr<RescueAnimal>> &animalList,
+                     const auth::SupabaseClient &client) {
   const std::string name = promptForString("What is the monkey's name?");
   for (const auto &animal : animalList) {
     if (animal->getAnimalType() == "Monkey" &&
@@ -366,17 +373,23 @@ void intakeNewMonkey(std::vector<std::unique_ptr<RescueAnimal>> &animalList) {
     }
   }
 
-  animalList.push_back(std::make_unique<Monkey>(
+  auto newMonkey = std::make_unique<Monkey>(
       name, gender, birthDate, weight, acquisitionDate, acquisitionContinent,
       trainingStatus, reserved, std::move(inServiceContinent), tailLength,
-      height, bodyLength, species));
+      height, bodyLength, species);
 
-  std::cout << name << " has been added to the database\n";
+  if (client.saveAnimal(*newMonkey)) {
+    std::cout << name << " has been added to the database\n";
+    animalList.push_back(std::move(newMonkey));
+  } else {
+    std::cout << "Error: Failed to save " << name << " to remote database.\n";
+  }
 }
 
 // Asks the user the type of animal and calls its associated intake function
 // Side Effect: Will add a new animal to the RescueAnimalServiceList
-void intakeNewAnimal(std::vector<std::unique_ptr<RescueAnimal>> &animalList) {
+void intakeNewAnimal(std::vector<std::unique_ptr<RescueAnimal>> &animalList,
+                     const auth::SupabaseClient &client) {
   while (true) {
     const std::string animalType = promptForString(
         "Please input the animal you would like to reserve (\"dog\" or "
@@ -396,10 +409,10 @@ void intakeNewAnimal(std::vector<std::unique_ptr<RescueAnimal>> &animalList) {
     }
 
     if (isDog) {
-      intakeNewDog(animalList);
+      intakeNewDog(animalList, client);
       std::cout << "The dog has been added to the service list.\n";
     } else {
-      intakeNewMonkey(animalList);
+      intakeNewMonkey(animalList, client);
       std::cout << "The monkey has been added to the service list.\n";
     }
 
@@ -410,7 +423,8 @@ void intakeNewAnimal(std::vector<std::unique_ptr<RescueAnimal>> &animalList) {
 // Changes an unreserved animals status to reserved
 // Side Effect: Will change the reserved type on an animal in
 // RescueAnimalServiceList
-void reserveAnimal(std::vector<std::unique_ptr<RescueAnimal>> &animalList) {
+void reserveAnimal(std::vector<std::unique_ptr<RescueAnimal>> &animalList,
+                   const auth::SupabaseClient &client) {
   while (true) {
     const std::string animalType = promptForString(
         "Please input the animal you would like to reserve (\"dog\" or "
@@ -446,9 +460,14 @@ void reserveAnimal(std::vector<std::unique_ptr<RescueAnimal>> &animalList) {
     }
 
     if (selected != nullptr) {
-      selected->setReserved(true);
-      std::cout << "We have changed the reservation status of "
-                << selected->getName() << ".\n";
+      if (client.updateAnimalReservation(selected->getName(), true)) {
+        selected->setReserved(true);
+        std::cout << "We have changed the reservation status of "
+                  << selected->getName() << ".\n";
+      } else {
+        std::cout << "Failed to persist reservation update to the database.\n";
+      }
+
       return;
     }
 
@@ -458,7 +477,8 @@ void reserveAnimal(std::vector<std::unique_ptr<RescueAnimal>> &animalList) {
 }
 
 void moveAnimal(std::vector<std::unique_ptr<RescueAnimal>> &animalList,
-                const graph::ContinentGraph &graph) {
+                const graph::ContinentGraph &graph,
+                const auth::SupabaseClient &client) {
 
   // Selection of animal
   // ---------------------------------------------------------------------------
@@ -478,7 +498,6 @@ void moveAnimal(std::vector<std::unique_ptr<RescueAnimal>> &animalList,
       if (inServiceContinent.has_value() &&
           stringCompare(animal->getTrainingStatus(), "In Service") &&
           animal->isReserved() && stringCompare(animal->getName(), name)) {
-        std::cout << "Got in here!\n";
         selected = animal.get();
         break;
       }
@@ -542,24 +561,23 @@ void moveAnimal(std::vector<std::unique_ptr<RescueAnimal>> &animalList,
   }
 
   while (true) {
-
     std::string decision = promptForString(" Confirm move of animal? (Y\\N)");
     if (stringCompare(decision, "Y")) {
 
       std::optional<std::string> continent(moveDestination);
-      selected->setInServiceContinent(continent);
-      std::cout << name << " has been moved to " << moveDestination << ".\n";
+      if (client.updateAnimalLocation(name, continent)) {
+        selected->setInServiceContinent(continent);
+        std::cout << name << " has been moved to " << moveDestination << ".\n";
+      } else {
+        std::cout << "Failed to persist location update to the database.\n";
+      }
 
     } else if (stringCompare(decision, "N")) {
-
       std::cout << name << " has not been moved.\n";
-
     } else {
-
       std::cout << "Please only reply with Y or N.\n";
       continue;
     }
-
     break;
   }
 }
@@ -610,16 +628,16 @@ void moveAnimal(std::vector<std::unique_ptr<RescueAnimal>> &animalList,
 int main() {
 
   // Must be run before ANY other code will end execution if user never logs in
-  auth::SupabaseClient client(kSupabaseUrl, kSupabseAnonKey);
-  if(!handleUserLogin(client)){
+  auth::SupabaseClient client(supabaseUrl, supabseAnonKey);
+  if (!handleUserLogin(client)) {
     std::cout << "Exiting application.\n";
     return 0;
   }
 
   // Pull the authenticated users list of animals from supabase
-  std::vector<std::unique_ptr<RescueAnimal>> rescueAnimalList =
+  std::vector<std::unique_ptr<RescueAnimal>> rescueAnimalServiceList =
       client.fetchAnimals();
-  std::cout << "Loaded " << rescueAnimalList.size()
+  std::cout << "Loaded " << rescueAnimalServiceList.size()
             << " animal records for this session.\n";
 
   // Make the continent graph data structure (see function above)
@@ -646,31 +664,31 @@ int main() {
         if (idx == userInput.length() && selection >= 1 && selection <= 7) {
           switch (selection) {
           case 1:
-            intakeNewAnimal(rescueAnimalList);
+            intakeNewAnimal(rescueAnimalServiceList, client);
             break;
           case 2:
-            reserveAnimal(rescueAnimalList);
+            reserveAnimal(rescueAnimalServiceList, client);
             break;
           case 3:
-            moveAnimal(rescueAnimalList, continentGraph);
+            moveAnimal(rescueAnimalServiceList, continentGraph, client);
             break;
           case 4:
-            printAnimals("dog", rescueAnimalList);
+            printAnimals("dog", rescueAnimalServiceList);
             break;
           case 5:
-            printAnimals("monkey", rescueAnimalList);
+            printAnimals("monkey", rescueAnimalServiceList);
             break;
           case 6:
-            printAnimals("available", rescueAnimalList);
+            printAnimals("available", rescueAnimalServiceList);
             break;
           case 7:
-            printAnimals("all", rescueAnimalList);
+            printAnimals("all", rescueAnimalServiceList);
             break;
           default:
             break;
           }
         } else {
-          std::cout << "The inputted number must be in the range 1-6\n";
+          std::cout << "The inputted number must be in the range 1-7\n";
         }
       } catch (const std::invalid_argument &) {
         std::cout

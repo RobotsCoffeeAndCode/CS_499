@@ -97,14 +97,6 @@
 				},
 				{
 					"backtrace" : 2,
-					"fragment" : "-Wpedantic"
-				},
-				{
-					"backtrace" : 2,
-					"fragment" : "-Wconversion"
-				},
-				{
-					"backtrace" : 2,
 					"fragment" : "-Wshadow"
 				}
 			],
@@ -153,11 +145,11 @@
 	[
 		{
 			"backtrace" : 2,
-			"id" : "rescue_utils::@6890427a1f51a3e7e1df"
+			"id" : "cpr::@c4b08663df96993e8225"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "cpr::@c4b08663df96993e8225"
+			"id" : "rescue_utils::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "supabase_client::@6890427a1f51a3e7e1df",
