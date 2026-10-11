@@ -1,9 +1,0 @@
-{
-  "revision": 0,
-  "rules": [
-    {
-      "primary-output": "CMakeFiles\\supabase_client.dir\\src\\SupabaseClient.cpp.obj"
-    }
-  ],
-  "version": 1
-}

@@ -6,6 +6,7 @@
 #include <string>
 #include <string_view>
 #include <vector>
+#include <algorithm>
 
 #include "ContinentGraph.hpp"
 #include "Dijkstra.hpp"
@@ -17,8 +18,10 @@
 
 using namespace RescueUtils;
 
-// Default API credentials (can be overridden at runtime via environment variables)
-static const std::string kDefaultUrl = "https://ldgztfeciviygfaiqwtr.supabase.co";
+// Default API credentials (can be overridden at runtime via environment
+// variables)
+static const std::string kDefaultUrl =
+    "https://ldgztfeciviygfaiqwtr.supabase.co";
 static const std::string kDefaultKey =
     "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9."
     "eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxkZ3p0ZmVjaXZpeWdmYWlxd3RyIiwicm9sZSI6Im"
@@ -26,7 +29,8 @@ static const std::string kDefaultKey =
     "t0e8kl9IWJbIMr939hn3YTnr6OayM5RLpFw";
 
 // Reads an environment variable or returns the provided default fallback
-static auto getEnvOrDefault(const char *varName, const std::string &fallback) -> std::string {
+static auto getEnvOrDefault(const char *varName, const std::string &fallback)
+    -> std::string {
   if (const char *val = std::getenv(varName)) {
     return std::string{val};
   }
@@ -91,8 +95,10 @@ void displayMenu() {
 void printAnimals(
     std::string_view listType,
     const std::vector<std::unique_ptr<RescueAnimal>> &animalList) {
-  std::cout << "|    Name    | Training Status | Service Continent | Reserved | Animal Type |\n"
-            << "-----------------------------------------------------------------------------\n";
+  std::cout << "|    Name    | Training Status | Service Continent | Reserved "
+               "| Animal Type |\n"
+            << "---------------------------------------------------------------"
+               "--------------\n";
 
   auto printRow = [](const RescueAnimal &animal) {
     std::cout << '|' << std::left << std::setw(12) << animal.getName() << '|'
@@ -102,20 +108,32 @@ void printAnimals(
                       ? *animal.getInServiceContinent()
                       : "N / A")
               << '|' << std::left << std::setw(10)
-              << (animal.isReserved() ? "true" : "false") << '|'
-              << std::left << std::setw(13) << animal.getAnimalType() << "|\n";
+              << (animal.isReserved() ? "true" : "false") << '|' << std::left
+              << std::setw(13) << animal.getAnimalType() << "|\n";
   };
 
   for (const auto &animal : animalList) {
-    if (listType == "dog" && animal->getAnimalType() != "Dog") continue;
-    if (listType == "monkey" && animal->getAnimalType() != "Monkey") continue;
-    if (listType == "available" && (animal->isReserved() || animal->getTrainingStatus() != "In Service")) continue;
-    if (listType == "reserved" && (!animal->isReserved() || animal->getTrainingStatus() != "In Service")) continue;
+    if (listType == "dog" && animal->getAnimalType() != "Dog") {
+      continue;
+    }
+    if (listType == "monkey" && animal->getAnimalType() != "Monkey") {
+      continue;
+    }
+    if (listType == "available" &&
+        (animal->isReserved() || animal->getTrainingStatus() != "In Service")) {
+      continue;
+    }
+    if (listType == "reserved" &&
+        (!animal->isReserved() ||
+         animal->getTrainingStatus() != "In Service")) {
+      continue;
+    }
     printRow(*animal);
   }
 }
 
-// Temporary struct to bundle common attributes and avoid duplicate code in dog/monkey prompts
+// Temporary struct to bundle common attributes and avoid duplicate code in
+// dog/monkey prompts
 struct AnimalIntakeCommon {
   std::string name;
   Gender gender;
@@ -129,13 +147,15 @@ struct AnimalIntakeCommon {
 };
 
 // Prompts for attributes shared by all animals and verifies uniqueness of name
-static std::optional<AnimalIntakeCommon>
-promptCommonAttributes(std::string_view animalType,
-                       const std::vector<std::unique_ptr<RescueAnimal>> &animalList) {
-  const std::string name = promptForString(std::string{"What is the "} + std::string{animalType} + "'s name?");
+static std::optional<AnimalIntakeCommon> promptCommonAttributes(
+    std::string_view animalType,
+    const std::vector<std::unique_ptr<RescueAnimal>> &animalList) {
+  const std::string name = promptForString(
+      std::string{"What is the "} + std::string{animalType} + "'s name?");
 
   for (const auto &animal : animalList) {
-    if (animal->getAnimalType() == animalType && stringCompare(animal->getName(), name)) {
+    if (animal->getAnimalType() == animalType &&
+        stringCompare(animal->getName(), name)) {
       std::cout << "\n\nThis " << animalType << " is already in our system\n\n";
       return std::nullopt;
     }
@@ -143,24 +163,27 @@ promptCommonAttributes(std::string_view animalType,
 
   Gender gender = parseGender(promptForString("What gender? (Male/Female)"));
   auto birthDate = promptForDate("What is the birth date?");
-  double weight = promptForPositiveDouble("What is the weight in kg?", "Please enter a positive decimal.");
+  double weight = promptForPositiveDouble("What is the weight in kg?",
+                                          "Please enter a positive decimal.");
   auto acqDate = promptForDate("What is the acquisition date?");
-  
-  std::string acqContinent = *promptForContinent("What continent was the animal acquired on?", false);
-  TrainingStatus status = parseTrainingStatus(promptForString("What is the training status?"));
-  bool reserved = promptForBool("Is the animal reserved? (true/false)");
-  auto serviceContinent = promptForContinent("What continent should it start service in? (or 'none')", true);
 
-  return AnimalIntakeCommon{
-      .name = name,
-      .gender = gender,
-      .birthDate = birthDate,
-      .weightKg = weight,
-      .acquisitionDate = acqDate,
-      .acquisitionContinent = std::move(acqContinent),
-      .trainingStatus = status,
-      .reserved = reserved,
-      .inServiceContinent = std::move(serviceContinent)};
+  std::string acqContinent =
+      *promptForContinent("What continent was the animal acquired on?", false);
+  TrainingStatus status =
+      parseTrainingStatus(promptForString("What is the training status?"));
+  bool reserved = promptForBool("Is the animal reserved? (true/false)");
+  auto serviceContinent = promptForContinent(
+      "What continent should it start service in? (or 'none')", true);
+
+  return AnimalIntakeCommon{.name = name,
+                            .gender = gender,
+                            .birthDate = birthDate,
+                            .weightKg = weight,
+                            .acquisitionDate = acqDate,
+                            .acquisitionContinent = std::move(acqContinent),
+                            .trainingStatus = status,
+                            .reserved = reserved,
+                            .inServiceContinent = std::move(serviceContinent)};
 }
 
 // Handles data intake and instantiation for a new Dog
@@ -182,7 +205,8 @@ void intakeNewDog(std::vector<std::unique_ptr<RescueAnimal>> &animalList,
     std::cout << common->name << " has been saved to the database.\n";
     animalList.push_back(std::move(newDog));
   } else {
-    std::cout << "Error: Failed to save " << common->name << " to the database.\n";
+    std::cout << "Error: Failed to save " << common->name
+              << " to the database.\n";
   }
 }
 
@@ -194,9 +218,12 @@ void intakeNewMonkey(std::vector<std::unique_ptr<RescueAnimal>> &animalList,
     return;
   }
 
-  double tailLength = promptForPositiveDouble("What is the monkey's tail length?", "Enter a positive number.");
-  double height = promptForPositiveDouble("What is the monkey's height?", "Enter a positive number.");
-  double bodyLength = promptForPositiveDouble("What is the monkey's body length?", "Enter a positive number.");
+  double tailLength = promptForPositiveDouble(
+      "What is the monkey's tail length?", "Enter a positive number.");
+  double height = promptForPositiveDouble("What is the monkey's height?",
+                                          "Enter a positive number.");
+  double bodyLength = promptForPositiveDouble(
+      "What is the monkey's body length?", "Enter a positive number.");
   std::string species = promptForMonkeySpecies("What species is the monkey?");
 
   auto newMonkey = std::make_unique<Monkey>(
@@ -209,7 +236,8 @@ void intakeNewMonkey(std::vector<std::unique_ptr<RescueAnimal>> &animalList,
     std::cout << common->name << " has been saved to the database.\n";
     animalList.push_back(std::move(newMonkey));
   } else {
-    std::cout << "Error: Failed to save " << common->name << " to the database.\n";
+    std::cout << "Error: Failed to save " << common->name
+              << " to the database.\n";
   }
 }
 
@@ -217,8 +245,9 @@ void intakeNewMonkey(std::vector<std::unique_ptr<RescueAnimal>> &animalList,
 void intakeNewAnimal(std::vector<std::unique_ptr<RescueAnimal>> &animalList,
                      const auth::SupabaseClient &client) {
   while (true) {
-    const std::string choice = promptForString(
-        "Enter animal type to intake (\"dog\" or \"monkey\"), or 'q' to return:");
+    const std::string choice =
+        promptForString("Enter animal type to intake (\"dog\" or \"monkey\"), "
+                        "or 'q' to return:");
 
     if (stringCompare(choice, "q")) {
       return;
@@ -227,7 +256,8 @@ void intakeNewAnimal(std::vector<std::unique_ptr<RescueAnimal>> &animalList,
     if (stringCompare(choice, "dog")) {
       intakeNewDog(animalList, client);
       return;
-    } else if (stringCompare(choice, "monkey")) {
+    }
+    if (stringCompare(choice, "monkey")) {
       intakeNewMonkey(animalList, client);
       return;
     }
@@ -236,58 +266,88 @@ void intakeNewAnimal(std::vector<std::unique_ptr<RescueAnimal>> &animalList,
   }
 }
 
-// Finds an available animal of the requested type in a specific continent and reserves it
-void reserveAnimal(std::vector<std::unique_ptr<RescueAnimal>> &animalList,
-                   const auth::SupabaseClient &client) {
+// Prompts user for animal type; returns "Dog", "Monkey", or nullopt on quit
+static auto promptAnimalType() -> std::optional<std::string_view> {
   while (true) {
-    const std::string animalType = promptForString(
-        "Enter animal type to reserve (\"dog\" or \"monkey\"), or 'q' to return:");
+    const std::string input = promptForString(
+        R"(Enter animal type to reserve ("dog" or "monkey"), or 'q' to return:)");
 
-    if (stringCompare(animalType, "q")) {
-      return;
+    if (stringCompare(input, "q")) {
+      return std::nullopt;
+    }
+    if (stringCompare(input, "dog")) {
+      return "Dog";
+    }
+    if (stringCompare(input, "monkey")) {
+      return "Monkey";
     }
 
-    const bool isDog = stringCompare(animalType, "dog");
-    const bool isMonkey = stringCompare(animalType, "monkey");
-
-    if (!isDog && !isMonkey) {
-      std::cout << "Unsupported species. Please select 'dog' or 'monkey'.\n";
-      continue;
-    }
-
-    const auto continentOpt = promptForContinent("Enter continent of service required:", false);
-    if (!continentOpt.has_value()) {
-      continue;
-    }
-
-    const std::string_view targetType = isDog ? "Dog" : "Monkey";
-    RescueAnimal *selected = nullptr;
-
-    for (const auto &animal : animalList) {
-      if (animal->getAnimalType() == targetType && !animal->isReserved()) {
-        const auto &inServiceContinent = animal->getInServiceContinent();
-        if (inServiceContinent.has_value() && stringCompare(*inServiceContinent, *continentOpt)) {
-          selected = animal.get();
-          break;
-        }
-      }
-    }
-
-    if (selected != nullptr) {
-      if (client.updateAnimalReservation(selected->getName(), true)) {
-        selected->setReserved(true);
-        std::cout << "Reserved " << selected->getName() << " successfully.\n";
-      } else {
-        std::cout << "Failed to persist reservation update to the database.\n";
-      }
-      return;
-    }
-
-    std::cout << "No unreserved " << targetType << " currently available in " << *continentOpt << ".\n";
+    std::cout << "Unsupported species. Please select 'dog' or 'monkey'.\n";
   }
 }
 
-// Calculates shortest travel cost using Dijkstra's algorithm and updates an animal's location
+// Declarative lookup: finds first unreserved animal matching type and continent
+static auto findAvailableAnimal(
+    const std::vector<std::unique_ptr<RescueAnimal>> &animalList,
+    std::string_view targetType, std::string_view continent) -> RescueAnimal * {
+  auto matchesCriteria = [&](const std::unique_ptr<RescueAnimal> &animal) {
+    if (animal->getAnimalType() != targetType || animal->isReserved()) {
+      return false;
+    }
+    const auto &serviceContinent = animal->getInServiceContinent();
+    return serviceContinent.has_value() &&
+           stringCompare(*serviceContinent, continent);
+  };
+
+  const auto iterator = std::ranges::find_if(animalList, matchesCriteria);
+  return (iterator != animalList.end()) ? iterator->get() : nullptr;
+}
+
+// Persists reservation to database and updates local in-memory model
+static auto commitReservation(RescueAnimal &animal,
+                              const auth::SupabaseClient &client) -> bool {
+  if (!client.updateAnimalReservation(animal.getName(), true)) {
+    std::cout << "Failed to persist reservation update to the database.\n";
+    return false;
+  }
+
+  animal.setReserved(true);
+  std::cout << "Reserved " << animal.getName() << " successfully.\n";
+  return true;
+}
+
+// Coordinates reservation workflow with low nesting and flat control flow
+void reserveAnimal(std::vector<std::unique_ptr<RescueAnimal>> &animalList,
+                   const auth::SupabaseClient &client) {
+  while (true) {
+    const auto targetType = promptAnimalType();
+    if (!targetType.has_value()) {
+      return;
+    }
+
+    const auto continent =
+        promptForContinent("Enter continent of service required:", false);
+    if (!continent.has_value()) {
+      continue;
+    }
+
+    RescueAnimal *selected =
+        findAvailableAnimal(animalList, *targetType, *continent);
+
+    if (selected == nullptr) {
+      std::cout << "No unreserved " << *targetType
+                << " currently available in " << *continent << ".\n";
+      continue;
+    }
+
+    commitReservation(*selected, client);
+    return;
+  }
+}
+
+
+// Calculates shortest travel cost using Dijkstra's algorithm and updates an
+// animal's location
 void moveAnimal(std::vector<std::unique_ptr<RescueAnimal>> &animalList,
                 const graph::ContinentGraph &graph,
                 const auth::SupabaseClient &client) {
@@ -296,7 +356,8 @@ void moveAnimal(std::vector<std::unique_ptr<RescueAnimal>> &animalList,
   // 1. Select the animal to move
   while (true) {
     printAnimals("reserved", animalList);
-    std::string name = promptForString("Select an active reserved animal to move by name (or 'q' to cancel):");
+    std::string name = promptForString(
+        "Select an active reserved animal to move by name (or 'q' to cancel):");
     if (stringCompare(name, "q")) {
       return;
     }
@@ -304,8 +365,7 @@ void moveAnimal(std::vector<std::unique_ptr<RescueAnimal>> &animalList,
     for (const auto &animal : animalList) {
       if (animal->getInServiceContinent().has_value() &&
           stringCompare(animal->getTrainingStatus(), "In Service") &&
-          animal->isReserved() && 
-          stringCompare(animal->getName(), name)) {
+          animal->isReserved() && stringCompare(animal->getName(), name)) {
         selected = animal.get();
         break;
       }
@@ -314,11 +374,13 @@ void moveAnimal(std::vector<std::unique_ptr<RescueAnimal>> &animalList,
     if (selected != nullptr) {
       break;
     }
-    std::cout << "Animal not found or not currently active and reserved. Try again.\n";
+    std::cout << "Animal not found or not currently active and reserved. Try "
+                 "again.\n";
   }
 
   // 2. Select destination continent
-  const auto destContinentOpt = promptForContinent("Enter destination continent:", false);
+  const auto destContinentOpt =
+      promptForContinent("Enter destination continent:", false);
   if (!destContinentOpt.has_value()) {
     return;
   }
@@ -338,12 +400,13 @@ void moveAnimal(std::vector<std::unique_ptr<RescueAnimal>> &animalList,
   int cost = pathResult.distances[*endIdx];
 
   if (cost == graph::DijkstraResult::infinity) {
-    std::cout << "No travel route found between " << current << " and " << destination << ".\n";
+    std::cout << "No travel route found between " << current << " and "
+              << destination << ".\n";
     return;
   }
 
-  std::cout << "Calculated transit cost for " << selected->getName() 
-            << " from " << current << " to " << destination << " is $" << cost << ".\n";
+  std::cout << "Calculated transit cost for " << selected->getName() << " from "
+            << current << " to " << destination << " is $" << cost << ".\n";
 
   // 4. Confirm and update location
   while (true) {
@@ -351,12 +414,14 @@ void moveAnimal(std::vector<std::unique_ptr<RescueAnimal>> &animalList,
     if (stringCompare(confirm, "Y")) {
       if (client.updateAnimalLocation(selected->getName(), destination)) {
         selected->setInServiceContinent(destination);
-        std::cout << selected->getName() << " successfully relocated to " << destination << ".\n";
+        std::cout << selected->getName() << " successfully relocated to "
+                  << destination << ".\n";
       } else {
         std::cout << "Failed to persist location update to database.\n";
       }
       break;
-    } else if (stringCompare(confirm, "N")) {
+    }
+    if (stringCompare(confirm, "N")) {
       std::cout << "Relocation aborted.\n";
       break;
     }
@@ -373,8 +438,8 @@ void moveAnimal(std::vector<std::unique_ptr<RescueAnimal>> &animalList,
   graph.addEdge(0, 3, 1400); // Africa <-> Australia
   graph.addEdge(0, 4, 650);  // Africa <-> Europe
 
-  graph.addEdge(1, 3, 800);  // Antarctica <-> Australia
-  graph.addEdge(1, 6, 900);  // Antarctica <-> South America
+  graph.addEdge(1, 3, 800); // Antarctica <-> Australia
+  graph.addEdge(1, 6, 900); // Antarctica <-> South America
 
   graph.addEdge(2, 3, 1000); // Asia <-> Australia
   graph.addEdge(2, 4, 500);  // Asia <-> Europe
@@ -383,17 +448,19 @@ void moveAnimal(std::vector<std::unique_ptr<RescueAnimal>> &animalList,
   graph.addEdge(3, 5, 1600); // Australia <-> North America
   graph.addEdge(3, 6, 1700); // Australia <-> South America
 
-  graph.addEdge(4, 5, 840);  // Europe <-> North America
+  graph.addEdge(4, 5, 840); // Europe <-> North America
 
-  graph.addEdge(5, 6, 930);  // North America <-> South America
+  graph.addEdge(5, 6, 930); // North America <-> South America
 
   return graph;
 }
 
 int main() {
-  // Read database credentials from environment variables (or fall back to defaults)
+  // Read database credentials from environment variables (or fall back to
+  // defaults)
   const std::string supabaseUrl = getEnvOrDefault("SUPABASE_URL", kDefaultUrl);
-  const std::string supabaseAnonKey = getEnvOrDefault("SUPABASE_ANON_KEY", kDefaultKey);
+  const std::string supabaseAnonKey =
+      getEnvOrDefault("SUPABASE_ANON_KEY", kDefaultKey);
 
   auth::SupabaseClient client(supabaseUrl, supabaseAnonKey);
   if (!handleUserLogin(client)) {
@@ -402,8 +469,10 @@ int main() {
   }
 
   // Load existing animals for the authenticated account
-  std::vector<std::unique_ptr<RescueAnimal>> rescueAnimalServiceList = client.fetchAnimals();
-  std::cout << "Loaded " << rescueAnimalServiceList.size() << " records for this session.\n";
+  std::vector<std::unique_ptr<RescueAnimal>> rescueAnimalServiceList =
+      client.fetchAnimals();
+  std::cout << "Loaded " << rescueAnimalServiceList.size()
+            << " records for this session.\n";
 
   const graph::ContinentGraph continentGraph = generateContinentGraph();
   std::cout << "Welcome to Grazioso Salvare.\n";
@@ -427,20 +496,36 @@ int main() {
 
       if (idx == userInput.length() && selection >= 1 && selection <= 7) {
         switch (selection) {
-          case 1: intakeNewAnimal(rescueAnimalServiceList, client); break;
-          case 2: reserveAnimal(rescueAnimalServiceList, client); break;
-          case 3: moveAnimal(rescueAnimalServiceList, continentGraph, client); break;
-          case 4: printAnimals("dog", rescueAnimalServiceList); break;
-          case 5: printAnimals("monkey", rescueAnimalServiceList); break;
-          case 6: printAnimals("available", rescueAnimalServiceList); break;
-          case 7: printAnimals("all", rescueAnimalServiceList); break;
-          default: break;
+        case 1:
+          intakeNewAnimal(rescueAnimalServiceList, client);
+          break;
+        case 2:
+          reserveAnimal(rescueAnimalServiceList, client);
+          break;
+        case 3:
+          moveAnimal(rescueAnimalServiceList, continentGraph, client);
+          break;
+        case 4:
+          printAnimals("dog", rescueAnimalServiceList);
+          break;
+        case 5:
+          printAnimals("monkey", rescueAnimalServiceList);
+          break;
+        case 6:
+          printAnimals("available", rescueAnimalServiceList);
+          break;
+        case 7:
+          printAnimals("all", rescueAnimalServiceList);
+          break;
+        default:
+          break;
         }
       } else {
         std::cout << "Please enter a valid numeric choice from 1 to 7.\n";
       }
     } catch (const std::exception &) {
-      std::cout << "Invalid input. Please enter a choice from 1-7 or 'q' to quit.\n";
+      std::cout
+          << "Invalid input. Please enter a choice from 1-7 or 'q' to quit.\n";
     }
   }
 
