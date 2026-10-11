@@ -3,25 +3,27 @@
 #include <algorithm>
 #include <cctype>
 #include <cmath>
-#include <cstddef>
+#include <iomanip>
 #include <iostream>
 #include <sstream>
 
 namespace RescueUtils {
 
+// Compares two strings character-by-character ignoring case
 bool stringCompare(std::string_view lhs, std::string_view rhs) noexcept {
-  return std::ranges::equal(lhs, rhs, [](char first, char second) {
-    return std::tolower(static_cast<unsigned char>(first)) ==
-           std::tolower(static_cast<unsigned char>(second));
+  return std::ranges::equal(lhs, rhs, [](char a, char b) {
+    return std::tolower(static_cast<unsigned char>(a)) ==
+           std::tolower(static_cast<unsigned char>(b));
   });
 }
 
+// Parses string dates by converting common delimiters into spaces, then extracting integers
 auto parseDateString(const std::string &str)
     -> std::optional<std::chrono::year_month_day> {
   std::string cleaned = str;
-  for (char &separator : cleaned) {
-    if (separator == '-' || separator == '/') {
-      separator = ' ';
+  for (char &ch : cleaned) {
+    if (ch == '-' || ch == '/') {
+      ch = ' ';
     }
   }
 
@@ -35,93 +37,54 @@ auto parseDateString(const std::string &str)
   return std::nullopt;
 }
 
+// Maps user string input to the corresponding Gender enum
 auto parseGender(std::string_view str) noexcept -> Gender {
-  if (stringCompare(str, "male")) {
-    return Gender::Male;
-  }
-  if (stringCompare(str, "female")) {
-    return Gender::Female;
-  }
+  if (stringCompare(str, "male"))   return Gender::Male;
+  if (stringCompare(str, "female")) return Gender::Female;
   return Gender::Unknown;
 }
 
+// Maps user string input to the corresponding TrainingStatus enum
 auto parseTrainingStatus(std::string_view str) noexcept -> TrainingStatus {
-  if (stringCompare(str, "intake")) {
-    return TrainingStatus::Intake;
-  }
-  if (stringCompare(str, "in training") || stringCompare(str, "intraining")) {
-    return TrainingStatus::InTraining;
-  }
-  if (stringCompare(str, "phase i") || stringCompare(str, "phasei") ||
-      stringCompare(str, "phase 1")) {
-    return TrainingStatus::PhaseI;
-  }
-  if (stringCompare(str, "phase ii") || stringCompare(str, "phaseii") ||
-      stringCompare(str, "phase 2")) {
-    return TrainingStatus::PhaseII;
-  }
-  if (stringCompare(str, "phase iii") || stringCompare(str, "phaseiii") ||
-      stringCompare(str, "phase 3")) {
-    return TrainingStatus::PhaseIII;
-  }
-  if (stringCompare(str, "in service") || stringCompare(str, "inservice")) {
-    return TrainingStatus::InService;
-  }
-  if (stringCompare(str, "retired")) {
-    return TrainingStatus::Retired;
-  }
+  if (stringCompare(str, "intake"))      return TrainingStatus::Intake;
+  if (stringCompare(str, "in training") || stringCompare(str, "intraining")) return TrainingStatus::InTraining;
+  if (stringCompare(str, "phase i")     || stringCompare(str, "phase 1"))   return TrainingStatus::PhaseI;
+  if (stringCompare(str, "phase ii")    || stringCompare(str, "phase 2"))   return TrainingStatus::PhaseII;
+  if (stringCompare(str, "phase iii")   || stringCompare(str, "phase 3"))   return TrainingStatus::PhaseIII;
+  if (stringCompare(str, "in service")  || stringCompare(str, "inservice"))  return TrainingStatus::InService;
+  if (stringCompare(str, "retired"))     return TrainingStatus::Retired;
   return TrainingStatus::Intake;
 }
 
-auto isValidMonkeySpecies(std::string_view species) noexcept
-    -> std::optional<std::string_view> {
-  const auto *match =
-      std::ranges::find_if(kValidMonkeySpecies, [&](std::string_view valid) {
-        return stringCompare(valid, species);
-      });
-
-  if (match != kValidMonkeySpecies.end()) {
-    return *match;
-  }
-  return std::nullopt;
-}
-
+// Checks if the given continent name matches our permitted list
 auto isValidContinent(std::string_view continent) noexcept
     -> std::optional<std::string_view> {
-  const auto *match =
-      std::ranges::find_if(kValidContinents, [&](std::string_view valid) {
-        return stringCompare(valid, continent);
-      });
+  const auto it = std::ranges::find_if(kValidContinents, [&](std::string_view c) {
+    return stringCompare(c, continent);
+  });
+  return (it != kValidContinents.end()) ? std::optional{*it} : std::nullopt;
+}
 
-  if (match != kValidContinents.end()) {
-    return *match;
+// Converts a continent name to its corresponding graph node index
+auto encodeContinentValue(std::string_view continent) noexcept
+    -> std::optional<std::size_t> {
+  for (std::size_t i = 0; i < kValidContinents.size(); ++i) {
+    if (stringCompare(kValidContinents[i], continent)) {
+      return i;
+    }
   }
   return std::nullopt;
 }
 
-auto encodeContinentValue(std::string_view continent) noexcept -> std::size_t {
-
-  std::size_t continentEncoding = 0;
-
-  if (continent == "Africa") {
-    continentEncoding = 0;
-  } else if (continent == "Antarctica") {
-    continentEncoding = 1;
-  } else if (continent == "Asia") {
-    continentEncoding = 2;
-  } else if (continent == "Australia") {
-    continentEncoding = 3;
-  } else if (continent == "Europe") {
-    continentEncoding = 4;
-  } else if (continent == "North America") {
-    continentEncoding = 5;
-  } else if (continent == "South America") {
-    continentEncoding = 6;
+// Converts a graph node index back to its human-readable continent name
+auto decodeContinentValue(std::size_t index) noexcept -> std::string_view {
+  if (index < kValidContinents.size()) {
+    return kValidContinents[index];
   }
-
-  return continentEncoding;
+  return "Unknown";
 }
 
+// Displays a prompt and reads a line of text from standard input
 auto promptForString(std::string_view prompt) -> std::string {
   std::cout << prompt << '\n';
   std::string input;
@@ -129,6 +92,7 @@ auto promptForString(std::string_view prompt) -> std::string {
   return input;
 }
 
+// Repeatedly prompts until the user enters a valid YYYY-MM-DD date
 auto promptForDate(std::string_view prompt) -> std::chrono::year_month_day {
   while (true) {
     std::cout << prompt << " (YYYY-MM-DD): ";
@@ -137,10 +101,11 @@ auto promptForDate(std::string_view prompt) -> std::chrono::year_month_day {
     if (auto date = parseDateString(line); date.has_value()) {
       return *date;
     }
-    std::cout << "Invalid date. Please use format YYYY-MM-DD.\n";
+    std::cout << "Invalid date format. Please use YYYY-MM-DD.\n";
   }
 }
 
+// Prompts for a non-negative decimal value and checks for invalid input characters
 auto promptForPositiveDouble(std::string_view prompt, std::string_view errorMsg)
     -> double {
   while (true) {
@@ -148,21 +113,62 @@ auto promptForPositiveDouble(std::string_view prompt, std::string_view errorMsg)
     try {
       std::size_t idx = 0;
       double val = std::stod(str, &idx);
-      if (idx == str.find_last_not_of(" \t\r\n") + 1) {
-        return std::abs(val);
+      // Ensure the whole string was consumed (ignoring trailing whitespace)
+      if (idx == str.find_last_not_of(" \t\r\n") + 1 && val >= 0.0) {
+        return val;
       }
     } catch (...) {
-      std::cout << "There was a problem in promtForPositiveDouble" << '\n';
+      // Input conversion failed, will print errorMsg below
     }
     std::cout << errorMsg << '\n';
   }
 }
 
+// Prompts for a boolean value (accepts true, t, yes, y)
 auto promptForBool(std::string_view prompt) -> bool {
   std::cout << prompt << '\n';
   std::string line;
   std::getline(std::cin, line);
-  return stringCompare(line, "true");
+  return stringCompare(line, "true") || stringCompare(line, "t") ||
+         stringCompare(line, "yes")  || stringCompare(line, "y");
+}
+
+// Prompts for a continent and re-prompts showing valid options until valid input is given
+auto promptForContinent(std::string_view prompt, bool allowNone) -> std::optional<std::string> {
+  while (true) {
+    std::string input = promptForString(prompt);
+    if (allowNone && (input.empty() || stringCompare(input, "none"))) {
+      return std::nullopt;
+    }
+
+    if (auto match = isValidContinent(input); match.has_value()) {
+      return std::string(*match);
+    }
+
+    std::cout << "Invalid continent. Permitted values:\n";
+    for (std::string_view continent : kValidContinents) {
+      std::cout << " - " << continent << '\n';
+    }
+  }
+}
+
+// Prompts for a monkey species and ensures it matches our accepted species list
+auto promptForMonkeySpecies(std::string_view prompt) -> std::string {
+  while (true) {
+    std::string species = promptForString(prompt);
+    const auto it = std::ranges::find_if(kValidMonkeySpecies, [&](std::string_view item) {
+      return stringCompare(item, species);
+    });
+
+    if (it != kValidMonkeySpecies.end()) {
+      return std::string(*it);
+    }
+
+    std::cout << "Invalid species. Permitted species:\n";
+    for (std::string_view valid : kValidMonkeySpecies) {
+      std::cout << " - " << valid << '\n';
+    }
+  }
 }
 
 } // namespace RescueUtils

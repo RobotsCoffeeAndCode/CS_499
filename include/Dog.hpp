@@ -1,13 +1,9 @@
 #pragma once
 
-#include <chrono>
-#include <optional>
-#include <string>
-#include <string_view>
+#include "RescueAnimal.hpp"
 #include <utility>
 
-#include "RescueAnimal.hpp"
-
+// Concrete rescue dog class tracking dog-specific traits like breed
 class Dog final : public RescueAnimal {
 private:
   std::string breed_;
@@ -15,27 +11,31 @@ private:
 public:
   Dog() = default;
 
-  // Full constructor initializing base and derived members
-  Dog(std::string name, std::string breed, Gender gender,
-      std::chrono::year_month_day birthDate, double weightKg,
+  Dog(std::string name,
+      std::string breed,
+      Gender gender,
+      std::chrono::year_month_day birthDate,
+      double weightKg,
       std::chrono::year_month_day acquisitionDate,
-      std::string acquisitionCountry, TrainingStatus trainingStatus,
-      bool reserved, std::optional<std::string> inServiceCountry)
+      std::string acquisitionContinent,
+      TrainingStatus trainingStatus,
+      bool reserved,
+      std::optional<std::string> inServiceContinent)
       : RescueAnimal(std::move(name), gender, birthDate, weightKg,
-                     acquisitionDate, std::move(acquisitionCountry),
-                     trainingStatus, reserved, std::move(inServiceCountry)),
+                     acquisitionDate, std::move(acquisitionContinent),
+                     trainingStatus, reserved, std::move(inServiceContinent)),
         breed_{std::move(breed)} {}
 
-  // Implement the pure virtual method
-  [[nodiscard]] auto getAnimalType() const noexcept
-      -> std::string_view override {
+  // Identifies this animal class as "Dog"
+  [[nodiscard]] auto getAnimalType() const noexcept -> std::string_view override {
     return "Dog";
   }
 
-  // Getters and Setters
-  [[nodiscard]] auto getBreed() const noexcept -> const std::string & {
-    return breed_;
+  // Serializes dog-specific properties for database storage
+  void serializeSubclassFields(nlohmann::json &payload) const override {
+    payload["breed"] = breed_;
   }
 
+  [[nodiscard]] auto getBreed() const noexcept -> const std::string & { return breed_; }
   void setBreed(std::string breed) { breed_ = std::move(breed); }
 };
