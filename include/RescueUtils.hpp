@@ -11,7 +11,8 @@
 
 namespace RescueUtils {
 
-// Single source of truth for continent names and their stable integer graph indices
+// Single instance of continent names and their stable integer graph indices
+// (before I had multiple, bad DRY practice)
 inline constexpr std::array<std::string_view, 7> kValidContinents{
     "Africa",        // 0
     "Antarctica",    // 1
@@ -30,7 +31,7 @@ inline constexpr std::array<std::string_view, 6> kValidMonkeySpecies{
 // Case-insensitive string comparison helper
 [[nodiscard]] bool stringCompare(std::string_view lhs, std::string_view rhs) noexcept;
 
-// Constructs and validates a standard calendar date
+// Makes a standard calandar date (chrono::year_month_day type)
 [[nodiscard]] constexpr auto makeDate(int year, int month, int day) noexcept
     -> std::optional<std::chrono::year_month_day> {
   if (month < 1 || month > 12 || day < 1 || day > 31) {
@@ -54,7 +55,8 @@ inline constexpr std::array<std::string_view, 6> kValidMonkeySpecies{
 // Parses string representation into a TrainingStatus enum
 [[nodiscard]] auto parseTrainingStatus(std::string_view str) noexcept -> TrainingStatus;
 
-// Continent validation and bidirectional index conversion
+// Continent validation and encoding / decoding between string and number 
+// representation (see kValidContinents above) 
 [[nodiscard]] auto isValidContinent(std::string_view continent) noexcept -> std::optional<std::string_view>;
 [[nodiscard]] auto encodeContinentValue(std::string_view continent) noexcept -> std::optional<std::size_t>;
 [[nodiscard]] auto decodeContinentValue(std::size_t index) noexcept -> std::string_view;

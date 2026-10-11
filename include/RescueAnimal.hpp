@@ -101,7 +101,7 @@ public:
   [[nodiscard]] virtual auto getAnimalType() const noexcept -> std::string_view = 0;
 
   // Derived classes implement this to write their unique fields into the JSON
-  // payload. This removes the need for dynamic_cast downcasts in database functions.
+  // payload. This removes dynamic casts in database storage functions.
   virtual void serializeSubclassFields(nlohmann::json &payload) const = 0;
 
   // --- Getters and Setters ---
@@ -133,6 +133,7 @@ public:
   [[nodiscard]] auto getInServiceContinent() const noexcept -> const std::optional<std::string> & {
     return inServiceContinent_;
   }
+
   void setInServiceContinent(std::optional<std::string> continent) {
     inServiceContinent_ = std::move(continent);
   }

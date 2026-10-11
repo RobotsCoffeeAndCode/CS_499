@@ -7,9 +7,11 @@
 
 namespace graph {
 
+// Constructor takes in the number of nodes of graph
 ContinentGraph::ContinentGraph(std::size_t vertices)
     : numVertices_(vertices), adjList_(vertices) {}
 
+// Add an edge between start and end vertexs, with input weight
 void ContinentGraph::addEdge(VertexId start, VertexId end, int weight) {
   if (start >= numVertices_ || end >= numVertices_) {
     throw std::out_of_range("Vertex index out of bounds.");
@@ -23,6 +25,7 @@ void ContinentGraph::addEdge(VertexId start, VertexId end, int weight) {
   }
 }
 
+// Returns a single list of neighboring nodes from given vertex
 const std::vector<Edge> &
 ContinentGraph::getNeighbors(VertexId currentVertex) const {
   if (currentVertex >= numVertices_) {
@@ -31,6 +34,7 @@ ContinentGraph::getNeighbors(VertexId currentVertex) const {
   return adjList_[currentVertex];
 }
 
+// Gets the number of vertices of the graph
 std::size_t ContinentGraph::getVertexCount() const noexcept {
   return numVertices_;
 }

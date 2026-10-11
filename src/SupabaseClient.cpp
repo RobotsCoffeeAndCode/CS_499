@@ -14,6 +14,7 @@
 
 namespace auth {
 
+// Uses nlohmann for parsing and structuring json in HTTP req/res
 using json = nlohmann::json;
 
 // Helper to format chrono dates into database standard "YYYY-MM-DD"
@@ -182,7 +183,8 @@ bool SupabaseClient::saveAnimal(const RescueAnimal &animal) const {
            ? json(*animal.getInServiceContinent())
            : json(nullptr)}};
 
-  // Polymorphic delegation: animal appends its own subclass-specific attributes
+  // Polymorphism, animal appends its own subclass-specific fields
+  // no need to add a switch on each animal sub-class!
   animal.serializeSubclassFields(payload);
 
   const auto response = cpr::Post(

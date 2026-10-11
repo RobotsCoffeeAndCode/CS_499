@@ -18,7 +18,7 @@ struct UserSession {
   std::string email;
 };
 
-// Manages remote REST calls to Supabase for authentication and animal record persistence
+// Manages remote REST calls to Supabase API for authentication and animal record persistence
 class SupabaseClient {
 private:
   std::string projectUrl_;
@@ -28,17 +28,26 @@ private:
 public:
   SupabaseClient(std::string projectUrl, std::string anonKey);
 
+  // Signs a user into the supabase db instance
   [[nodiscard]] bool signIn(const std::string &email, const std::string &password);
+
+  // Registers a user using an email (MUST BE IN EMAIL FORMAT XXX@XXX.XXX etc.)
+  // and a given password into the supabase db instance
   [[nodiscard]] bool signUp(const std::string &email, const std::string &password);
+
+  // Signs a user out (changes session status) 
   void signOut() noexcept;
 
+  // Checks if a user is authenticated (error handling)
   [[nodiscard]] bool isAuthenticated() const noexcept;
+
+  // Returns the clients session status
   [[nodiscard]] const std::optional<UserSession> &getSession() const noexcept;
 
   // Fetches animal records created by the authenticated user
   [[nodiscard]] std::vector<std::unique_ptr<RescueAnimal>> fetchAnimals() const;
 
-  // Persists a newly added animal record to the database
+  // Adds (saves) an animal record to the database
   [[nodiscard]] bool saveAnimal(const RescueAnimal &animal) const;
 
   // Updates reservation flag in the database for a named animal

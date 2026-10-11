@@ -23,7 +23,7 @@ struct DijkstraResult {
   getPathTo(std::size_t target) const;
 };
 
-// Computes single-source shortest paths on the continent graph
+// Computes single-source shortest paths (used on the continent graph in main)
 [[nodiscard]] DijkstraResult
 dijkstra(const ContinentGraph &graph, std::size_t startVertex);
 

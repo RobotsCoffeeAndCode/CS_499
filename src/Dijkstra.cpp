@@ -11,11 +11,15 @@ struct QueueNode {
   int distance;
   std::size_t vertex;
 
+  // Overload the > operator for node comparison
   bool operator>(const QueueNode &other) const noexcept {
     return distance > other.distance;
   }
+
 };
 
+// Implementation of Dijkstra's Algorithm, takes a graph and source vertex
+// returns a DijkstraResult with costs to navigate to other nodes from source
 DijkstraResult dijkstra(const ContinentGraph &graph, std::size_t startVertex) {
   const std::size_t vertexCount = graph.getVertexCount();
   if (startVertex >= vertexCount) {
