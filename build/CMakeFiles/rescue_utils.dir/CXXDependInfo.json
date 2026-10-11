@@ -14,7 +14,8 @@
 	"forward-modules-from-target-dirs" : [],
 	"include-dirs" : 
 	[
-		"C:\\Users\\Redhawk\\Desktop\\CapstoneProject\\include"
+		"C:\\Users\\Redhawk\\Desktop\\CapstoneProject\\include",
+		"_deps\\nlohmann_json-src\\include"
 	],
 	"language" : "CXX",
 	"linked-target-dirs" : [],

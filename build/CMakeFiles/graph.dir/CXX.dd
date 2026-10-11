@@ -1,0 +1,5 @@
+ninja_dyndep_version = 1.0
+build CMakeFiles/graph.dir/src/ContinentGraph.cpp.obj: dyndep
+
+build CMakeFiles/graph.dir/src/Dijkstra.cpp.obj: dyndep
+

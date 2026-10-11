@@ -15,9 +15,9 @@
 	"include-dirs" : 
 	[
 		"C:\\Users\\Redhawk\\Desktop\\CapstoneProject\\include",
+		"_deps\\nlohmann_json-src\\include",
 		"_deps\\cpr-src\\include",
 		"_deps\\cpr-build\\cpr_generated_includes",
-		"_deps\\nlohmann_json-src\\include",
 		"_deps\\googletest-src\\googletest\\include",
 		"_deps\\googletest-src\\googletest"
 	],

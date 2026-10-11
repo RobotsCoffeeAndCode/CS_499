@@ -18,8 +18,7 @@
 
 using namespace RescueUtils;
 
-// Default API credentials (can be overridden at runtime via environment
-// variables)
+// Default API credentials (can be overridden via environment variables)
 static const std::string kDefaultUrl =
     "https://ldgztfeciviygfaiqwtr.supabase.co";
 static const std::string kDefaultKey =
@@ -456,11 +455,10 @@ void moveAnimal(std::vector<std::unique_ptr<RescueAnimal>> &animalList,
 }
 
 int main() {
-  // Read database credentials from environment variables (or fall back to
-  // defaults)
-  const std::string supabaseUrl = getEnvOrDefault("SUPABASE_URL", kDefaultUrl);
+  // Read database credentials from env variables (or fallback to defaults)
+  const std::string supabaseUrl = getEnvOrDefault("DB_SUPABASE_URL", kDefaultUrl);
   const std::string supabaseAnonKey =
-      getEnvOrDefault("SUPABASE_ANON_KEY", kDefaultKey);
+      getEnvOrDefault("DB_SUPABASE_PUB_KEY", kDefaultKey);
 
   auth::SupabaseClient client(supabaseUrl, supabaseAnonKey);
   if (!handleUserLogin(client)) {
