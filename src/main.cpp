@@ -1,3 +1,4 @@
+#include <algorithm>
 #include <cstdlib>
 #include <iomanip>
 #include <iostream>
@@ -6,7 +7,7 @@
 #include <string>
 #include <string_view>
 #include <vector>
-#include <algorithm>
+
 
 #include "ContinentGraph.hpp"
 #include "Dijkstra.hpp"
@@ -334,8 +335,8 @@ void reserveAnimal(std::vector<std::unique_ptr<RescueAnimal>> &animalList,
         findAvailableAnimal(animalList, *targetType, *continent);
 
     if (selected == nullptr) {
-      std::cout << "No unreserved " << *targetType
-                << " currently available in " << *continent << ".\n";
+      std::cout << "No unreserved " << *targetType << " currently available in "
+                << *continent << ".\n";
       continue;
     }
 
@@ -343,7 +344,6 @@ void reserveAnimal(std::vector<std::unique_ptr<RescueAnimal>> &animalList,
     return;
   }
 }
-
 
 // Calculates shortest travel cost using Dijkstra's algorithm and updates an
 // animal's location
@@ -427,7 +427,7 @@ void moveAnimal(std::vector<std::unique_ptr<RescueAnimal>> &animalList,
   }
 }
 
-// Builds the bi-directional weighted continent transit network
+// Builds the bi-directional weighted continent graph network
 [[nodiscard]] auto generateContinentGraph() -> graph::ContinentGraph {
   graph::ContinentGraph graph(RescueUtils::kValidContinents.size());
 
@@ -456,7 +456,8 @@ void moveAnimal(std::vector<std::unique_ptr<RescueAnimal>> &animalList,
 
 int main() {
   // Read database credentials from env variables (or fallback to defaults)
-  const std::string supabaseUrl = getEnvOrDefault("DB_SUPABASE_URL", kDefaultUrl);
+  const std::string supabaseUrl =
+      getEnvOrDefault("DB_SUPABASE_URL", kDefaultUrl);
   const std::string supabaseAnonKey =
       getEnvOrDefault("DB_SUPABASE_PUB_KEY", kDefaultKey);
 
